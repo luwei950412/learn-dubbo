@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>show users</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>用户名:</th>
+            <th>密码:</th>
+        </tr>
+        <tr th:each="user:${user}">
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.password}"></td>
+        </tr>
+    </table>
+</body>
+</html>

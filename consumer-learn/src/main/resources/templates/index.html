@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+</head>
+<body>
+<h1>
+  hello spring boot!!!!哈哈112
+</h1>
+<table>
+  <tr th:each="user:${girlList}">
+    <td th:text="${user.id}"></td>
+    <td th:text="${user.cupSize}"></td>
+    <td th:text="${user.age}"></td>
+  </tr>
+</table>
+
+<form th:action="@{/girl/add}" method="post">
+  <input type="text" name="cupSize" placeholder="请输入罩杯"/><br />
+  <input type="text" name="age" placeholder="请输入年龄"/><br />
+  <input type="text" name="money" placeholder="请输入金额"/><br />
+  <input type="submit" value="提交女生信息" />
+  <input type="reset" value="重置信息" />
+</form>
+</body>
+</html>
