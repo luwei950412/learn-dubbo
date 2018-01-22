@@ -1,5 +1,0 @@
-com\sxdubboapi\learn\App.class
-com\sxdubboapi\learn\domain\SysRole.class
-com\sxdubboapi\learn\domain\SysPermission.class
-com\sxdubboapi\learn\domain\User.class
-com\sxdubboapi\learn\service\UserService.class

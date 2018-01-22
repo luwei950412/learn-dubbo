@@ -24,6 +24,7 @@ public class SysPermissionPO implements Serializable{
     private Long parentId; //父编号
     private String parentIds; //父编号列表
     private Boolean available = Boolean.FALSE;
+
     @ManyToMany
     @JoinTable(name="SysRolePermission",joinColumns={@JoinColumn(name="permissionId")},inverseJoinColumns={@JoinColumn(name="roleId")})
     private List<SysRolePO> roles;

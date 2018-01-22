@@ -32,7 +32,7 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setLoginUrl("/user/login");
         // 登录成功后要跳转的链接
         shiroFilterFactoryBean.setSuccessUrl("/user/index");
-        shiroFilterFactoryBean.setUnauthorizedUrl("/403");
+//        shiroFilterFactoryBean.setUnauthorizedUrl("/user/403");
 
         //拦截器.
         Map<String,String> filterChainDefinitionMap = new LinkedHashMap<String,String>();

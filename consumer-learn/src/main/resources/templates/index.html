@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
 <head>
   <meta charset="UTF-8" />
-  <title></title>
+  <title>Title</title>
 </head>
 <body>
-<h1>
-  hello spring boot!!!!哈哈112
-</h1>
-<table>
-  <tr th:each="user:${girlList}">
-    <td th:text="${user.id}"></td>
-    <td th:text="${user.cupSize}"></td>
-    <td th:text="${user.age}"></td>
-  </tr>
-</table>
+<h1>index，hello，你好<shiro:principal/></h1>
+<a href="../girl/index">show</a>
 
-<form th:action="@{/girl/add}" method="post">
-  <input type="text" name="cupSize" placeholder="请输入罩杯"/><br />
-  <input type="text" name="age" placeholder="请输入年龄"/><br />
-  <input type="text" name="money" placeholder="请输入金额"/><br />
-  <input type="submit" value="提交女生信息" />
-  <input type="reset" value="重置信息" />
-</form>
+<a href="../user/logout">logout</a>
 </body>
 </html>
+<!--<table>-->
+  <!--<tr th:each="user:${girlList}">-->
+    <!--<td th:text="${user.id}"></td>-->
+    <!--<td th:text="${user.cupSize}"></td>-->
+    <!--<td th:text="${user.age}"></td>-->
+  <!--</tr>-->
+<!--</table>-->

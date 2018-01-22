@@ -3,6 +3,7 @@ package com.sxdubbo.learn.controller;
 import com.alibaba.fastjson.JSONObject;
 
 import com.sxdubboapi.learn.domain.User;
+import com.sxdubboapi.learn.service.RedisService;
 import com.sxdubboapi.learn.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
@@ -32,19 +33,28 @@ public class UserController {
     public UserService userService;
 //    public User user;
 
+    @Autowired
+    public RedisService redisService;
 
-    @ResponseBody
-    @GetMapping(value = "/index/{name}")
-    public JSONObject show(@PathVariable("name") String username){
-//        BeanUtils.copyProperties();
-        JSONObject jsonObject = new JSONObject();
-        User user = new User();
 
-        user = userService.findByUsername(username);
-        System.out.println(user.getUsername()+"++++++++++++"+user.getPassword());
-        jsonObject.put("str", user);
-        return jsonObject;
+//    @ResponseBody
+//    @GetMapping(value = "/index")
+//    public JSONObject show(@PathVariable("name") String username){
+////        BeanUtils.copyProperties();
+//        JSONObject jsonObject = new JSONObject();
+//        User user = new User();
+//
+//        user = userService.findByUsername(username);
+//        System.out.println(user.getUsername()+"++++++++++++"+user.getPassword());
+//        jsonObject.put("str", user);
+//        return jsonObject;
+//    }
+    @GetMapping(value = "/index")
+    public String index(){
+
+        return "/user/index";
     }
+
     @GetMapping(value = "/register")
     public String register(){
 
@@ -74,13 +84,13 @@ public class UserController {
     }
 
 
-    @RequestMapping(value="/login",method=RequestMethod.GET)
-    public String loginForm(Model model){
-//        model.addAttribute("user", new User());
-        return "/user/login";
-    }
+//    @RequestMapping(value="/login",method=RequestMethod.GET)
+//    public String loginForm(Model model){
+////        model.addAttribute("user", new User());
+//        return "/user/login";
+//    }
 
-    @RequestMapping(value = "/login", method=RequestMethod.POST)
+    @RequestMapping(value = "/login")
     public String login(@Valid User user, BindingResult bindingResult, RedirectAttributes redirectAttributes) throws Exception{
         if(bindingResult.hasErrors()){
             return "/user/login";
@@ -117,13 +127,23 @@ public class UserController {
             redirectAttributes.addFlashAttribute("message", "用户名或密码不正确");
         }
         //验证是否登录成功
-        if(currentUser.isAuthenticated()){
-            logger.info("用户[" + username + "]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)");
-            return "/user/index";
-        }else{
+//        if(currentUser.isAuthenticated()){
+//            logger.info("用户[" + username + "]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)");
+//
+//            System.out.println(username+"---here is redis progress");
+//            try {
+//                redisService.setStr("username",username);
+//                System.out.println(redisService.getStr("username")+"$$$$$$$$$$$$$$$$$$$$");
+////                return "success";
+//            } catch (Exception e){
+//                e.printStackTrace();
+////                return "error";
+//            }
+//            return "/user/index";
+//        }else{
             token.clear();
             return "/user/login";
-        }
+//        }
     }
 
     @RequestMapping(value="/logout",method= RequestMethod.GET)

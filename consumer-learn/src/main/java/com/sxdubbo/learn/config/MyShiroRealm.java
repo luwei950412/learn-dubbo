@@ -5,14 +5,16 @@ package com.sxdubbo.learn.config;
 
 import javax.annotation.Resource;
 
-import org.apache.shiro.authc.AuthenticationException;
-import org.apache.shiro.authc.AuthenticationInfo;
-import org.apache.shiro.authc.AuthenticationToken;
-import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import com.sxdubbo.learn.controller.UserController;
+import com.sxdubboapi.learn.service.RedisService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.apache.shiro.subject.Subject;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 
 import com.sxdubboapi.learn.domain.SysPermission;
@@ -20,9 +22,16 @@ import com.sxdubboapi.learn.domain.SysRole;
 import com.sxdubboapi.learn.domain.User;
 import com.sxdubboapi.learn.service.UserService;
 
+import java.util.logging.Logger;
+
 public class MyShiroRealm extends AuthorizingRealm {
     @Resource
     private UserService userService;
+
+    @Resource
+    private RedisService redisService;
+
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(UserController.class);
 
     private User user = new User();
     @Override
@@ -54,19 +63,26 @@ public class MyShiroRealm extends AuthorizingRealm {
 //        BeanUtils.copyProperties(user,user);
 
         System.out.println("----->>userInfo="+user.getUsername());
-//        if(user != null){
+//        try {
             SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
                     user.getUsername(), //用户名
                     user.getPassword(), //密码
 //                ByteSource.Util.bytes(user.getCredentialsSalt()),//salt=username+salt
                     getName()  //realm name
             );
-        System.out.println(authenticationInfo+"++++++++++++++++");
-            return authenticationInfo;
-//        }else{
-//            System.out.println("user is null");
+//        }catch (Exception e){
+//
 //        }
-//    return null;
+//        System.out.println(token+"++++++++++++++++");
+
+        if(authenticationInfo != null){
+//            redisService.setStr("username",username);
+            redisService.setObj("user", user);
+            User user_redis = new User();
+            user_redis = (User)redisService.getObj("user");
+            System.out.println(user_redis.getUsername()+"$$$$$$$$$$$$$$$$$$$$");
+        }
+            return authenticationInfo;
     }
 
 }
