@@ -17,6 +17,12 @@ public class User implements Serializable{
 
     private String email;
 
+    private String position; //职位
+
+    private String city;//城市
+
+    private String introduction;//个性签名，自我介绍
+
     private Integer userType;  //user type: 0:common user; 1:lecture;
 
     private Date createDate;
@@ -25,7 +31,7 @@ public class User implements Serializable{
 
     private Integer userStatus;  //user status: 0:normal status; 1:frozen status
 
-    private List<SysRole> roleList;// 一个用户具有多个角色
+//    private List<SysRole> roleList;// 一个用户具有多个角色
 
 
     //getter and setter section
@@ -70,6 +76,30 @@ public class User implements Serializable{
         this.email = email;
     }
 
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
+    }
+
     public Integer getUserType() {
         return userType;
     }
@@ -102,11 +132,11 @@ public class User implements Serializable{
         this.userStatus = userStatus;
     }
 
-    public List<SysRole> getRoleList() {
-        return roleList;
-    }
-
-    public void setRoleList(List<SysRole> roleList) {
-        this.roleList = roleList;
-    }
+//    public List<SysRole> getRoleList() {
+//        return roleList;
+//    }
+//
+//    public void setRoleList(List<SysRole> roleList) {
+//        this.roleList = roleList;
+//    }
 }

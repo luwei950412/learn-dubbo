@@ -5,13 +5,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * created by  luwei
  * 2018-01-22 18:36.
  **/
 @Entity
-@Table(name="video")
+@Table(name = "video")
 public class VideoPO implements Serializable {
 
     @Id
@@ -20,11 +21,19 @@ public class VideoPO implements Serializable {
 
     private String serialNumber;//视频编号 例如：1-1
 
+    private Integer chapterId;
+
     private Integer courseId;
 
     private String videoName;
 
     private String videoDuration;
+
+    private String filePath;
+
+    private Date createDate;
+
+    private Date modifyDate;
 
 //    private String
 
@@ -43,6 +52,14 @@ public class VideoPO implements Serializable {
 
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
+    }
+
+    public Integer getChapterId() {
+        return chapterId;
+    }
+
+    public void setChapterId(Integer chapterId) {
+        this.chapterId = chapterId;
     }
 
     public Integer getCourseId() {
@@ -67,5 +84,29 @@ public class VideoPO implements Serializable {
 
     public void setVideoDuration(String videoDuration) {
         this.videoDuration = videoDuration;
+    }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public Date getModifyDate() {
+        return modifyDate;
+    }
+
+    public void setModifyDate(Date modifyDate) {
+        this.modifyDate = modifyDate;
     }
 }

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ImportResource;
 @ImportResource(value = {"classpath:providers.xml"})
 public class ProviderLearnApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ProviderLearnApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ProviderLearnApplication.class, args);
+    }
 }

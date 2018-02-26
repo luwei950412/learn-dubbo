@@ -1,11 +1,14 @@
 package com.sxdubboapi.learn.domain;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
  * created by  luwei
  * 2018-01-22 18:36.
  **/
 
-public class Video {
+public class Video implements Serializable{
 
     private Integer id;
 
@@ -13,11 +16,18 @@ public class Video {
 
     private Integer courseId;
 
+    private Integer chapterId;
+
     private String videoName;
 
     private String videoDuration;
 
-//    private String
+    private String filePath;
+
+    private Date createDate;
+
+    private Date modifyDate;
+
 
 
     public Integer getId() {
@@ -44,6 +54,14 @@ public class Video {
         this.courseId = courseId;
     }
 
+    public Integer getChapterId() {
+        return chapterId;
+    }
+
+    public void setChapterId(Integer chapterId) {
+        this.chapterId = chapterId;
+    }
+
     public String getVideoName() {
         return videoName;
     }
@@ -58,5 +76,29 @@ public class Video {
 
     public void setVideoDuration(String videoDuration) {
         this.videoDuration = videoDuration;
+    }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public Date getModifyDate() {
+        return modifyDate;
+    }
+
+    public void setModifyDate(Date modifyDate) {
+        this.modifyDate = modifyDate;
     }
 }

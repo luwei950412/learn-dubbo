@@ -1,12 +1,13 @@
 package com.sxdubboapi.learn.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * created by  luwei
  * 2018-01-22 18:31.
  **/
-public class Course {
+public class Course implements Serializable{
 
     private Integer id;
 
@@ -21,6 +22,14 @@ public class Course {
     private String type;
 
     private String hour;
+
+    private String introduction; //课程介绍
+
+    private Integer level;//难度级别：1：容易；2：中级；3：高级
+
+    private double score;//评分
+
+    private Integer chapterNum; //章节数
 
     private Date createDate;
 
@@ -80,6 +89,38 @@ public class Course {
 
     public void setHour(String hour) {
         this.hour = hour;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
+    }
+
+    public Integer getLevel() {
+        return level;
+    }
+
+    public void setLevel(Integer level) {
+        this.level = level;
+    }
+
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
+    }
+
+    public Integer getChapterNum() {
+        return chapterNum;
+    }
+
+    public void setChapterNum(Integer chapterNum) {
+        this.chapterNum = chapterNum;
     }
 
     public Date getCreateDate() {

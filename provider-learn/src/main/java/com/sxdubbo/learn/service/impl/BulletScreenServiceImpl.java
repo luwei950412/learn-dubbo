@@ -12,16 +12,17 @@ import org.springframework.beans.factory.annotation.Autowired;
  * created by  luwei
  * 2018-01-22 19:59.
  **/
-public class BulletScreenServiceImpl implements BulletScreenService{
+public class BulletScreenServiceImpl implements BulletScreenService {
 
     @Autowired
     public BulletScreenRepository bulletScreenRepository;
+
     @Override
-    public BulletScreen findByVideoId(Integer videoId){
+    public BulletScreen findByVideoId(Integer videoId) {
         BulletScreen bulletScreen = new BulletScreen();
         BulletScreenPO bulletScreenPO = new BulletScreenPO();
         bulletScreenPO = bulletScreenRepository.findByVideoId(videoId);
-        BeanUtils.copyProperties(bulletScreenPO,bulletScreen);
+        BeanUtils.copyProperties(bulletScreenPO, bulletScreen);
         return bulletScreen;
     }
 }

@@ -18,20 +18,20 @@ public class UserVideoServiceImpl implements UserVideoService {
     public UserVideoRepository userVideoRepository;
 
     @Override
-    public UserVideo findByUserId(Integer userId){
-        UserVideo userVideo  = new UserVideo();
+    public UserVideo findByUserId(Integer userId) {
+        UserVideo userVideo = new UserVideo();
         UserVideoPO userVideoPO = new UserVideoPO();
         userVideoPO = userVideoRepository.findByUserId(userId);
-        BeanUtils.copyProperties(userVideoPO,userVideo);
+        BeanUtils.copyProperties(userVideoPO, userVideo);
         return userVideo;
     }
 
     @Override
-    public UserVideo findByVideoId(Integer videoId){
-        UserVideo userVideo  = new UserVideo();
+    public UserVideo findByVideoId(Integer videoId) {
+        UserVideo userVideo = new UserVideo();
         UserVideoPO userVideoPO = new UserVideoPO();
         userVideoPO = userVideoRepository.findByUserId(videoId);
-        BeanUtils.copyProperties(userVideoPO,userVideo);
+        BeanUtils.copyProperties(userVideoPO, userVideo);
         return userVideo;
     }
 }

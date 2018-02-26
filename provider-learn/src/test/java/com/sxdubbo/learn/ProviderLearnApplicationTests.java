@@ -12,29 +12,31 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class ProviderLearnApplicationTests {
 
-	@Autowired
-	UserService userService;
-	@Test
-	public void contextLoads() {
-	}
+    @Autowired
+    UserService userService;
 
-	@Test
-	public void testSaveUser() {
-		User user = new User();
-		user.setUsername("asasdasd123");
-		user.setPassword("asbaf123");
-		user.setEmail("asd");
-		userService.addUser(user);
-	}
-	@Test
-	public void showUser() {
-		User user = new User();
+    @Test
+    public void contextLoads() {
+    }
+
+    @Test
+    public void testSaveUser() {
+        User user = new User();
+        user.setUsername("asasdasd123");
+        user.setPassword("asbaf123");
+        user.setEmail("asd");
+        userService.addUser(user);
+    }
+
+    @Test
+    public void showUser() {
+        User user = new User();
 //		user.setUsername("asasdasd123");
 //		user.setPassword("asbaf123");
 //		user.setEmail("asd");
-		user = userService.findByUsername("luwei");
-		System.out.println(user.getUsername());
-		
-	}
+        user = userService.findByUsername("luwei");
+        System.out.println(user.getUsername());
+
+    }
 
 }

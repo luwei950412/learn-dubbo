@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class SayHelloController {
 
-//    @Autowired
+    //    @Autowired
 //    SayHelloService sayHelloService;
 //    /**
 //     * 测试 JSON 接口；
@@ -25,11 +25,8 @@ public class SayHelloController {
 //     * @return
 //     */
 //    @ResponseBody
-//    @RequestMapping("/sayhello/{name}")
-//    public JSONObject testJson(@PathVariable("name") String name) {
-//        JSONObject jsonObject = new JSONObject();
-//        String testStr = sayHelloService.sayHello(name);
-//        jsonObject.put("str", testStr);
-//        return jsonObject;
-//    }
+    @RequestMapping("/test")
+    public String test() {
+        return "test";
+    }
 }

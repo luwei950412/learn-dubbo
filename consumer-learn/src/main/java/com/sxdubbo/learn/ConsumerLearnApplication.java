@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ImportResource;
 @ImportResource(value = {"classpath:consumers.xml"})
 public class ConsumerLearnApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ConsumerLearnApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ConsumerLearnApplication.class, args);
+    }
 }

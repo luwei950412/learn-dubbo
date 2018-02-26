@@ -13,7 +13,7 @@ import java.util.Date;
  * 2018-01-22 18:50.
  **/
 @Entity
-@Table(name="UserVideo")
+@Table(name = "UserVideo")
 public class UserVideoPO implements Serializable {
 
     @Id

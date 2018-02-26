@@ -13,7 +13,7 @@ import java.util.Date;
  * 2018-01-22 18:53.
  **/
 @Entity
-@Table(name="BulletScreen")
+@Table(name = "BulletScreen")
 public class BulletScreenPO implements Serializable {
 
     @Id

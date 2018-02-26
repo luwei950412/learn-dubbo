@@ -12,7 +12,7 @@ import java.util.Date;
  * 2018-01-22 18:31.
  **/
 @Entity
-@Table(name="course")
+@Table(name = "course")
 public class CoursePO implements Serializable {
     @Id
     @GeneratedValue
@@ -20,15 +20,23 @@ public class CoursePO implements Serializable {
 
     private String courseName;
 
-    private String userid;
+    private Integer userid;
 
-    private String filePath;
+    private String filePath;//课程图片
 
     private String duration;//时长
 
-    private String type;
+    private String type;  //课程类别
 
-    private String hour;
+    private String hour; //课时
+
+    private String introduction; //课程介绍
+
+    private Integer level;//难度级别：1：容易；2：中级；3：高级
+
+    private double score;//评分
+
+    private Integer chapterNum; //章节数
 
     private Date createDate;
 
@@ -50,11 +58,11 @@ public class CoursePO implements Serializable {
         this.courseName = courseName;
     }
 
-    public String getUserid() {
+    public Integer getUserid() {
         return userid;
     }
 
-    public void setUserid(String userid) {
+    public void setUserid(Integer userid) {
         this.userid = userid;
     }
 
@@ -88,6 +96,38 @@ public class CoursePO implements Serializable {
 
     public void setHour(String hour) {
         this.hour = hour;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
+    }
+
+    public Integer getLevel() {
+        return level;
+    }
+
+    public void setLevel(Integer level) {
+        this.level = level;
+    }
+
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
+    }
+
+    public Integer getChapterNum() {
+        return chapterNum;
+    }
+
+    public void setChapterNum(Integer chapterNum) {
+        this.chapterNum = chapterNum;
     }
 
     public Date getCreateDate() {

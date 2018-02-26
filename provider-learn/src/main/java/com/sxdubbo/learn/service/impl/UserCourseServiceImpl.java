@@ -18,22 +18,22 @@ public class UserCourseServiceImpl implements UserCourseService {
     public UserCourseRepository userCourseRepository;
 
     @Override
-    public UserCourse findByUserId(Integer userId){
+    public UserCourse findByUserId(Integer userId) {
 
-        UserCourse userCourse  = new UserCourse();
+        UserCourse userCourse = new UserCourse();
         UserCoursePO userCoursePO = new UserCoursePO();
         userCoursePO = userCourseRepository.findByUserId(userId);
-        BeanUtils.copyProperties(userCoursePO,userCourse);
+        BeanUtils.copyProperties(userCoursePO, userCourse);
         return userCourse;
     }
 
     @Override
-    public UserCourse findByCourseId(Integer courseId){
+    public UserCourse findByCourseId(Integer courseId) {
 
-        UserCourse userCourse  = new UserCourse();
+        UserCourse userCourse = new UserCourse();
         UserCoursePO userCoursePO = new UserCoursePO();
         userCoursePO = userCourseRepository.findByUserId(courseId);
-        BeanUtils.copyProperties(userCoursePO,userCourse);
+        BeanUtils.copyProperties(userCoursePO, userCourse);
         return userCourse;
     }
 }

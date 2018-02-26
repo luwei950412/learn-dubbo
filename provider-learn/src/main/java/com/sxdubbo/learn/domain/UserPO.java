@@ -10,8 +10,8 @@ import java.util.List;
  * 2018-01-04 13:46.
  **/
 @Entity
-@Table(name="user")
-public class UserPO implements Serializable{
+@Table(name = "user")
+public class UserPO implements Serializable {
 
     @Id
     @GeneratedValue
@@ -20,24 +20,29 @@ public class UserPO implements Serializable{
     @Column(unique = true)
     private String username;
 
-    @Column(unique = true)
     private String password;
 
     private String headimg;
 
     private String email;
 
-    private Integer userType;  //user type: 0:common user; 1:lecture;
+    private String position; //职位
+
+    private String city;//城市
+
+    private String introduction;//个性签名，自我介绍
+
+    private Integer userType;  //user type: 0:admin; 1:common user; 2:lecture;
 
     private Date createDate;
 
     private Date modifyDate;
 
-    private Integer userStatus;  //user status: 0:normal status; 1:frozen status
+    private Integer userStatus;  //user status: 0:normal status; 1:待审核 2：frozen status
 
-    @ManyToMany(fetch= FetchType.EAGER)//立即从数据库中进行加载数据;
-    @JoinTable(name = "SysUserRole", joinColumns = { @JoinColumn(name = "userId") }, inverseJoinColumns ={@JoinColumn(name = "roleId") })
-    private List<SysRolePO> roleList;// 一个用户具有多个角色
+//    @ManyToMany(fetch = FetchType.EAGER)//立即从数据库中进行加载数据;
+//    @JoinTable(name = "SysUserRole", joinColumns = {@JoinColumn(name = "userId")}, inverseJoinColumns = {@JoinColumn(name = "roleId")})
+//    private List<SysRolePO> roleList;// 一个用户具有多个角色
 
     //getter and setter section
 
@@ -81,6 +86,30 @@ public class UserPO implements Serializable{
         this.email = email;
     }
 
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
+    }
+
     public Integer getUserType() {
         return userType;
     }
@@ -113,11 +142,11 @@ public class UserPO implements Serializable{
         this.userStatus = userStatus;
     }
 
-    public List<SysRolePO> getRoleList() {
-        return roleList;
-    }
-
-    public void setRoleList(List<SysRolePO> roleList) {
-        this.roleList = roleList;
-    }
+//    public List<SysRolePO> getRoleList() {
+//        return roleList;
+//    }
+//
+//    public void setRoleList(List<SysRolePO> roleList) {
+//        this.roleList = roleList;
+//    }
 }

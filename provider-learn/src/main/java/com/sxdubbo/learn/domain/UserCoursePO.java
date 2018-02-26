@@ -12,14 +12,14 @@ import java.util.Date;
  * 2018-01-22 18:44.
  **/
 @Entity
-@Table(name="UserCourse")
+@Table(name = "UserCourse")
 public class UserCoursePO implements Serializable {
 
     @Id
     @GeneratedValue
     private Integer id;
 
-    private  Integer userId;
+    private Integer userId;
 
     private Integer courseId;
 
