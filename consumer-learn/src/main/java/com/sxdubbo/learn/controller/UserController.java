@@ -1,6 +1,7 @@
 package com.sxdubbo.learn.controller;
 
 
+import com.sxdubbo.learn.utils.AppMD5Util;
 import com.sxdubboapi.learn.domain.User;
 import com.sxdubboapi.learn.service.CommentService;
 import com.sxdubboapi.learn.service.CourseService;
@@ -20,8 +21,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -103,59 +106,36 @@ public class UserController {
 
         return "/admin/user/login";
     }
-//    @RequestMapping("/loginUser")
-//    public String loginUser(String username,String password,HttpSession session) {
-//        System.out.println("here is loginUser+++++++++++++++");
-//        UsernamePasswordToken usernamePasswordToken=new UsernamePasswordToken(username,password);
-//        Subject subject = SecurityUtils.getSubject();
-//        try {
-//            subject.login(usernamePasswordToken);   //完成登录
-//            User user=(User) subject.getPrincipal();
-//            session.setAttribute("user", user);
-//            return "/admin/index";
-//        } catch(Exception e) {
-//            return "/admin/user/login";//返回登录页面
-//        }
-//
-//    }
 
     @PostMapping("/login")
-    public String login(HttpServletRequest request, Map<String, Object> map) throws Exception {
-        System.out.println("HomeController.login()");
-        // 登录失败从request中获取shiro处理的异常信息。
-        // shiroLoginFailure:就是shiro异常类的全类名.
-        String exception = (String) request.getAttribute("shiroLoginFailure");
-        System.out.println("exception=" + exception);
-        String msg = "";
-        if (exception != null) {
-            if (UnknownAccountException.class.getName().equals(exception)) {
-                System.out.println("UnknownAccountException -- > 账号不存在：");
-                msg = "UnknownAccountException -- > 账号不存在：";
-            } else if (IncorrectCredentialsException.class.getName().equals(exception)) {
-                System.out.println("IncorrectCredentialsException -- > 密码不正确：");
-                msg = "IncorrectCredentialsException -- > 密码不正确：";
-            } else if ("kaptchaValidateFailed".equals(exception)) {
-                System.out.println("kaptchaValidateFailed -- > 验证码错误");
-                msg = "kaptchaValidateFailed -- > 验证码错误";
-            } else {
-                msg = "else >> " + exception;
-                System.out.println("else -- >" + exception);
-            }
+    @ResponseBody
+    public String login(@Valid User user, HttpServletRequest request, HttpServletResponse response)throws IOException {
+        User user1 = userService.findByUsername(user.getUsername());
+        if(user1.getPassword().equals(AppMD5Util.getMD5(user.getPassword()))){
+            System.out.println(user.getUsername());
+            System.out.println(user.getPassword());
+
+            response.setCharacterEncoding("UTF-8");
+            response.setContentType("text/html;charset=UTF-8");
+            //使用request对象的getSession()获取session，如果session不存在则创建一个
+            HttpSession session = request.getSession();
+            //将数据存储到session中
+            session.setAttribute("userInfo", user1);
+
+            redisService.setObj("user", user1);
+//            User user_redis = new User();
+//            user_redis = (User) redisService.getObj("user");
+            return "success";
+        }else{
+            return "error";
         }
-        map.put("msg", msg);
-        // 此方法不处理登录成功,由shiro进行处理
-        return "/admin/user/login";
     }
 
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logout(RedirectAttributes redirectAttributes,HttpServletRequest request) {
         //使用权限管理工具进行用户的退出，跳出登录，给出提示信息
-        System.out.println("进入退出注销界面111111111111111111111111111");
-        SecurityUtils.getSubject().logout();
         try {
             redisService.delObj("user");
-
-//            HttpServletRequest request = ServletActionContext.getRequest();
             HttpSession session1 = request.getSession();
             session1.invalidate();
         } catch (Exception e) {

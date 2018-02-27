@@ -18,13 +18,6 @@
     <link rel="shortcut icon" href="http://demo.cssmoban.com/cssthemes4/btzero_30_miminiummaster/asset/img/logomi.png">
 </head>
 <body id="mimin" class="dashboard form-signin-wrapper">
-<script language="javascript" type="text/javascript">
-    <#--if("${(userInfo.username)!}"){-->
-        <#--alert(session_user+"hello");-->
-    <#--}else{-->
-        <#--alert("erro,null");-->
-    <#--}-->
-</script>
 <!--</shiro:notAuthenticated>-->
 <!--<form th:action="@{/user/login}" method="post">-->
 <!--<p>账号：<input type="text" name="username" value="luwei" /></p>-->
@@ -35,7 +28,7 @@
 <#--<img src="/admin/images/login-bg.jpg" />-->
 <div class="container">
 
-    <form class="form-signin" action="/user/login" method="post">
+    <form class="form-signin" id="loginWindowForm" method="post" enctype="multipart/form-data">
         <div class="panel periodic-login">
         <#--<span class="atomic-number">28</span>-->
             <div class="panel-body text-center">
@@ -44,12 +37,12 @@
                 <p class="element-name">Miminium</p>
                 <i class="fa fa-arrow-down"></i>
                 <div class="form-group form-animate-text" style="margin-top:40px !important;">
-                    <input class="form-text" required="" name="username" type="text">
+                    <input id="loginWindowMemberUsername" class="form-text" required="" name="username" type="text">
                     <span class="bar"></span>
                     <label>Username</label>
                 </div>
                 <div class="form-group form-animate-text" style="margin-top:40px !important;">
-                    <input class="form-text" required="" name="password" type="password">
+                    <input id="loginWindowMemberPassword" class="form-text" required="" name="password" type="password">
                     <span class="bar"></span>
                     <label>Password</label>
                 </div>
@@ -59,7 +52,7 @@
             <#--<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins>-->
             <#--</div> Remember me-->
             <#--</label>-->
-                <input class="btn col-md-12" value="SignIn" type="submit"/>
+                <input class="btn col-md-12" value="SignIn" type="button" onclick="memberLogin();"/>
             </div>
             <div class="text-center" style="padding:5px;">
                 <a href="http://demo.cssmoban.com/cssthemes4/btzero_30_miminiummaster/forgotpass.html">Forgot
@@ -74,6 +67,7 @@
 <!-- end: Content -->
 <!-- start: Javascript -->
 <script src="/admin/js/jquery.js"></script>
+<script src="/admin/js/login.js"></script>
 <script src="/admin/js/jquery_002.js"></script>
 <script src="/admin/js/bootstrap.js"></script>
 

@@ -39,4 +39,12 @@ public class ProviderLearnApplicationTests {
 
     }
 
+    @Test
+    public void getUserByUsername(){
+        User user = new User();
+
+        user = userService.findByUsername("luwei");
+        System.out.println("here is user info"+user.getPassword());
+    }
+
 }
