@@ -49,13 +49,13 @@
 
             <ul class="nav navbar-nav navbar-right user-nav">
                 <li class="user-name">
-                    <#--<#if "${(userInfo.username)!}"=="">-->
-                    <#--<script>-->
-                        <#--window.location.href="/index";-->
-                    <#--</script>-->
-                        <#--<#else>-->
-                    你好，<#if "${userInfo.userType}" == "0">管理员
-                <#elseif "${userInfo.userType}"=="2">讲师
+                    <#if "${(userInfo.username)!}"=="">
+                    <script>
+                        window.location.href="/index";
+                    </script>
+                        <#else>
+                    你好，<#if "${(userInfo.userType)!}" == "0">管理员
+                <#elseif "${(userInfo.userType)!}"=="2">讲师
                 </#if>
                         <#--</#if>-->
                     <span>${(userInfo.username)!}</span></li>   <#--此处是登录用户明显是地方${test.username}-->
