@@ -2,32 +2,33 @@ package com.sxdubbo.learn.controller;
 
 
 import com.sxdubbo.learn.utils.AppMD5Util;
+import com.sxdubbo.learn.utils.FileUtils;
 import com.sxdubboapi.learn.domain.User;
 import com.sxdubboapi.learn.service.CommentService;
 import com.sxdubboapi.learn.service.CourseService;
 import com.sxdubboapi.learn.service.RedisService;
 import com.sxdubboapi.learn.service.UserService;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.IncorrectCredentialsException;
-import org.apache.shiro.authc.UnknownAccountException;
-import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.ClassUtils;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
+import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 /**
  * created by  luwei
@@ -216,5 +217,50 @@ public class UserController {
 
     }
 
+    @PostMapping("/updateUser")
+    public String updateUser(@Valid User user, BindingResult bindingResult, HttpServletRequest request,
+                             @RequestParam(value="headimg") MultipartFile file, RedirectAttributes attributes) {
+
+        User user1 = userService.getUserById(user.getId());
+        user.setCreateDate(user1.getCreateDate());
+        user.setModifyDate(new Date());
+        user.setPassword(user1.getPassword());
+        if (!file.isEmpty()) {
+            String contentType = file.getContentType();
+            String fileName = file.getOriginalFilename();
+            String suffixName = fileName.substring(fileName.lastIndexOf("."));
+            //        String filePath1 = request.getSession().getServletContext().getRealPath("/");
+            //        System.out.println(filePath1+"++++++++++++++");
+
+            String filePath = ClassUtils.getDefaultClassLoader().getResource("static/upload/").getPath();
+            try {
+                filePath = URLDecoder.decode(filePath, "utf-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
+            File dest = new File(filePath);
+            // 检测是否存在目录
+            if (!dest.exists()) {
+                dest.mkdirs();// 新建文件夹
+            }
+            String file_name = System.currentTimeMillis() + suffixName;
+            try {
+                FileUtils.uploadFile(file.getBytes(), filePath, file_name);
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
+            user.setHeadimg(file_name);
+        } else {
+            user.setHeadimg(user1.getHeadimg());
+        }
+        userService.addUser(user);
+        if (user.getUserType() == 2) {
+            return "redirect:/user/lecture";
+        } else {
+            return "redirect:/user/common";
+        }
+
+    }
 
 }
