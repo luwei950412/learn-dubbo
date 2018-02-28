@@ -146,11 +146,11 @@
                                                     &nbsp;
                                                 </#if></td>
                                                 <td>
-                                                    <#if "${userInfo.userType}"=="2">
-                                                        <span title="您是讲师，无权进行如此操作">[删除]</span>
-                                                    <#else>
+                                                    <#if "${userInfo.userType}"=="0">
                                                         <a href="/user/delete?id=${lecture.id}"
                                                            onclick="javascript:return p_del()" title="删除">[删除]</a>
+
+                                                        <a href="" data-toggle="modal" data-target="#myModal_update${count}" title="修改用户信息">[修改]</a>
                                                     </#if>
 
                                                     <script language="javascript">
@@ -163,6 +163,73 @@
                                                             }
                                                         }
                                                     </script>
+
+                                                    <!-- 模态框（Modal） ---------修改信息-->
+                                                    <div style="margin-top: 50px" class="modal fade" id="myModal_update${count}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                <#--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">-->
+                                                                <#--&times;-->
+                                                                <#--</button>-->
+                                                                    <h4 class="modal-title" id="myModalLabel">
+                                                                        修改用户信息
+                                                                    </h4>
+                                                                </div>
+                                                                <form action="/user/updateUser" method="post" enctype="multipart/form-data">
+                                                                    <div class="modal-body" style="height:550px;width:400px">
+
+                                                                        <label for="name" class="col-sm-2 control-label">用户名</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="hidden" name="id" value="${lecture.id}" />
+                                                                            <input type="text" style="width: 400px;" class="form-control" name="username"
+                                                                                   value="${(lecture.username)!}" placeholder="请输入用户">
+                                                                        </div>
+                                                                        <label for="name" class="col-sm-2 control-label">Email</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="text" style="width: 400px;" class="form-control" name="email"
+                                                                                   value="${(lecture.email)!}" placeholder="请输入用户email">
+                                                                        </div>
+                                                                        <label for="name" class="col-sm-2 control-label">用户状态</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="text" style="width: 400px;" class="form-control" name="userStatus"
+                                                                                   value="${(lecture.userStatus)!}" placeholder="请输入用户状态">
+                                                                            <#--<textarea id="quick_post" name="content" rows="10" cols="80" placeholder="请输入赛事内容">${(sportInfo.content)!}</textarea>-->
+                                                                        </div>
+                                                                        <label for="name" class="col-sm-2 control-label">用户类别</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="text" style="width: 400px;" class="form-control" name="userType"
+                                                                                   value="${(lecture.userType)!}" placeholder="请输入用户类别">
+                                                                        </div>
+                                                                        <label for="name" class="col-sm-2 control-label">所在城市</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="text" style="width: 400px;" class="form-control" name="city"
+                                                                                   value="${(lecture.city)!}" placeholder="请输入所在城市">
+                                                                        </div>
+                                                                        <label for="name" class="col-sm-2 control-label">用户状态</label>
+                                                                        <div class="col-sm-10">
+                                                                        <textarea id="quick_post" name="introduction" rows="10" cols="50" placeholder="请输入用户介绍">${(lecture.introduction)!}</textarea>
+                                                                        </div>
+                                                                        <label for="name" class="col-sm-2 control-label">职位</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="text" style="width: 400px;" class="form-control" name="city"
+                                                                                   value="${(lecture.position)!}" placeholder="请输入用户职位">
+                                                                        </div>
+
+                                                                        <label for="name" class="col-sm-2 control-label">头像</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="file" style="width: 400px;" class="form-control" name="headimg" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <input type="button" value="关闭" class="col-sm-4 btn btn-default" data-dismiss="modal" />
+                                                                        <input type="submit" value="提交" class="col-sm-4 btn btn-primary" />
+                                                                    </div>
+                                                                </form>
+                                                            </div><!-- /.modal-content -->
+                                                        </div><!-- /.modal -->
+                                                    </div>
+
                                                 <#--<a href="income!view.action?id=${income.id}" title="查看">[查看]</a>-->
                                                 </td>
                                             </tr>
