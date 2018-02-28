@@ -146,9 +146,7 @@
                                                     &nbsp;
                                                 </#if></td>
                                                 <td>
-                                                    <#if "${userInfo.userType}"=="2">
-                                                        <span title="您是讲师，无权进行如此操作">[删除]</span>
-                                                    <#else>
+                                                    <#if "${userInfo.userType}"=="0">
                                                         <a href="/user/delete?id=${lecture.id}"
                                                            onclick="javascript:return p_del()" title="删除">[删除]</a>
                                                     </#if>
