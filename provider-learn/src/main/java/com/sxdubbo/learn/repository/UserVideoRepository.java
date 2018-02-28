@@ -12,4 +12,9 @@ public interface UserVideoRepository extends JpaRepository<UserVideoPO, String> 
     public UserVideoPO findByUserId(Integer userId);
 
     public UserVideoPO findByVideoId(Integer videoId);
+//  save()
+    public UserVideoPO save(UserVideoPO userVideoPO);
+
+    public UserVideoPO findByUserIdAndVideoId(Integer userId,Integer videoId);
+
 }
