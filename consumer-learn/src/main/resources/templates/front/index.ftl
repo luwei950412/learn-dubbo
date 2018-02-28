@@ -101,7 +101,7 @@
                                 </ul>
                             </li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                            <li class="btn-cta"><a href="/front/user/login.ftl"><span>Login</span></a></li>
                             <li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
                         </ul>
                     </div>

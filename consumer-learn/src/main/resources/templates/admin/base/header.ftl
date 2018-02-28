@@ -53,7 +53,7 @@
                     <script>
                         window.location.href="/index";
                     </script>
-                        <#else>
+                        </#if>
                     你好，<#if "${(userInfo.userType)!}" == "0">管理员
                 <#elseif "${(userInfo.userType)!}"=="2">讲师
                 </#if>
