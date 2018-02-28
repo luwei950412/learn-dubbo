@@ -51,7 +51,7 @@
                 <li class="user-name">
                     <#if "${(userInfo.username)!}"=="">
                     <script>
-                        window.location.href="/index";
+                        window.location.href="/user/login";
                     </script>
                         </#if>
                     你好，<#if "${(userInfo.userType)!}" == "0">管理员
