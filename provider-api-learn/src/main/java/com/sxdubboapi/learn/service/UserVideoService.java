@@ -11,4 +11,8 @@ public interface UserVideoService {
     public UserVideo findByUserId(Integer userId);
 
     public UserVideo findByVideoId(Integer videoId);
+
+    public UserVideo saveUserVideo(UserVideo userVideo);
+
+    public UserVideo findByUserIdAndVideoId(Integer userId,Integer videoId);
 }
