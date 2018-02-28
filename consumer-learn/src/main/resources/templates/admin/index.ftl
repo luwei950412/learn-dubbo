@@ -15,7 +15,7 @@
                 <p class="animated fadeInDown"><span class="fa  fa-map-marker"></span> SEU,SuZhou</p>
 
                 <ul class="nav navbar-nav">
-                    <li><a href="">用户</a></li>
+                    <li><a href="">用户${base}</a></li>
                     <li><a href="" class="active">课程</a></li>
                     <li><a href="">问答</a></li>
                     <li><a href="">测试</a></li>
