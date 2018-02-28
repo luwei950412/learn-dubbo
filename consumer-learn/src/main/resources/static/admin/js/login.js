@@ -12,7 +12,7 @@
 				return false;
 			}
 			$.ajax({
-				url:  "${base}/user/login",
+				url:  "/user/login",
 				data: $loginWindowForm.serialize(),
 				type: "POST",
 				cache: false,
