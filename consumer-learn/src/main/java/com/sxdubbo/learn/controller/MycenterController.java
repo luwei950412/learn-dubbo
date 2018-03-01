@@ -55,6 +55,10 @@ public class MycenterController {
     public String moment(){
         return "mycenter/moment/moment";
     }
+    @GetMapping("/modify")
+    public  String modify(){
+        return "mycenter/profile/modify";
+    }
 }
 
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html>
 <head>
     <title>My Center</title>
@@ -162,9 +162,11 @@
 <div id="sidebar-nav">
     <ul id="dashboard-menu">
         <li>
-            <div class="pointer">
-                <div class="arrow"></div>
-                <div class="arrow_border"></div>
+            <div id="p_active1" >
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
             </div>
             <a href="myprofile">
                 <div id="active1">
@@ -174,6 +176,12 @@
             </a>
         </li>
         <li>
+            <div id="p_active2"  >
+            <div class="pointer">
+                <div class="arrow"></div>
+                <div class="arrow_border"></div>
+            </div>
+        </div>
             <a class="dropdown-toggle" href="#">
                 <div id="active2">
                 <i class="icon-signal"></i>
@@ -187,6 +195,12 @@
             </ul>
         </li>
         <li>
+            <div id="p_active3">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+            </div>
             <a class="dropdown-toggle" href="#">
                 <div id="active3">
                 <i class="icon-group"></i>
@@ -201,6 +215,12 @@
             </ul>
         </li>
         <li>
+            <div id="p_active4">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+            </div>
             <a href="score"id="active4">
                 <div id="active4">
                 <i class="icon-edit"></i>
@@ -209,6 +229,12 @@
             </a>
         </li>
         <li>
+            <div id="p_active5">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+            </div>
             <a href="schedule" id="active5">
                 <div id="active5">
                 <i class="icon-calendar-empty"></i>
@@ -217,6 +243,12 @@
             </a>
         </li>
         <li>
+            <div id="p_active6">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+            </div>
             <a href="community" id="active6">
                 <div id="active6">
                 <i class="icon-th-large"></i>
@@ -225,6 +257,12 @@
             </a>
         </li>
         <li>
+            <div id="p_active7">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+            </div>
             <a href="setting" id="active7">
                 <div id="active7">
                 <i class="icon-cog"></i>
