@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/consumer-learn/consumer-learn.iml" filepath="$PROJECT_DIR$/consumer-learn/consumer-learn.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/learn-dubbo.iml" filepath="$PROJECT_DIR$/.idea/learn-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider-api-learn/provider-api-learn.iml" filepath="$PROJECT_DIR$/provider-api-learn/provider-api-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider-learn/provider-learn.iml" filepath="$PROJECT_DIR$/provider-learn/provider-learn.iml" />
     </modules>
