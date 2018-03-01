@@ -6,16 +6,19 @@
 </style>
 <#include  "../base/header.ftl" >
 <div class="content">
+    <div class="profile_main">
+       <div class="profile_person"  >
+           <div class="personal_image">
+              <img src="img/personal-info.png" class="avatar img-circle" />
+           </div>
+           <div class="person_name">
+                   Hello,&nbspBitch
+           </div>
+           <div class="person_sign">
 
-<div class="">
-<div class="span3 avatar-box"  >
-    <div class="personal-image">
-        <img src="img/personal-info.png" class="avatar img-circle" />
-
+           </div>
+       </div>
     </div>
-</div>
-
-</div>
 
 
 

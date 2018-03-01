@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
         </button>
 
-        <a class="brand" href="index.html"><img src="img/logo.png" /></a>
+        <a class="brand" href="#"><img src="img/logo.png" /></a>
 
         <ul class="nav pull-right">
             <li class="hidden-phone">
@@ -182,8 +182,8 @@
                 </div>
             </a>
             <ul class="submenu">
-                <li><a href="favorite"><span class="drop-item"">最近学习</span></a></li>
-                <li><a href="recent"><span class="drop-item">我的收藏</span></a></li>
+                <li><a href="recent"><span class="drop-item"">最近学习</span></a></li>
+                <li><a href="favorite"><span class="drop-item">我的收藏</span></a></li>
             </ul>
         </li>
         <li>

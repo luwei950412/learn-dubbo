@@ -1,14 +1,28 @@
 .drop-item{
     color:#a2b0b7;
 }
-.span3 avatar-box{
+.profile_main{
+    width:800px;
+    height:800px;
+    background-color:#f6f6f6;
+    position: relative;
+    left:15%;
+    top:50px;
+}
+.profile_person{
+    position: relative;
+    top:40px;
+}
+.personal_image{
+    text-align: center;
+}
+.avatar img-circle{
 
 }
-
-.test_1{
-    width:600px;
-    height:800px;
-    background-color: grey;
-    color:grey;
+.person_name{
     position: relative;
+    top:15px;
+    text-align:center;
+    font-family: Arial;
+    font-size: 20px;
 }

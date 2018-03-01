@@ -56,3 +56,5 @@ public class MycenterController {
         return "mycenter/moment/moment";
     }
 }
+
+
