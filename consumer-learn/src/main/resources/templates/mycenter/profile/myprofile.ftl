@@ -1,16 +1,39 @@
-    <style type="text/css">
-        #active1{
-            color:black;
-        }
-    </style>
 
-
+<style type="text/css">
+    #active1{
+        color:black;
+    }
+</style>
 <#include  "../base/header.ftl" >
-<!-- main container -->
 <div class="content">
+    <div class="profile_main">
+       <div class="profile_person"  >
+           <div class="personal_image">
+              <img src="img/personal-info.png" class="avatar img-circle" />
+           </div>
+           <div class="person_name">
+                   Hello,&nbspBitch
+           </div>
+           <div class="person_sign">
+
+           </div>
+       </div>
+    </div>
+
+
+
 
 
 </div>
+
+
+
+
+
+
+
+
+
 <!-- scripts -->
 <script src="js/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>

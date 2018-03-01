@@ -1,16 +1,15 @@
+
     <style type="text/css">
-        #active1{
+        #active3{
             color:black;
+            font-weight: bold;
         }
     </style>
 
-
 <#include  "../base/header.ftl" >
-<!-- main container -->
-<div class="content">
 
 
-</div>
+
 <!-- scripts -->
 <script src="js/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
