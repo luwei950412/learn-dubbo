@@ -263,4 +263,39 @@ public class UserController {
 
     }
 
+    @PostMapping("/updateAdminUser")
+    public String updateAdminUser(@Valid User user, BindingResult bindingResult, HttpServletRequest request,
+                                  @RequestParam(value="headimg") MultipartFile file, RedirectAttributes attributes){
+        User user1 = userService.getUserById(user.getId());
+        user.setCreateDate(user1.getCreateDate());
+        user.setModifyDate(new Date());
+        user.setPassword(user1.getPassword());
+        if (!file.isEmpty()) {
+            String contentType = file.getContentType();
+            String fileName = file.getOriginalFilename();
+            String suffixName = fileName.substring(fileName.lastIndexOf("."));
+
+            String filePath = ClassUtils.getDefaultClassLoader().getResource("static/admin/upload/").getPath();
+            try {
+                filePath = URLDecoder.decode(filePath, "utf-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
+            String file_name = System.currentTimeMillis() + suffixName;
+            try {
+                FileUtils.uploadFile(file.getBytes(), filePath, file_name);
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
+            user.setHeadimg(file_name);
+        } else {
+            user.setHeadimg(user1.getHeadimg());
+        }
+        userService.addUser(user);
+        return "redirect:/user/index";
+
+
+    }
+
 }

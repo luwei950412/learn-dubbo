@@ -8,8 +8,8 @@
             <div class="col-md-12">
                 <h3 class="animated fadeInLeft">课程管理中心</h3>
                 <p class="animated fadeInDown">
-                    <a href="/course/listAdmin">课程管理管理</a> <span class="fa-angle-right fa">
-                    <a href="/chapter/chapterManage?id=${(courseId)!}">章节管理</a> <span class="fa-angle-right fa"></span> 视频信息
+                    <a href="${base}/course/listAdmin">课程管理管理</a> <span class="fa-angle-right fa">
+                    <a href="${base}/chapter/chapterManage?id=${(courseId)!}">章节管理</a> <span class="fa-angle-right fa"></span> 视频信息
                 </p>
             </div>
         </div>
@@ -69,7 +69,7 @@
                                                             添加视频信息
                                                         </h4>
                                                     </div>
-                                                    <form action="/video/addVideo" method="post" enctype="multipart/form-data">
+                                                    <form action="${base}/video/addVideo" method="post" enctype="multipart/form-data">
                                                         <div class="modal-body" style="height:170px;width:400px">
                                                             <label for="name" class="col-sm-2 control-label">编号</label>
                                                             <div class="col-sm-10">
@@ -152,7 +152,7 @@
                                                     <div class="modal fade bs-example-modal-lg${count}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                                                         <div class="modal-dialog modal-lg" role="document">
                                                             <div class="modal-content">
-                                                                <video src="/admin/upload/${video.filePath}" height="450" controls preload="metadata"></video>
+                                                                <video src="${base}/admin/upload/${video.filePath}" height="450" controls preload="metadata"></video>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -174,7 +174,7 @@
                                                 </#if>
                                                 </td>
                                                 <td>
-                                                    <a href="/video/deleteVideo?id=${video.id}" onclick="javascript:return p_del()" title="删除">[删除]</a>
+                                                    <a href="${base}/video/deleteVideo?id=${video.id}" onclick="javascript:return p_del()" title="删除">[删除]</a>
                                                     <script language="javascript">
                                                         function p_del() {
                                                             var msg = "您真的确定要删除吗？\n\n请确认！";
@@ -201,7 +201,7 @@
                                                                         修改视频信息
                                                                     </h4>
                                                                 </div>
-                                                                <form action="/video/updateVideo" method="post"  enctype="multipart/form-data">
+                                                                <form action="${base}/video/updateVideo" method="post"  enctype="multipart/form-data">
                                                                     <div class="modal-body" style="height:170px;width:400px">
                                                                         <label for="name" class="col-sm-2 control-label">编号</label>
                                                                         <div class="col-sm-10">
