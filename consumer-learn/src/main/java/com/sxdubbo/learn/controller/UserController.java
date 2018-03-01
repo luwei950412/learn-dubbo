@@ -232,7 +232,7 @@ public class UserController {
             //        String filePath1 = request.getSession().getServletContext().getRealPath("/");
             //        System.out.println(filePath1+"++++++++++++++");
 
-            String filePath = ClassUtils.getDefaultClassLoader().getResource("static/upload/").getPath();
+            String filePath = ClassUtils.getDefaultClassLoader().getResource("static/admin/upload/").getPath();
             try {
                 filePath = URLDecoder.decode(filePath, "utf-8");
             } catch (UnsupportedEncodingException e) {
