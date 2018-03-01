@@ -97,6 +97,22 @@ public class CourseServiceImpl implements CourseService {
     }
 //3-1 fxb
     @Override
+    public List<Course> findByTypeLike(String type){
+        System.out.println(type);
+        List<Course> courseList = new ArrayList<>();
+//        List<CoursePO> coursePOList = courseRepository.findByTypeLike(type);
+        List<CoursePO> coursePOList = courseRepository.findByTypeIgnoreCaseContaining(type);
+        System.out.println("service imp +++++");
+        for(int i = 0 ; i < coursePOList.size() ; i++) {
+            System.out.println("service imp PO");
+            Course course = new Course();
+            BeanUtils.copyProperties(coursePOList.get(i), course);
+            courseList.add(course);
+        }
+        System.out.println("service imp return");
+        return courseList;
+    }
+    @Override
     public List<Course> findByType(String type){
         List<Course> courseList=new ArrayList<>();
         List<CoursePO> coursePOList = courseRepository.findByType(type);
