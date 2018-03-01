@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-right">
-                        <p class="site">www.yourdomainname.com</p>
+
                         <p class="num">Call: +01 123 456 7890</p>
                         <ul class="fh5co-social">
                             <li><a href="#"><i class="icon-facebook2"></i></a></li>
@@ -82,27 +82,34 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2">
-                        <div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Educ<span>.</span></a></div>
+                        <div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>LEARN<span>.</span></a></div>
                     </div>
+                    <form>
+                        <input type="text">
+
+                    </form>
+
                     <div class="col-xs-10 text-right menu-1">
+
                         <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="teacher.html">Teacher</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li class="has-dropdown">
-                                <a href="blog.html">Blog</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Web Design</a></li>
-                                    <li><a href="#">eCommerce</a></li>
-                                    <li><a href="#">Branding</a></li>
-                                    <li><a href="#">API</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li class="btn-cta"><a href="/front/user/login.ftl"><span>Login</span></a></li>
-                            <li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
+                            <li class="active"><a href="index.html">首页</a></li>
+                            <li style=""><a href="courses.html">课程</a></li>
+                            <li><a href="teacher.html">教师</a></li>
+                            <li><a href="about.html">问答</a></li>
+                            <li><a href="pricing.html">发现</a></li>
+                            <!--							<li class="has-dropdown">
+                                                            <a href="blog.html">Blog</a>
+                                                            <ul class="dropdown">
+                                                                <li><a href="#">Web Design</a></li>
+                                                                <li><a href="#">eCommerce</a></li>
+                                                                <li><a href="#">Branding</a></li>
+                                                                <li><a href="#">API</a></li>
+                                                            </ul>
+                                                        </li>
+                            -->
+                            <li><a href="contact.html">联系我们</a></li>
+                            <li class="btn-cta"><a href="#"><span>登录</span></a></li>
+                            <li class="btn-cta"><a href="#"><span>注册</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -142,9 +149,8 @@
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2 text-center slider-text">
                                 <div class="slider-text-inner">
-                                    <h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
-                                    <h2>Brought to you by <a href="#" target="_blank">freehtml5.co</a></h2>
-                                    <p><a class="btn btn-primary btn-lg" href="#">Start Learning Now!</a></p>
+                                    <h1>系统学习Docker，践行DevOps理念</h1>
+                                    <p><a class="btn btn-primary btn-lg" href="#">开始学习!</a></p>
                                 </div>
                             </div>
                         </div>
@@ -156,9 +162,8 @@
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2 text-center slider-text">
                                 <div class="slider-text-inner">
-                                    <h1>The Great Aim of Education is not Knowledge, But Action</h1>
-                                    <h2>Brought to you by <a href="#" target="_blank">freehtml5.co</a></h2>
-                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">Start Learning Now!</a></p>
+                                    <h1>学会TensorFlow,抢占人工智能前沿阵地</h1>
+                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">开始学习!</a></p>
                                 </div>
                             </div>
                         </div>
@@ -170,9 +175,8 @@
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2 text-center slider-text">
                                 <div class="slider-text-inner">
-                                    <h1>We Help You to Learn New Things</h1>
-                                    <h2>Brought to you by <a href="#" target="_blank">freehtml5.co</a></h2>
-                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">Start Learning Now!</a></p>
+                                    <h1>学习人工智能，从这开始</h1>
+                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">开始学习!</a></p>
                                 </div>
                             </div>
                         </div>
@@ -186,16 +190,16 @@
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                    <h2>Course categories</h2>
-                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                    <h2>热门推荐</h2>
+
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6 text-center animate-box">
                     <div class="services">
-						<span class="icon">
-							<i class="icon-shop"></i>
-						</span>
+
+
+                        </span>
                         <div class="desc">
                             <h3><a href="#">Business</a></h3>
                             <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>

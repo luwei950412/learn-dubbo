@@ -7,7 +7,7 @@
 <#include  "../base/header.ftl" >
 <div class="content">
 
-
+<div class="">
 <div class="span3 avatar-box"  >
     <div class="personal-image">
         <img src="img/personal-info.png" class="avatar img-circle" />
@@ -15,7 +15,7 @@
     </div>
 </div>
 
-
+</div>
 
 
 
