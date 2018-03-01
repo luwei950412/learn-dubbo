@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -93,4 +94,23 @@ public class CourseController {
     }
 
 
+//    fxb 3-1  课程的分类功能：如后端开发 前端开发 数据库
+    @RequestMapping("/getTypes")
+    public  String getTypes(Model model){
+        List<String> typeList=courseService.findAllTypes();
+        for(String s:typeList){
+            System.out.println("Types:"+s);
+        }
+        return null;
+    }
+//  查找后端开发的子分类 如后端开发：(Java Php c...)
+    @RequestMapping("/getClasses")
+    public String getClassesInType(Model model){
+        List<String> classesInType=courseService.getClassesInType("UI设计");
+        for(String s:classesInType){
+            System.out.println("classes in type:UI设计："+s);
+        }
+        return null;
+    }
+//
 }

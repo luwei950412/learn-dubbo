@@ -11,6 +11,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -26,10 +28,9 @@ public class CourseServiceImpl implements CourseService {
     public ChapterRepository chapterRepository;
 
     @Override
-    public Course findByCourseName(String courseNmae) {
+    public Course findByCourseName(String courseName) {
         Course course = new Course();
-        CoursePO coursePO = new CoursePO();
-        coursePO = courseRepository.findByCourseName(courseNmae);
+        CoursePO coursePO = courseRepository.findByCourseName(courseName);
         BeanUtils.copyProperties(coursePO, course);
         return course;
     }
@@ -37,8 +38,6 @@ public class CourseServiceImpl implements CourseService {
     @Override
     public List<Course> findAllCourse(){
         List<Course> courseList= new ArrayList<Course>();
-
-//        UserPO userPO = new UserPO();
         List<CoursePO> coursePOList = courseRepository.findAll();
         for(int i = 0 ; i < coursePOList.size() ; i++) {
             Course course = new Course();
@@ -51,8 +50,6 @@ public class CourseServiceImpl implements CourseService {
     @Override
     public List<Course> findByUserId(Integer userId){
         List<Course> courseList= new ArrayList<Course>();
-
-//        UserPO userPO = new UserPO();
         List<CoursePO> coursePOList = courseRepository.findByUserid(userId);
         for(int i = 0 ; i < coursePOList.size() ; i++) {
             Course course = new Course();
@@ -97,5 +94,49 @@ public class CourseServiceImpl implements CourseService {
         coursePO1 = courseRepository.save(coursePO);
         BeanUtils.copyProperties(coursePO1, course1);
         return course1;
+    }
+//3-1 fxb
+    @Override
+    public List<Course> findByType(String type){
+        List<Course> courseList=new ArrayList<>();
+        List<CoursePO> coursePOList = courseRepository.findByType(type);
+        for(int i = 0 ; i < coursePOList.size() ; i++) {
+            Course course = new Course();
+            BeanUtils.copyProperties(coursePOList.get(i), course);
+            courseList.add(course);
+        }
+        return courseList;
+    }
+
+    @Override
+    public List<String> findAllTypes(){
+        List<String> courseTypesList=new ArrayList<>();
+        List<CoursePO> coursePOList=courseRepository.findAll();
+        for(int i = 0 ; i < coursePOList.size() ; i++) {
+            Course course = new Course();
+            BeanUtils.copyProperties(coursePOList.get(i), course);
+            courseTypesList.add(course.getType().split("/")[0]);
+        }
+        HashSet<String> hashSet=new HashSet<>(courseTypesList);
+        courseTypesList.clear();
+        courseTypesList.addAll(hashSet);
+        return courseTypesList;
+    }
+
+    @Override
+    public List<String> getClassesInType(String type){
+        List<CoursePO> coursePOList=courseRepository.findAll();
+        List<String> classesInTypeList=new ArrayList<>();
+        for(int i = 0 ; i < coursePOList.size() ; i++) {
+            Course course = new Course();
+            BeanUtils.copyProperties(coursePOList.get(i), course);
+            if(course.getType().startsWith(type)){
+                classesInTypeList.addAll(Arrays.asList(course.getType().split("/")[1].split(" ")));
+            }
+        }
+        HashSet<String> hashSet=new HashSet<>(classesInTypeList);
+        classesInTypeList.clear();
+        classesInTypeList.addAll(hashSet);
+        return classesInTypeList;
     }
 }

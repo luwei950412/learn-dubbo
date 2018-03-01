@@ -13,6 +13,7 @@ public interface CourseRepository extends JpaRepository<CoursePO, Long> {
 
     public CoursePO findByCourseName(String CourseName);
     public List<CoursePO> findByUserid(Integer userId);
+    public List<CoursePO> findByType(String type);
 
     public CoursePO findById(Integer id);
 }

@@ -25,8 +25,11 @@ public class UserVideoController {
     private User user=new User();
 
     private Video video=new Video();
+
+
     @RequestMapping(value = "watch")
     public String watch(Model model){
+//        判断当前用户是否登录 是否已经看过该照片
         if (userVideoService.findByUserIdAndVideoId(user.getId(),video.getId())==null){
             return "/admin/video/watch";
         }else{
@@ -36,6 +39,8 @@ public class UserVideoController {
         }
 
     }
+
+
     @RequestMapping(value = "/addRecord")
     @ResponseBody//此处不能省略 否则ajax无法解析返回值
     public String addRecord(@Valid UserVideo userVideo){
@@ -46,5 +51,12 @@ public class UserVideoController {
         UserVideo userVideo1=userVideoService.saveUserVideo(userVideo);
         System.out.println("+++++++++++++++++++++++++++UserVideo已经存入");
         return "success";
+    }
+
+    //    fxb 3-1
+    @RequestMapping(value = "danmu")
+    public String danmu(Model model){
+        return "/admin/video/danmu";
+
     }
 }
