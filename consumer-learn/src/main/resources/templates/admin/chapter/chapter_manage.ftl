@@ -8,7 +8,7 @@
             <div class="col-md-12">
                 <h3 class="animated fadeInLeft">课程管理中心</h3>
                 <p class="animated fadeInDown">
-                    <a href="/course/listAdmin">课程管理</a> <span class="fa-angle-right fa"></span> 章节信息
+                    <a href="${base}/course/listAdmin">课程管理</a> <span class="fa-angle-right fa"></span> 章节信息
                 </p>
             </div>
         </div>
@@ -68,7 +68,7 @@
                                                             添加章节信息
                                                         </h4>
                                                     </div>
-                                                    <form action="/chapter/addChapter" method="post">
+                                                    <form action="${base}/chapter/addChapter" method="post">
                                                     <div class="modal-body" style="height:100px;width:400px">
                                                         <label for="name" class="col-sm-2 control-label">名字</label>
                                                         <div class="col-sm-10">
@@ -158,8 +158,8 @@
                                                 </#if>
                                                 </td>
                                                 <td>
-                                                    <a href="/video/videoManage?id=${chapter.id}" title="视频管理">[视频管理]</a>
-                                                    <a href="/chapter/deleteChapter?id=${chapter.id}" onclick="javascript:return p_del()" title="删除">[删除]</a>
+                                                    <a href="${base}/video/videoManage?id=${chapter.id}" title="视频管理">[视频管理]</a>
+                                                    <a href="${base}/chapter/deleteChapter?id=${chapter.id}" onclick="javascript:return p_del()" title="删除">[删除]</a>
                                                     <script language="javascript">
                                                         function p_del() {
                                                             var msg = "您真的确定要删除吗？\n\n请确认！";

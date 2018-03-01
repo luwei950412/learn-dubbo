@@ -100,7 +100,8 @@
                                             <#if "${common.userType}" == "1">
                                                 <#assign count=count+1>
                                             <tr role="row" class="odd">
-                                                <td class="">${common.username}</td>
+                                                <td class=""><img width="50px" height="50px" style="border-radius: 30%" src="${base}/admin/upload/${(common.headimg)!}" />
+                                                    &nbsp;&nbsp;&nbsp;${common.username}</td>
                                                 <td class="sorting_1">${common.email}</td>
                                                 <td class="">
                                                     <#if common.userStatus ==0 ><i class="fa fa-check-square-o"
@@ -109,13 +110,13 @@
                                                             <#if "${common.userType}"=="0">
                                                                 <span title="您无权冻结管理员">[冻结锁定]</span>
                                                             <#else>
-                                                                <a href="/user/view?id=${common.id}"
+                                                                <a href="${base}/user/view?id=${common.id}"
                                                                    title="操作冻结">[冻结锁定]</a>
                                                             </#if>
                                                         </#if>
                                                     <#else><i class="fa fa-lock" style="color: red">锁定</i>
                                                         <#if "${userInfo.userType}"=="0">
-                                                            <a href="/user/view?id=${common.id}"
+                                                            <a href="${base}/user/view?id=${common.id}"
                                                                title="操作解除冻结">[解除冻结]</a>
                                                         </#if>
                                                     </#if>
@@ -132,8 +133,9 @@
                                                     &nbsp;
                                                 </#if></td>
                                                 <td>
-                                                    <a href="/user/delete?id=${common.id}"
+                                                    <a href="${base}/user/delete?id=${common.id}"
                                                        onclick="javascript:return p_del()" title="删除">[删除]</a>
+                                                    <a href="" data-toggle="modal" data-target="#myModal_update${count}" title="修改用户信息">[修改]</a>
                                                 </td>
                                                 <script language="javascript">
                                                     function p_del() {
@@ -145,6 +147,72 @@
                                                         }
                                                     }
                                                 </script>
+
+                                                <!-- 模态框（Modal） ---------修改信息-->
+                                                <div style="margin-top: 50px" class="modal fade" id="myModal_update${count}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                            <#--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">-->
+                                                            <#--&times;-->
+                                                            <#--</button>-->
+                                                                <h4 class="modal-title" id="myModalLabel">
+                                                                    修改用户信息
+                                                                </h4>
+                                                            </div>
+                                                            <form action="${base}/user/updateUser" method="post" enctype="multipart/form-data">
+                                                                <div class="modal-body" style="height:550px;width:400px">
+
+                                                                    <label for="name" class="col-sm-2 control-label">用户名</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="hidden" name="id" value="${common.id}" />
+                                                                        <input type="text" style="width: 400px;" class="form-control" name="username"
+                                                                               value="${(common.username)!}" placeholder="请输入用户">
+                                                                    </div>
+                                                                    <label for="name" class="col-sm-2 control-label">Email</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" style="width: 400px;" class="form-control" name="email"
+                                                                               value="${(common.email)!}" placeholder="请输入用户email">
+                                                                    </div>
+                                                                    <label for="name" class="col-sm-2 control-label">用户状态</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" style="width: 400px;" class="form-control" name="userStatus"
+                                                                               value="${(common.userStatus)!}" placeholder="请输入用户状态">
+                                                                    <#--<textarea id="quick_post" name="content" rows="10" cols="80" placeholder="请输入赛事内容">${(sportInfo.content)!}</textarea>-->
+                                                                    </div>
+                                                                    <label for="name" class="col-sm-2 control-label">用户类别</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" style="width: 400px;" class="form-control" name="userType"
+                                                                               value="${(common.userType)!}" placeholder="请输入用户类别">
+                                                                    </div>
+                                                                    <label for="name" class="col-sm-2 control-label">所在城市</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" style="width: 400px;" class="form-control" name="city"
+                                                                               value="${(common.city)!}" placeholder="请输入所在城市">
+                                                                    </div>
+                                                                    <label for="name" class="col-sm-2 control-label">用户介绍</label>
+                                                                    <div class="col-sm-10">
+                                                                        <textarea id="quick_post" name="introduction" rows="10" cols="50" placeholder="请输入用户介绍">${(common.introduction)!}</textarea>
+                                                                    </div>
+                                                                    <label for="name" class="col-sm-2 control-label">职位</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" style="width: 400px;" class="form-control" name="position"
+                                                                               value="${(common.position)!}" placeholder="请输入用户职位">
+                                                                    </div>
+
+                                                                    <label for="name" class="col-sm-2 control-label">头像</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="file" style="width: 400px;" class="form-control" name="headimg" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <input type="button" value="关闭" class="col-sm-4 btn btn-default" data-dismiss="modal" />
+                                                                    <input type="submit" value="提交" class="col-sm-4 btn btn-primary" />
+                                                                </div>
+                                                            </form>
+                                                        </div><!-- /.modal-content -->
+                                                    </div><!-- /.modal -->
+                                                </div>
                                             </tr>
                                             </#if>
                                         </#list>

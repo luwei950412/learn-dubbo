@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <#--<meta http-equiv="Access-Control-Allow-Origin" content="*">-->
     <title>Miminium</title>
-    <link rel="stylesheet" type="text/css" href="/admin/css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/admin/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="${base}/admin/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="${base}/admin/css/bootstrap.css"/>
 
     <!-- plugins -->
     <!-- <link rel="stylesheet" type="text/css" href="./css/font-awesome.css"> -->
 
-    <link rel="stylesheet" type="text/css" href="/admin/css/simple-line-icons.css"/>
-    <link rel="stylesheet" type="text/css" href="/admin/css/animate.css"/>
-    <link rel="stylesheet" type="text/css" href="/admin/css/fullcalendar.css"/>
-    <link href="/admin/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="${base}/admin/css/simple-line-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="${base}/admin/css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="${base}/admin/css/fullcalendar.css"/>
+    <link href="${base}/admin/css/style.css" rel="stylesheet"/>
     <!-- end: Css -->
 
     <link rel="shortcut icon" href="http://demo.cssmoban.com/cssthemes4/btzero_30_miminiummaster/asset/img/logomi.png"/>
 </head>
 <body id="mimin" class="dashboard">
 <div class="adcenter">
-    <script src="/admin/js/ggad2_728x90.js"></script>
+    <script src="${base}/admin/js/ggad2_728x90.js"></script>
 </div>
 <!-- start: Header -->
 <nav class="navbar navbar-default header navbar-fixed-top">
@@ -30,7 +31,7 @@
                 <span class="middle"></span>
                 <span class="bottom"></span>
             </div>
-            <a href="http://demo.cssmoban.com/cssthemes4/btzero_30_miminiummaster/index.html" class="navbar-brand">
+            <a href="${base}/admin/index" class="navbar-brand">
                 <b>MIMIN</b>
             </a>
 
@@ -49,18 +50,18 @@
 
             <ul class="nav navbar-nav navbar-right user-nav">
                 <li class="user-name">
-                    <#--<#if "${(userInfo.username)!}"=="">-->
-                    <#--<script>-->
-                        <#--window.location.href="/index";-->
-                    <#--</script>-->
-                        <#--<#else>-->
-                    你好，<#if "${userInfo.userType}" == "0">管理员
-                <#elseif "${userInfo.userType}"=="2">讲师
+                    <#if "${(userInfo.username)!}"=="">
+                    <script>
+                        window.location.href="/user/login";
+                    </script>
+                        </#if>
+                    你好，<#if "${(userInfo.userType)!}" == "0">管理员
+                <#elseif "${(userInfo.userType)!}"=="2">讲师
                 </#if>
                         <#--</#if>-->
                     <span>${(userInfo.username)!}</span></li>   <#--此处是登录用户明显是地方${test.username}-->
                 <li class="dropdown avatar-dropdown">
-                    <img src="/admin/images/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown"
+                    <img src="/admin/upload/${(userInfo.headimg)!}" class="img-circle avatar" alt="user name" data-toggle="dropdown"
                          aria-haspopup="true" aria-expanded="true"/>
                     <ul class="dropdown-menu user-dropdown">
                         <li><a href="#"><span class="fa fa-user"></span> 我的信息</a></li>
@@ -70,7 +71,7 @@
                             <ul>
                                 <li><a href=""><span class="fa fa-cogs"></span></a></li>
                                 <li><a href=""><span class="fa fa-lock"></span></a></li>
-                                <li><a href="/user/logout"><span class="fa fa-power-off " title="注销"></span></a></li>
+                                <li><a href="${base}/user/logout"><span class="fa fa-power-off " title="注销"></span></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -104,7 +105,7 @@
                   </ul>
                 </li> -->
                 <li class="ripple">
-                    <a href="/admin/index">
+                    <a href="${base}/admin/index">
                         <span class="fa fa-home"></span> Home
                         <!-- <i class="fa fa-home"></i> -->
                         <span class="fa-angle-right fa right-arrow text-right"></span>
@@ -130,14 +131,14 @@
                     <span class="fa fa-pencil-square"></span> 用户管理 <span
                         class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree" style="display: none;">
-                        <li><a href="/user/lecture">讲师</a></li>
-                        <li><a href="/user/common">普通用户</a></li>
+                        <li><a href="${base}/user/lecture">讲师</a></li>
+                        <li><a href="${base}/user/common">普通用户</a></li>
                     </ul>
                 </li>
                 <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> 课程管理
                     <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree" style="display: none;">
-                        <li><a href="/course/listAdmin">课程信息</a></li>
+                        <li><a href="${base}/course/listAdmin">课程信息</a></li>
                         <li><a href="#">Wizard</a></li>
                     </ul>
                 </li>
@@ -181,5 +182,3 @@
         </div>
     </div>
     <!-- end: Left Menu -->
-
-
