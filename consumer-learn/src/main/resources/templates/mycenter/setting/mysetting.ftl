@@ -33,19 +33,18 @@
     <![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style type="text/css">
-        #active1{
+        #active7{
             color:black;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
 <#include  "../base/header.ftl" >
-<!-- main container -->
-<div class="content">
 
 
-</div>
+
 <!-- scripts -->
 <script src="js/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>

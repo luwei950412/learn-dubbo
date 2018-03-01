@@ -15,19 +15,14 @@
     <link href="css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
 
     <!-- global styles -->
-    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="/mycenter/css/layout.css" />
     <link rel="stylesheet" type="text/css" href="css/elements.css" />
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
-    <link rel="stylesheet" type="text/css" href="css/new.css" />
+    <link rel="stylesheet" type="text/css" href="/mycenter/css/new.css" />
 
     <!-- this page specific styles -->
     <link rel="stylesheet" href="css/compiled/index.css" type="text/css" media="screen" />
 
-    <!-- open sans font -->
-    <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
-
-    <!-- lato font -->
-    <link href='http://fonts.useso.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -166,61 +161,75 @@
 <!-- sidebar -->
 <div id="sidebar-nav">
     <ul id="dashboard-menu">
-        <li class="active">
+        <li>
             <div class="pointer">
                 <div class="arrow"></div>
                 <div class="arrow_border"></div>
             </div>
-            <a href="index.html" class="active1">
+            <a href="myprofile">
+                <div id="active1">
                 <i class="icon-home"></i>
-                <span>动态</span>
+                <span>资料</span>
+                </div>
             </a>
         </li>
         <li>
-            <a class="dropdown-toggle" href="#" id="active2">
+            <a class="dropdown-toggle" href="#">
+                <div id="active2">
                 <i class="icon-signal"></i>
                 <span>课程</span>
                 <i class="icon-chevron-down"></i>
+                </div>
             </a>
             <ul class="submenu">
-                <li><a href="user-list.html"><span class="drop-item"">最近学习</span></a></li>
-                <li><a href="new-user.html"><span class="drop-item">我的收藏</span></a></li>
+                <li><a href="favorite"><span class="drop-item"">最近学习</span></a></li>
+                <li><a href="recent"><span class="drop-item">我的收藏</span></a></li>
             </ul>
         </li>
         <li>
-            <a class="dropdown-toggle" href="#" id="active3">
+            <a class="dropdown-toggle" href="#">
+                <div id="active3">
                 <i class="icon-group"></i>
                 <span>问答</span>
                 <i class="icon-chevron-down"></i>
+                </div>
             </a>
             <ul class="submenu">
-                <li><a href="user-list.html"><span class="drop-item">我的提问</span></a></li>
-                <li><a href="new-user.html"><span class="drop-item">我的回答</span></a></li>
-                <li><a href="user-profile.html"><span class="drop-item">我的关注</span></a></li>
+                <li><a href="myquestion"><span class="drop-item">我的提问</span></a></li>
+                <li><a href="myanswer"><span class="drop-item">我的回答</span></a></li>
+                <li><a href="myfollow"><span class="drop-item">我的关注</span></a></li>
             </ul>
         </li>
         <li>
-            <a href="#"id="active4">
+            <a href="score"id="active4">
+                <div id="active4">
                 <i class="icon-edit"></i>
                 <span>成绩</span>
+                </div>
             </a>
         </li>
         <li>
-            <a href="calendar.html" id="active5">
+            <a href="schedule" id="active5">
+                <div id="active5">
                 <i class="icon-calendar-empty"></i>
                 <span>计划</span>
+                </div>
             </a>
         </li>
         <li>
-            <a href="tables.html" id="active6">
+            <a href="community" id="active6">
+                <div id="active6">
                 <i class="icon-th-large"></i>
                 <span>社区</span>
+                </div>
             </a>
         </li>
         <li>
-            <a href="personal-info.html" id="active7">
+            <a href="setting" id="active7">
+                <div id="active7">
                 <i class="icon-cog"></i>
                 <span>设置</span>
+                </div>
             </a>
         </li>
         <li>
