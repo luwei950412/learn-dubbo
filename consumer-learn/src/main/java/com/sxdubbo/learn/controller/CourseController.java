@@ -48,11 +48,11 @@ public class CourseController {
     public RedisService redisService;
 
 
-    @GetMapping("/list")//前段list
+    @GetMapping("/listCourse")//前段list
     public String getAllCourse(Model model) {
         List<Course> courseList = courseService.findAllCourse();
         model.addAttribute("courseList", courseList);
-        return "/admin/course/course_list";
+        return "/front/course/course_list";
     }
 
     @GetMapping("/listAdmin")//后端list
