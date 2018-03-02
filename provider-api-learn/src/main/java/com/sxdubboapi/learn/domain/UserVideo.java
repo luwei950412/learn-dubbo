@@ -17,7 +17,7 @@ public class UserVideo  implements Serializable{
 
     private Integer videoId;
 
-    private double progress;//视频学习进度
+    private Double progress;//视频学习进度
 
     private Date createDate;
 

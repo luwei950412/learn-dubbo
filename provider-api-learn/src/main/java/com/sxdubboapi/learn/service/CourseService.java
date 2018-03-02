@@ -26,7 +26,7 @@ public interface CourseService {
     public List<String> getClassesInType(String type);
 
 //
-
+    public List<Course> findByTypeLike(String type);
     public void deleteCourse(Integer id);
     public Course addCourse(Course course);
     public Course updateCourse(Course course);

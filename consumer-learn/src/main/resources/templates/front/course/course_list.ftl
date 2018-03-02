@@ -38,14 +38,18 @@
                                 </li>
                                 <#list classes as cl>
                                 <li class="course-nav-item">
-                                    <#if dict?exists>
-                                        <#list dict?keys as key>
-                                            <#if (dict[key] == cl)>
-                                                <a href="${base}/course/listCourse?c=${key}" data-ct="fe">${cl}</a>
-                                            </#if>
-                                        <#--${dict[key]}-->
-                                        </#list>
-                                    </#if>
+                                    <#--<a href="${base}/course/listCourse?c=${dict[cl]}" data-ct="fe">${cl}</a>-->
+                                    <#assign key="${cl}">
+                                    <a href="${base}/course/listCourse?c=${dict[key]!}" data-ct="fe">${cl}</a>
+                                    <#--3-2 fxb 1:00-->
+                                    <#--<#if dict?exists>-->
+                                        <#--<#list dict?keys as key>-->
+                                            <#--<#if (dict[key] == cl)>-->
+                                                <#--<a href="${base}/course/listCourse?c=${key}" data-ct="fe">${cl}</a>-->
+                                            <#--</#if>-->
+                                        <#--&lt;#&ndash;${dict[key]}&ndash;&gt;-->
+                                        <#--</#list>-->
+                                    <#--</#if>-->
 
                                 </li>
                                 </#list>
