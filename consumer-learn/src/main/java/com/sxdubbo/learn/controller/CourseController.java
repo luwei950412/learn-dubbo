@@ -1,5 +1,6 @@
 package com.sxdubbo.learn.controller;
 
+import com.sxdubbo.learn.utils.FileUtils;
 import com.sxdubboapi.learn.domain.Chapter;
 import com.sxdubboapi.learn.domain.Course;
 import com.sxdubboapi.learn.domain.User;
@@ -10,13 +11,20 @@ import com.sxdubboapi.learn.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.ClassUtils;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.io.File;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.*;
 
 /**
@@ -38,20 +46,20 @@ public class CourseController {
     @Autowired
     public RedisService redisService;
 
-    private ArrayList<String> getKey(String value, HashMap<String,String> map) {
-        ArrayList<String> keyList = new ArrayList<String>();
-        String key = null;
-        Set<Map.Entry<String, String>> set = map.entrySet();// entrySet()方法就是把map中的每个键值对变成对应成Set集合中的一个对象.
-        Iterator it = set.iterator();
-        while (it.hasNext()) {
-            Map.Entry<String, String> entry = (Map.Entry<String, String>) it.next();
-            if (entry.getValue().equals(value)) {
-                key = (String) entry.getKey();
-                keyList.add(key);
-            }
-        }
-        return keyList;
-    }
+//    private ArrayList<String> getKey(String value, HashMap<String,String> map) {
+//        ArrayList<String> keyList = new ArrayList<String>();
+//        String key = null;
+//        Set<Map.Entry<String, String>> set = map.entrySet();// entrySet()方法就是把map中的每个键值对变成对应成Set集合中的一个对象.
+//        Iterator it = set.iterator();
+//        while (it.hasNext()) {
+//            Map.Entry<String, String> entry = (Map.Entry<String, String>) it.next();
+//            if (entry.getValue().equals(value)) {
+//                key = (String) entry.getKey();
+//                keyList.add(key);
+//            }
+//        }
+//        return keyList;
+//    }
 
     @GetMapping("/listCourse")//前段list
     public String getAllCourse(Model model,@RequestParam(value = "c",required=false) String c) {
@@ -80,7 +88,7 @@ public class CourseController {
         dict.put("fetool","前端工具");
 
         dict.put("php","PHP");
-        dict.put("Java","Java");
+        dict.put("java","java");
         dict.put("SpringBoot","SpringBoot");
         dict.put("python","Python");
         dict.put("c","C");
@@ -91,7 +99,7 @@ public class CourseController {
 
         dict.put("android","Android");
         dict.put("ios","IOS");
-        dict.put("unity3d","Unity 3D");
+        dict.put("unity3d","Unity3D");
         dict.put("cocos2d-x","Cocos2d-x");
 
         dict.put("mysql","MySQL");
@@ -109,7 +117,7 @@ public class CourseController {
         dict.put("test","测试");
         dict.put("linux","Linux");
 
-        dict.put("dynamicCarton","动效动画");
+        dict.put("dynamicCarton","动画特效");
         dict.put("uiapp","APPUI设计");
         dict.put("uitool","设计工具");
         dict.put("uijc","设计基础");
@@ -151,7 +159,7 @@ public class CourseController {
 
         dict.put("Android","android");
         dict.put("IOS","ios");
-        dict.put("Unity 3D","unity3d");
+        dict.put("Unity3D","unity3d");
         dict.put("Cocos2d-x","cocos2d-x");
 
         dict.put("MySQL","mysql");
@@ -169,13 +177,10 @@ public class CourseController {
         dict.put("测试","test");
         dict.put("Linux","linux");
 
-        dict.put("动效动画","dynamicCarton");
+        dict.put("动画特效","dynamicCarton");
         dict.put("APPUI设计","uiapp");
         dict.put("设计工具","uitool");
         dict.put("设计基础","uijc");
-
-
-
         HashMap<String,String> hashMap = new HashMap<String,String>();
         HashMap<String,String> hashMap1 = new HashMap<>();
 //      courseList界面初次进入的时候 自动获取所有的course
@@ -193,9 +198,7 @@ public class CourseController {
             for(Course course1:courseList){
 //                3-2 00:00
 //                3-2 9:00   fxb
-                System.out.println("course1.getType().split(\"/\")[1].split(\" \") ---- >  "+ Arrays.toString(course1.getType().split("/")[1].split(" ")));
                 hashSet1.addAll(Arrays.asList(course1.getType().split("/")[1].split(" ")));
-                System.out.println("***************************************"+course1.getType().split("/")[1].split(" ")[0]+"*******");
 //                hashSet1.add(course1.getType().split("/")[1]);
             }
             model.addAttribute("courseList", courseList);
@@ -205,12 +208,11 @@ public class CourseController {
 //                3-2 9:00 fxb 将方向后面的详细分类分隔开
                 case "fe":
                     List<Course> courseList0 = courseService.findByTypeLike("前端开发");
-                    System.out.println("+++++前端开发++++++");
                     for(Course course1:courseList0){
-                        System.out.println("+++++前端开发++++++");
 //                        hashSet1.add(course1.getType().split("/")[1]);
                         hashSet1.addAll(Arrays.asList(course1.getType().split("/")[1].split(" ")));
                     }
+                    model.addAttribute("direction_flag","fe");
                     model.addAttribute("courseList", courseList0);
                     break;
                 case "be":
@@ -220,6 +222,7 @@ public class CourseController {
 //                        3-2 9:00 fxb
                         hashSet1.addAll(Arrays.asList(course1.getType().split("/")[1].split(" ")));
                     }
+                    model.addAttribute("direction_flag","be");
                     model.addAttribute("courseList", courseList1);
                     break;
                 case "mobile":
@@ -228,6 +231,7 @@ public class CourseController {
 //                        hashSet1.add(course1.getType().split("/")[1]);
                         hashSet1.addAll(Arrays.asList(course1.getType().split("/")[1].split(" ")));
                     }
+                    model.addAttribute("direction_flag","mobile");
                     model.addAttribute("courseList", courseList2);
                     break;
                 case "data":
@@ -236,6 +240,7 @@ public class CourseController {
 //                        hashSet1.add(course1.getType().split("/")[1]);
                         hashSet1.addAll(Arrays.asList(course1.getType().split("/")[1].split(" ")));
                     }
+                    model.addAttribute("direction_flag","data");
                     model.addAttribute("courseList", courseList3);
                     break;
                 case "ai":
@@ -244,6 +249,7 @@ public class CourseController {
 //                        hashSet1.add(course1.getType().split("/")[1]);
                         hashSet1.addAll(Arrays.asList(course1.getType().split("/")[1].split(" ")));
                     }
+                    model.addAttribute("direction_flag","ai");
                     model.addAttribute("courseList", courseList4);
                     break;
                 case "op":
@@ -252,6 +258,7 @@ public class CourseController {
 //                        hashSet1.add(course1.getType().split("/")[1]);
                         hashSet1.addAll(Arrays.asList(course1.getType().split("/")[1].split(" ")));
                     }
+                    model.addAttribute("direction_flag","op");
                     model.addAttribute("courseList", courseList5);
                     break;
                 case "cb":
@@ -260,6 +267,7 @@ public class CourseController {
 //                        hashSet1.add(course1.getType().split("/")[1]);
                         hashSet1.addAll(Arrays.asList(course1.getType().split("/")[1].split(" ")));
                     }
+                    model.addAttribute("direction_flag","cb");
                     model.addAttribute("courseList", courseList6);
                     break;
                 case "ui":
@@ -268,31 +276,32 @@ public class CourseController {
 //                        hashSet1.add(course1.getType().split("/")[1]);
                         hashSet1.addAll(Arrays.asList(course1.getType().split("/")[1].split(" ")));
                     }
+                    model.addAttribute("direction_flag","ui");
                     model.addAttribute("courseList", courseList7);
                     break;
                 default:
                     if(dict.get(c)!=null){
-                        System.out.println(dict.get(c));
 //                        3-2 9:20 fxb 添加注释 按照分类classes 模糊查询 返回courseList数据
                         List<Course> course_List = courseService.findByTypeLike(dict.get(c));
+                        HashSet<String> hashSet2 = new HashSet<>();
+
                         for(Course course1:course_List){
 //                            hashSet1.add(course1.getType().split("/")[1]);
-
                             String type_first = course1.getType().split("/")[0];
+                            hashSet2.add(type_first);
                             List<Course> courseList11 = courseService.findByTypeLike(type_first);
                             for(Course course2:courseList11){
                                 hashSet1.addAll(Arrays.asList(course2.getType().split("/")[1].split(" ")));
                             }
                         }
+                        model.addAttribute("direction_flag",hashSet2.toArray()[0]);
+                        model.addAttribute("classes_flag",c);
                         model.addAttribute("courseList", course_List);
                     }else{
                         break;
                     }
                     break;
             }
-
-
-
         }
         model.addAttribute("dict",dict);
         model.addAttribute("classes",hashSet1);
@@ -316,10 +325,42 @@ public class CourseController {
     }
 
     @RequestMapping("/addCourse")
-    public String addCourse(@Valid Course course, Model model,RedirectAttributes attributes){
+    public String addCourse(@Valid Course course, BindingResult bindingResult, HttpServletRequest request,
+                            @RequestParam(value="filePath") MultipartFile file, RedirectAttributes attributes){
         course.setCreateDate(new Date());
         course.setModifyDate(new Date());
         Course course1= new Course();
+
+        if (!file.isEmpty()) {
+            String contentType = file.getContentType();
+            String fileName = file.getOriginalFilename();
+            String suffixName = fileName.substring(fileName.lastIndexOf("."));
+            //        String filePath1 = request.getSession().getServletContext().getRealPath("/");
+            //        System.out.println(filePath1+"++++++++++++++");
+
+            String filePath = ClassUtils.getDefaultClassLoader().getResource("static/admin/upload/").getPath();
+            try {
+                filePath = URLDecoder.decode(filePath, "utf-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
+            File dest = new File(filePath);
+            // 检测是否存在目录
+            if (!dest.exists()) {
+                dest.mkdirs();// 新建文件夹
+            }
+            String file_name = System.currentTimeMillis() + suffixName;
+            try {
+                FileUtils.uploadFile(file.getBytes(), filePath, file_name);
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
+            course.setFilePath(file_name);
+        } else {
+//            course.setFilePath(course1.getFilePath());
+        }
+
         course1 = courseService.addCourse(course);
 //        attributes.addAttribute("id",course.getCourseId());
         return "redirect:/course/listAdmin";
@@ -335,11 +376,43 @@ public class CourseController {
     }
 
     @PostMapping("/updateCourse")
-    public String updateCourse(@Valid Course course,RedirectAttributes attributes){
+    public String updateCourse(@Valid Course course, BindingResult bindingResult, HttpServletRequest request,
+                               @RequestParam(value="filePath") MultipartFile file, RedirectAttributes attributes){
         Course course1 = courseService.findById(course.getId());
         course.setCreateDate(course1.getCreateDate());
         course.setModifyDate(new Date());
         course.setUserid(course1.getUserid());
+
+        if (!file.isEmpty()) {
+            String contentType = file.getContentType();
+            String fileName = file.getOriginalFilename();
+            String suffixName = fileName.substring(fileName.lastIndexOf("."));
+            //        String filePath1 = request.getSession().getServletContext().getRealPath("/");
+            //        System.out.println(filePath1+"++++++++++++++");
+
+            String filePath = ClassUtils.getDefaultClassLoader().getResource("static/admin/upload/").getPath();
+            try {
+                filePath = URLDecoder.decode(filePath, "utf-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
+            File dest = new File(filePath);
+            // 检测是否存在目录
+            if (!dest.exists()) {
+                dest.mkdirs();// 新建文件夹
+            }
+            String file_name = System.currentTimeMillis() + suffixName;
+            try {
+                FileUtils.uploadFile(file.getBytes(), filePath, file_name);
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
+            course.setFilePath(file_name);
+        } else {
+            course.setFilePath(course1.getFilePath());
+        }
+
         Course course2= courseService.addCourse(course);
         return "redirect:/course/listAdmin";
     }

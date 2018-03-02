@@ -10,21 +10,36 @@
                         <span class="hd l">方向：</span>
                         <div class="bd">
                             <ul class="">
+                                <#if "${(direction_flag)!}" == "">
                                 <li class="course-nav-item on">
-                                    <a href="https://www.imooc.com/course/list">全部</a>
+                                    <a href="${base}/course/listCourse">全部</a>
                                 </li>
+                                <#else>
+                                    <li class="course-nav-item">
+                                        <a href="${base}/course/listCourse">全部</a>
+                                    </li>
+                                </#if>
                                 <#--<#list “This|is|split”?split(“|”) as s>-->
                                 <#list direction as di>
-                                <li class="course-nav-item">
+
                                     <#if dict?exists>
                                     <#list dict?keys as key>
                                     <#if (dict[key] == di)>
-                                        <a href="${base}/course/listCourse?c=${key}" data-ct="fe">${di}</a>
+
+                                    <#if "${(direction_flag)!}" == "${(dict[key])!}" || "${(direction_flag)!}" == "${key}">
+                                        <li class="course-nav-item on">
+                                            <a href="${base}/course/listCourse?c=${key}" data-ct="fe">${di}</a>
+                                        </li>
+                                    <#else>
+                                        <li class="course-nav-item">
+                                            <a href="${base}/course/listCourse?c=${key}" data-ct="fe">${di}</a>
+                                        </li>
+                                    </#if>
                                     </#if>
                                     <#--${dict[key]}-->
                                     </#list>
                                     </#if>
-                                </li>
+
                                 </#list>
                             </ul>
                         </div>
@@ -33,14 +48,38 @@
                         <span class="hd l">分类：</span>
                         <div class="bd">
                             <ul class="">
+                                <#if "${(classes_flag)!}" == "">
                                 <li class="course-nav-item on">
-                                    <a href="https://www.imooc.com/course/list?">全部</a>
+                                    <a href="${base}/course/listCourse">全部</a>
                                 </li>
+                                <#else>
+                                    <li class="course-nav-item">
+                                        <a href="${base}/course/listCourse">全部</a>
+                                    </li>
+                                </#if>
                                 <#list classes as cl>
+                                    <#assign key="${cl}" />
+                                <#if "${(classes_flag)!}" == "${(dict[key])!}">
+                                    <li class="course-nav-item on">
+                                    <#--<a href="${base}/course/listCourse?c=${dict[cl]}" data-ct="fe">${cl}</a>-->
+
+                                        <a href="${base}/course/listCourse?c=${(dict[key])!}" data-ct="fe">${cl}</a>
+                                    <#--3-2 fxb 1:00-->
+                                    <#--<#if dict?exists>-->
+                                    <#--<#list dict?keys as key>-->
+                                    <#--<#if (dict[key] == cl)>-->
+                                    <#--<a href="${base}/course/listCourse?c=${key}" data-ct="fe">${cl}</a>-->
+                                    <#--</#if>-->
+                                    <#--&lt;#&ndash;${dict[key]}&ndash;&gt;-->
+                                    <#--</#list>-->
+                                    <#--</#if>-->
+
+                                    </li>
+                                <#else>
+
                                 <li class="course-nav-item">
                                     <#--<a href="${base}/course/listCourse?c=${dict[cl]}" data-ct="fe">${cl}</a>-->
-                                    <#assign key="${cl}">
-                                    <a href="${base}/course/listCourse?c=${dict[key]!}" data-ct="fe">${cl}</a>
+                                    <a href="${base}/course/listCourse?c=${(dict[key])!}" data-ct="fe">${cl}</a>
                                     <#--3-2 fxb 1:00-->
                                     <#--<#if dict?exists>-->
                                         <#--<#list dict?keys as key>-->
@@ -52,6 +91,7 @@
                                     <#--</#if>-->
 
                                 </li>
+                                </#if>
                                 </#list>
 
                             </ul>
@@ -128,18 +168,18 @@
                         <a target="_blank" href="https://www.imooc.com/learn/950" class="course-card">
 
                             <div class="course-card-top">
-                                <img class="course-banner lazy" data-original="//img4.mukewang.com/5a9371160001ecb106000338-240-135.jpg" src="%E5%85%A8%E9%83%A8%E8%AF%BE%E7%A8%8B_IT%E5%9F%B9%E8%AE%AD%E7%B2%BE%E5%93%81%E8%AF%BE%E7%A8%8B-%E6%85%95%E8%AF%BE%E7%BD%91_files/5a9371160001ecb106000338-240-135.jpg" style="display: inline;">
+                                <img class="course-banner lazy" data-original="//img4.mukewang.com/5a9371160001ecb106000338-240-135.jpg" src="${base}/admin/upload/${(course.filePath)!}" style="display: inline;">
                                 <div class="course-label">
-                                    <label>${course.courseName}</label>
+                                    <label>${course.type}</label>
                                 </div>
                             </div>
                             <div class="course-card-content">
-                                <h3 class="course-card-name">web端功能自动化定位元素</h3>
+                                <h3 class="course-card-name">${course.courseName}</h3>
                                 <div class="clearfix course-card-bottom">
                                     <div class="course-card-info">
-                                        <span>中级</span><span><i class="icon-set_sns"></i>491</span>
+                                        <span><#if "${course.level}"=="1">初级<#elseif "${course.level}"=="2">中级<#else>困难</#if></span><span><i class="icon-set_sns"></i>491</span>
                                     </div>
-                                    <p class="course-card-desc">页面元素高级定位方式,在不同的浏览器上查看元素，Xpath，CSS定位</p>
+                                    <p class="course-card-desc">${course.introduction}</p>
                                 </div>
                             </div>
                         </a>

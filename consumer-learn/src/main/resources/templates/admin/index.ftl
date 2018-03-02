@@ -163,12 +163,14 @@
                     <div class="panel box-v2">
                         <div class="panel-heading padding-0">
                             <img src="${base}/admin/images/bg2.jpg" class="box-v2-cover img-responsive"/>
-                            <a class="box-v2-detail" data-toggle="modal" data-target="#myModal_update" title="用户信息">
+                            <a data-toggle="modal" data-target="#myModal_update" title="用户信息">
+                            <div class="box-v2-detail">
                                 <img src="${base}/admin/upload/${(userInfo.headimg)!}" class="img-responsive"/>
                                 <h4>${(userInfo.username)!}</h4>
+                            </div>
                             </a>
 
-                        </div>
+                        <#--</div>-->
                         <!-- 模态框（Modal） ---------修改信息-->
                         <div style="margin-top: 50px" class="modal fade" id="myModal_update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -184,45 +186,45 @@
                                     <form action="${base}/user/updateAdminUser" method="post" enctype="multipart/form-data">
                                         <div class="modal-body" style="height:550px;width:400px">
 
-                                            <label for="name" class="col-sm-2 control-label">用户名</label>
-                                            <div class="col-sm-10">
+                                            <label for="name" class="col-sm-3 control-label">用户名</label>
+                                            <div class="col-sm-9">
                                                 <input type="hidden" name="id" value="${userInfo.id}" />
                                                 <input type="text" style="width: 400px;" class="form-control" name="username"
                                                        value="${(userInfo.username)!}" placeholder="请输入用户">
                                             </div>
-                                            <label for="name" class="col-sm-2 control-label">Email</label>
-                                            <div class="col-sm-10">
+                                            <label for="name" class="col-sm-3 control-label">Email</label>
+                                            <div class="col-sm-9">
                                                 <input type="text" style="width: 400px;" class="form-control" name="email"
                                                        value="${(userInfo.email)!}" placeholder="请输入用户email">
                                             </div>
-                                            <label for="name" class="col-sm-2 control-label">用户状态</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" style="width: 400px;" class="form-control" name="userStatus"
-                                                       value="${(userInfo.userStatus)!}" placeholder="请输入用户状态">
+                                            <label for="name" class="col-sm-3 control-label">用户状态</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" style="width: 400px;" class="form-control" name="userStatus" readonly
+                                                       value="<#if userInfo.userStatus==0>正常<#elseif userInfo.userStatus==1>待审核<#else>冻结</#if>" placeholder="请输入用户状态">
                                             <#--<textarea id="quick_post" name="content" rows="10" cols="80" placeholder="请输入赛事内容">${(sportInfo.content)!}</textarea>-->
                                             </div>
-                                            <label for="name" class="col-sm-2 control-label">用户类别</label>
-                                            <div class="col-sm-10">
+                                            <label for="name" class="col-sm-3 control-label">用户类别</label>
+                                            <div class="col-sm-9">
                                                 <input type="text" style="width: 400px;" class="form-control" name="userType"
-                                                       value="${(userInfo.userType)!}" placeholder="请输入用户类别">
+                                                       value="<#if userInfo.userType==0>管理员<#else>讲师</#if>" readonly placeholder="请输入用户类别">
                                             </div>
-                                            <label for="name" class="col-sm-2 control-label">所在城市</label>
-                                            <div class="col-sm-10">
+                                            <label for="name" class="col-sm-3 control-label">所在城市</label>
+                                            <div class="col-sm-9">
                                                 <input type="text" style="width: 400px;" class="form-control" name="city"
                                                        value="${(userInfo.city)!}" placeholder="请输入所在城市">
                                             </div>
-                                            <label for="name" class="col-sm-2 control-label">用户状态</label>
-                                            <div class="col-sm-10">
+                                            <label for="name" class="col-sm-3 control-label">用户状态</label>
+                                            <div class="col-sm-9">
                                                 <textarea id="quick_post" name="introduction" rows="10" cols="50" placeholder="请输入用户介绍">${(userInfo.introduction)!}</textarea>
                                             </div>
-                                            <label for="name" class="col-sm-2 control-label">职位</label>
-                                            <div class="col-sm-10">
+                                            <label for="name" class="col-sm-3 control-label">用户职位</label>
+                                            <div class="col-sm-9">
                                                 <input type="text" style="width: 400px;" class="form-control" name="position"
                                                        value="${(userInfo.position)!}" placeholder="请输入用户职位">
                                             </div>
 
-                                            <label for="name" class="col-sm-2 control-label">头像</label>
-                                            <div class="col-sm-10">
+                                            <label for="name" class="col-sm-3 control-label">用户头像</label>
+                                            <div class="col-sm-9">
                                                 <input type="file" style="width: 400px;" class="form-control" name="headimg" />
                                             </div>
                                         </div>
@@ -234,7 +236,7 @@
                                 </div><!-- /.modal-content -->
                             </div><!-- /.modal -->
                         </div>
-                        <#--model end -->
+                        <#--model end-->
 
                         </div>
                         <div class="panel-body">

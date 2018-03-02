@@ -264,7 +264,7 @@ public class UserController {
     }
 
     @PostMapping("/updateAdminUser")
-    public String updateAdminUser(@Valid User user, BindingResult bindingResult, HttpServletRequest request,
+    public String updateAdminUser(@Valid User user, BindingResult bindingResult, HttpServletRequest request,HttpServletResponse response,
                                   @RequestParam(value="headimg") MultipartFile file, RedirectAttributes attributes){
         User user1 = userService.getUserById(user.getId());
         user.setCreateDate(user1.getCreateDate());
@@ -292,10 +292,19 @@ public class UserController {
         } else {
             user.setHeadimg(user1.getHeadimg());
         }
+
         userService.addUser(user);
-        return "redirect:/user/index";
+
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
+        //使用request对象的getSession()获取session，如果session不存在则创建一个
+        HttpSession session = request.getSession();
+        //将数据存储到session中
+        session.setAttribute("userInfo", user);
+
+        redisService.setObj("user", user);
 
 
+        return "redirect:/admin/index";
     }
-
 }

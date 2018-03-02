@@ -67,13 +67,11 @@ public class IndexController {
         } else {
 
         }
-        System.out.println(SendGET("http://www.weather.com.cn/data/cityinfo/101190401.html"));
         String jsonData = SendGET("http://www.weather.com.cn/data/cityinfo/101190401.html");
         JSONObject jso= JSON.parseObject(jsonData);//json字符串转换成jsonobject对象
         String weather = jso.getJSONObject("weatherinfo").getString("weather");
         String low_temp = jso.getJSONObject("weatherinfo").getString("temp1");
         String high_temp = jso.getJSONObject("weatherinfo").getString("temp2");
-        System.out.println(jso.getJSONObject("weatherinfo").getString("weather"));
 
         model.addAttribute("low_temp",low_temp);
         model.addAttribute("high_temp",high_temp);
