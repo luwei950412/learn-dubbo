@@ -4,6 +4,15 @@
         color:black;
     }
 </style>
+<style>
+    #p_active2{  display: none;  }
+    #p_active3{  display: none;  }
+    #p_active4{  display: none;  }
+    #p_active5{  display: none;  }
+    #p_active6{  display: none;  }
+    #p_active7{  display: none;  }
+</style>
+
 <#include  "../base/header.ftl" >
 <div class="content">
     <div class="profile_main">
@@ -11,30 +20,128 @@
            <div class="personal_image">
               <img src="img/personal-info.png" class="avatar img-circle" />
            </div>
-           <div class="person_name">
+           <div class="person_name"><!-- 昵称 -->
                    Hello,&nbspBitch
            </div>
-           <div class="person_sign">
-
+           <div class="person_sign"><!-- 签名 -->
+                   Come here and I will kick your ass!
            </div>
        </div>
+        <div class="profile_info">
+            <div class="learn_time">
+                   <span class="learntime_static">学习时间</span>
+                   <span class="learntime_dynamic">0h</span>
+            </div>
+            <div class="relevent_info">
+                <div class="table">
+                    <div class="tr">
+                        <div class="td">
+                            <span class="rf_static">经验</span><span class="rf_dynamic">0</span>
+                        </div>
+                        <div class="td">
+                            <span class="rf_static">积分</span><span class="rf_dynamic">0</span>
+                        </div>
+                    </div >
+                    <div class="tr">
+                        <div class="td">
+                            <span class="rf_static">关注</span><span class="rf_dynamic">0</span>
+                        </div>
+                        <div class="td">
+                            <span class="rf_static">粉丝</span><span class="rf_dynamic">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modify_btn">
+                <div class="btn_position">
+                    <a href="#"><div class="modify" onclick="popBox()">修改资料</div></a>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-
 
 </div>
 
-
-
-
-
-
-
+<div id="popLayer" >
+</div>
+<div id="popBox">
+    <div class="popBox_sub">
+    </div>
+    <div class="close_img">
+        <a href="javascript:void(0)" onclick="closeBox()">
+            <img src="img/multiply.png" width="40px">
+        </a>
+    </div>
+    <div class="modify_contain">
+        <div class="modify_title">
+            <div class="mt_char">
+                修改资料
+            </div>
+        </div>
+        <div class="modify_position">
+           <!-- <div class="modify_a">
+                <div class="m_char">名称</div>
+                <div class="m_txt"><input type="text" class="m_input" style="height: 25px"/></div>
+            </div>
+            <div class="modify_a">
+                <div class="m_char">邮件</div>
+                <div class="m_txt"><input type="text" class="m_input" style="height: 25px"/></div>
+            </div>
+            <div class="modify_a">
+                <div class="m_char">城市</div>
+                <div class="m_txt"><input type="text" class="m_input" style="height: 25px"/></div>
+            </div>
+            <div class="modify_a">
+                <div class="m_char">职位</div>
+                <div class="m_txt"><input type="text" class="m_input" style="height: 25px"/></div>
+            </div>
+            <div class="modify_a">
+                <div class="m_char">签名</div>
+                <div class="m_txt"><input type="text" class="m_input" style=""/></div>
+            </div>-->
+            <form>
+            <div class="field-box">
+                <label class="m_char">名称:</label>
+                <input class="span5 inline-input" type="text" value="${(userInfo.username)!}" />
+            </div>
+            <div class="field-box">
+                <label class="m_char">邮箱:</label>
+                <input class="span5 inline-input" type="text" value="" />
+            </div>
+            <div class="field-box">
+                <label class="m_char">城市:</label>
+                <div class="ui-select">
+                    <div class="zcityGroup" city-range="{'level_start':1,'level_end':2}" city-ini="江苏省,南京市">
+                    </div>
+                </div>
+            </div>
+            <div class="field-box">
+                <label class="m_char">职位:</label>
+                <input class="span5 inline-input" type="text" value="产品经理" />
+            </div>
+            <div class="field-box">
+                <label class="m_char">签名:</label>
+                <input class="span5 inline-input" type="text" value="balabalabala" />
+            </div>
+            <div class="span6 field-box actions">
+                <input type="button" class="btn-glow primary" value="保存" />
+                <span></span>
+                <input type="reset" value="重置" class="reset" />
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 <!-- scripts -->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/zcity.js"></script>
+
+<script type="text/javascript">
+    zcityrun('.zcityGroup');
+</script>
+
 <script src="js/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
@@ -45,6 +152,29 @@
 <script src="js/jquery.flot.stack.js"></script>
 <script src="js/jquery.flot.resize.js"></script>
 <script src="js/theme.js"></script>
+
+<script type="text/javascript">
+    function popBox(){
+        var popBox = document.getElementById('popBox');
+        var popLayer = document.getElementById('popLayer');
+
+        popLayer.style.width = document.body.scrollWidth + "px";
+        popLayer.style.height = document.body.scrollHeight + "px";
+
+        popLayer.style.display = "block";
+        popBox.style.display = "block";
+    }//end func popBox()
+
+    function closeBox(){
+        var popBox = document.getElementById('popBox');
+        var popLayer = document.getElementById('popLayer');
+
+        popLayer.style.display = "none";
+        popBox.style.display = "none";
+
+    }//end func closeBox()
+
+</script>
 
 <script type="text/javascript">
     $(function () {

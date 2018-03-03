@@ -76,7 +76,7 @@ textarea {
 .inline-input input[type="password"],
 input[type="text"].inline-input,
 input[type="password"].inline-input {
-	background: #fff;
+	background: #f8f8f8;
 	border-top: 0 none;
 	border-left: 0 none;
 	border-right: 0 none;

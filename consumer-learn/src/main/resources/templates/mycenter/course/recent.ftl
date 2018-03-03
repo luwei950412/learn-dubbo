@@ -5,6 +5,14 @@
             font-weight: bold;
         }
     </style>
+    <style>
+        #p_active1{  display: none;  }
+        #p_active3{  display: none;  }
+        #p_active4{  display: none;  }
+        #p_active5{  display: none;  }
+        #p_active6{  display: none;  }
+        #p_active7{  display: none;  }
+    </style>
 
 
 <#include  "../base/header.ftl" >

@@ -371,11 +371,11 @@
 /* Custom Select */
 
 .ui-select {
-	width: 137px;
+	width: 257px;
 	margin-left: 0px !important;
 	vertical-align: middle;
 	min-width: 100px;
-	height: 25px;
+	height: 30px;
 	min-height: 25px !important;
 	position: relative;
 	overflow: hidden;
