@@ -2,8 +2,12 @@ package com.sxdubbo.learn.controller;
 
 import com.sxdubboapi.learn.domain.Chapter;
 import com.sxdubboapi.learn.domain.Course;
+import com.sxdubboapi.learn.domain.User;
+import com.sxdubboapi.learn.domain.Video;
 import com.sxdubboapi.learn.service.ChapterService;
 import com.sxdubboapi.learn.service.CourseService;
+import com.sxdubboapi.learn.service.UserService;
+import com.sxdubboapi.learn.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,8 +28,25 @@ public class ChapterController {
     @Autowired
     public ChapterService chapterService;
     @Autowired
+    public VideoService videoService;
+    @Autowired
     public CourseService courseService;
+    @Autowired
+    public UserService userService;
 
+    @GetMapping("/listChapter")
+    public String listChapter(@RequestParam("id") Integer id,Model model){
+        Course course = courseService.findById(id);
+        List<Chapter> chapterList = chapterService.findByCourseId(id);
+        List<Video> videoList = videoService.findByCourseId(id);
+        System.out.println(course.getUserId()+course.getCourseName());
+        User user = userService.getUserById(course.getUserId());
+        model.addAttribute("course",course);
+        model.addAttribute("chapterList",chapterList);
+        model.addAttribute("videoList",videoList);
+        model.addAttribute("user",user);
+        return "/front/course/chapter_list";
+    }
     @GetMapping("/chapterManage")
     public String chapterMange(Model model, @RequestParam("id") Integer courseId){
 //        User user_redis = new User();

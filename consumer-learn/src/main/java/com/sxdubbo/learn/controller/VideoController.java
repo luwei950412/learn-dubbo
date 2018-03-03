@@ -116,6 +116,7 @@ public class VideoController {
             String fileName = file.getOriginalFilename();
             String suffixName = fileName.substring(fileName.lastIndexOf("."));
             String filePath = ClassUtils.getDefaultClassLoader().getResource("static/admin/upload/").getPath();
+            System.out.println("here is video");
             try {
                 filePath= URLDecoder.decode(filePath,"utf-8");
             } catch (UnsupportedEncodingException e) {
@@ -140,6 +141,15 @@ public class VideoController {
         Video video1 = videoService.updateVideo(video_final);
         attributes.addAttribute("id",video_final.getChapterId());
         return "redirect:/video/videoManage";
+    }
+//    前端视频播放界面，****未完******需要添加问答的数据*****8
+    @GetMapping("/videoView")
+    public String videoView(@RequestParam("id") Integer videoId,Model model){
+        Video video = videoService.findById(videoId);
+        Chapter chapter = chapterService.findById(video.getChapterId());
+        model.addAttribute("video",video);
+        model.addAttribute("chapter",chapter);
+        return "/front/video/video_view";
     }
 
 }

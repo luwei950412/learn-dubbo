@@ -30,7 +30,11 @@
     <![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
-
+<#if "${(userFront.username)!}"=="">
+<script>
+    window.location.href="/front/index";
+</script>
+</#if>
 <!-- navbar -->
 <div class="navbar navbar-inverse">
     <div class="navbar-inner">
@@ -40,7 +44,7 @@
             <span class="icon-bar"></span>
         </button>
 
-        <a class="brand" href="#"><img src="img/logo.png" /></a>
+        <a class="brand" href="${base}/front/index"><img src="img/logo.png" /></a>
 
         <ul class="nav pull-right">
             <li class="hidden-phone">

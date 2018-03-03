@@ -15,4 +15,5 @@ public interface VideoRepository extends JpaRepository<VideoPO, Integer> {
     public VideoPO findByVideoName(String videoName);
 
     public List<VideoPO> findByChapterId(Integer userId);
+    public List<VideoPO> findByCourseId(Integer courseId);
 }

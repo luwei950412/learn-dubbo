@@ -2516,8 +2516,8 @@ select[multiple].ipt,textarea.ipt {
 }
 @font-face {
  font-family:icomoon;
- src:url(/static/fonts/icomoon/fonts/icomoon.eot?d8493nx);
- src:url(/static/fonts/icomoon/fonts/icomoon.eot?d8493nx#iefix) format('embedded-opentype'),url(/static/fonts/icomoon/fonts/icomoon.ttf?d8493nx) format('truetype'),url(/static/fonts/icomoon/fonts/icomoon.woff?d8493nx) format('woff'),url(/static/fonts/icomoon/fonts/icomoon.svg?d8493nx#icomoon) format('svg');
+ src:url(../fonts/icomoon/icomoon.eot?d8493nx);
+ src:url(../fonts/icomoon/icomoon.eot?d8493nx#iefix) format('embedded-opentype'),url(../fonts/icomoon/icomoon.ttf?d8493nx) format('truetype'),url(../fonts/icomoon/icomoon.woff?d8493nx) format('woff'),url(../fonts/icomoon/icomoon.svg?d8493nx#icomoon) format('svg');
  font-weight:400;
  font-style:normal
 }
@@ -2562,9 +2562,9 @@ select[multiple].ipt,textarea.ipt {
 .icon-thumb_o:before {
  content:"\e91e"
 }
-.icon-check:before {
- content:"\e91d"
-}
+/*.icon-check:before {*/
+ /*content:"\e91d"*/
+/*}*/
 .icon-radiobu_on:before {
  content:"\e919"
 }

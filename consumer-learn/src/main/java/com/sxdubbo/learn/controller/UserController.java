@@ -22,6 +22,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.sound.midi.Soundbank;
 import javax.validation.Valid;
 import java.io.File;
 import java.io.IOException;
@@ -67,11 +68,40 @@ public class UserController {
 //    }
 
 
-    @GetMapping(value = "/register")
+    @GetMapping(value = "/frontRegister")
     public String register() {
 
-        return "/register";
+        return "/front/user/register";
     }
+    @PostMapping("/isExistUsername")
+    @ResponseBody
+    public String isExistUsername(@RequestParam("username") String username){
+        System.out.println(username+"&&&&&&&&&&&&&&&");
+        User user = userService.findByUsername(username);
+        if(user == null){
+            return "true";
+        }else{
+            return "false";
+        }
+    }
+    @PostMapping("/frontRegister")
+    @ResponseBody
+    public String addUser(@Valid User user){
+        System.out.println(user.getUsername()+user.getEmail());
+        user.setUserType(2);
+        user.setUserStatus(0);
+        user.setPassword(AppMD5Util.getMD5(user.getPassword()));
+        user.setCreateDate(new Date());
+        user.setModifyDate(new Date());
+        User user1 = userService.addUser(user);
+        if(user1 != null){
+            return "success";
+        }else{
+            return "error";
+        }
+
+    }
+
 
     //    @GetMapping(value = "/test")
 //    public String hello(){
@@ -107,6 +137,29 @@ public class UserController {
 
         return "/admin/user/login";
     }
+    @GetMapping(value = "/frontLogin")
+    public String frontLogin(){
+        return "/front/user/login";
+    }
+
+    @PostMapping("/frontLogin")
+    @ResponseBody
+    public String frontLogin(@Valid User user, HttpServletRequest request, HttpServletResponse response)throws IOException {
+        User user1 = userService.findByUsername(user.getUsername());
+        if(user1.getPassword().equals(AppMD5Util.getMD5(user.getPassword()))){
+            response.setCharacterEncoding("UTF-8");
+            response.setContentType("text/html;charset=UTF-8");
+            //使用request对象的getSession()获取session，如果session不存在则创建一个
+            HttpSession session = request.getSession();
+            //将数据存储到session中
+            session.setAttribute("userFront", user1);
+
+            redisService.setObj("userFront", user1);
+            return "success";
+        }else{
+            return "error";
+        }
+    }
 
     @PostMapping("/login")
     @ResponseBody
@@ -138,12 +191,28 @@ public class UserController {
         try {
             redisService.delObj("user");
             HttpSession session1 = request.getSession();
-            session1.invalidate();
+            session1.setAttribute("userInfo",null);
+//            session1.invalidate();
         } catch (Exception e) {
             e.printStackTrace();
         }
         redirectAttributes.addFlashAttribute("message", "您已安全退出");
         return "/user/login";
+    }
+    @RequestMapping(value = "/frontLogout", method = RequestMethod.GET)
+    public String frontLogout(RedirectAttributes redirectAttributes,HttpServletRequest request) {
+        //使用权限管理工具进行用户的退出，跳出登录，给出提示信息
+        try {
+            System.out.println("front logout");
+            redisService.delObj("userFront");
+            HttpSession session1 = request.getSession();
+            session1.setAttribute("userFront",null);
+//            session1.invalidate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        redirectAttributes.addFlashAttribute("message", "您已安全退出");
+        return "redirect:/front/index";
     }
 
     @RequestMapping("/403")
@@ -306,5 +375,51 @@ public class UserController {
 
 
         return "redirect:/admin/index";
+    }
+
+    @PostMapping("/updateFrontUser")
+    public String updateFrontUser(@Valid User user, BindingResult bindingResult, HttpServletRequest request,HttpServletResponse response,
+                                  @RequestParam(value="headimg") MultipartFile file, RedirectAttributes attributes){
+        User user1 = userService.getUserById(user.getId());
+        System.out.println("here is front modify");
+        user.setCreateDate(user1.getCreateDate());
+        user.setModifyDate(new Date());
+        user.setPassword(user1.getPassword());
+        if (!file.isEmpty()) {
+            String contentType = file.getContentType();
+            String fileName = file.getOriginalFilename();
+            String suffixName = fileName.substring(fileName.lastIndexOf("."));
+            System.out.println("file upload");
+            String filePath = ClassUtils.getDefaultClassLoader().getResource("static/admin/upload/").getPath();
+            try {
+                filePath = URLDecoder.decode(filePath, "utf-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
+            String file_name = System.currentTimeMillis() + suffixName;
+            try {
+                FileUtils.uploadFile(file.getBytes(), filePath, file_name);
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
+            user.setHeadimg(file_name);
+        } else {
+            user.setHeadimg(user1.getHeadimg());
+        }
+
+        userService.addUser(user);
+
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
+        //使用request对象的getSession()获取session，如果session不存在则创建一个
+        HttpSession session = request.getSession();
+        //将数据存储到session中
+        session.setAttribute("userFront", user);
+
+        redisService.setObj("userFront", user);
+
+
+        return "redirect:/mycenter/profile";
     }
 }

@@ -50,7 +50,7 @@ public class CourseServiceImpl implements CourseService {
     @Override
     public List<Course> findByUserId(Integer userId){
         List<Course> courseList= new ArrayList<Course>();
-        List<CoursePO> coursePOList = courseRepository.findByUserid(userId);
+        List<CoursePO> coursePOList = courseRepository.findByUserId(userId);
         for(int i = 0 ; i < coursePOList.size() ; i++) {
             Course course = new Course();
             BeanUtils.copyProperties(coursePOList.get(i), course);

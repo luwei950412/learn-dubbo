@@ -12,6 +12,7 @@ public interface VideoService {
 
     public Video findByVedioName(String videoName);
     public List<Video> findByChapterId(Integer chapterId);
+    public List<Video> findByCourseId(Integer chapterId);
     public Video findById(Integer id);
     public void deleteVideo(Integer id);
     public Video addVideo(Video video);

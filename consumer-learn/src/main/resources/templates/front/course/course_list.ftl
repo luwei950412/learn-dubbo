@@ -165,7 +165,7 @@
 
                     <#list courseList as course>
                     <div class="course-card-container">
-                        <a target="_blank" href="https://www.imooc.com/learn/950" class="course-card">
+                        <a target="_blank" href="${base}/chapter/listChapter?id=${course.id}" class="course-card">
 
                             <div class="course-card-top">
                                 <img class="course-banner lazy" data-original="//img4.mukewang.com/5a9371160001ecb106000338-240-135.jpg" src="${base}/admin/upload/${(course.filePath)!}" style="display: inline;">
@@ -185,30 +185,10 @@
                         </a>
                     </div>
                     </#list>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </ul>
             </div>
-
         </div>
-
     </div>
-
 </div>
 
 <#include "../base/footer.ftl">

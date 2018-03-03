@@ -89,6 +89,7 @@
 <script src="${base}/front/js/simplyCountdown.js"></script>
 <!-- Main -->
 <script src="${base}/front/js/main.js"></script>
+<script src="${base}/front/js/login.js"></script>
 <script>
     var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
 

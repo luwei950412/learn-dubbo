@@ -12,7 +12,7 @@
 				return false;
 			}
 			$.ajax({
-				url:  "/user/login",
+				url:  "/user/frontLogin",
 				data: $loginWindowForm.serialize(),
 				type: "POST",
 				cache: false,
@@ -20,7 +20,7 @@
 					// alert("hello1");
 					if (data == "success") {
 						alert("登录成功");
-						window.location.href="/admin/index";
+						window.location.href="/front/index";
 					}else{
 						alert("登录失败，原因：可能不存在这样的用户名或者密码错误！！！");
 					}
@@ -90,14 +90,14 @@
 					if (data == "true") {
 						alert("正常");
 						$.ajax({
-							url:  "/user/register",
+							url:  "/user/frontRegister",
 							data: $registerWindowForm.serialize(),
 							type: "POST",
 							cache: false,
 							success: function(data) {
 								if (data == "success") {
 									alert("注册成功");
-									window.location.href="/user/login";
+									window.location.href="/user/frontLogin";
 								}else{
 									alert("注册失败");
 								}

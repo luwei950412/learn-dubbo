@@ -18,13 +18,13 @@
     <div class="profile_main">
        <div class="profile_person"  >
            <div class="personal_image">
-              <img src="img/personal-info.png" class="avatar img-circle" />
+              <img style="width: 100px;height: 100px;" src="${base}/admin/upload/${(userFront.headimg)!}" class="avatar img-circle" />
            </div>
            <div class="person_name"><!-- 昵称 -->
-                   Hello,&nbspBitch
+                   Hello,&nbsp;${(userFront.username)!}
            </div>
            <div class="person_sign"><!-- 签名 -->
-                   Come here and I will kick your ass!
+                   ${(userFront.introduction)!}
            </div>
        </div>
         <div class="profile_info">
@@ -79,52 +79,38 @@
             </div>
         </div>
         <div class="modify_position">
-           <!-- <div class="modify_a">
-                <div class="m_char">名称</div>
-                <div class="m_txt"><input type="text" class="m_input" style="height: 25px"/></div>
-            </div>
-            <div class="modify_a">
-                <div class="m_char">邮件</div>
-                <div class="m_txt"><input type="text" class="m_input" style="height: 25px"/></div>
-            </div>
-            <div class="modify_a">
-                <div class="m_char">城市</div>
-                <div class="m_txt"><input type="text" class="m_input" style="height: 25px"/></div>
-            </div>
-            <div class="modify_a">
-                <div class="m_char">职位</div>
-                <div class="m_txt"><input type="text" class="m_input" style="height: 25px"/></div>
-            </div>
-            <div class="modify_a">
-                <div class="m_char">签名</div>
-                <div class="m_txt"><input type="text" class="m_input" style=""/></div>
-            </div>-->
-            <form>
+
+            <form action="/user/updateFrontUser" method="post" enctype="multipart/form-data">
+                <div class="field-box">
+                    <label class="m_char">头像:</label><img style="border-radius: 50%;width:100px;height: 100px;" src="${base}/admin/upload/${(userFront.headimg)!}">
+                    <input type="hidden" name="id" value="${(userFront.id)!}">
+                    <input class="span5 inline-input" type="file" name="headimg" value="修改" />
+                </div>
             <div class="field-box">
-                <label class="m_char">名称:</label>
-                <input class="span5 inline-input" type="text" value="${(userInfo.username)!}" />
+                <label class="m_char">用户名:</label>
+                <input class="span5 inline-input" name="username" type="text" value="${(userFront.username)!}" />
             </div>
             <div class="field-box">
                 <label class="m_char">邮箱:</label>
-                <input class="span5 inline-input" type="text" value="" />
+                <input class="span5 inline-input" type="text" name="email" value="${(userFront.email)!}" />
             </div>
             <div class="field-box">
                 <label class="m_char">城市:</label>
                 <div class="ui-select">
-                    <div class="zcityGroup" city-range="{'level_start':1,'level_end':2}" city-ini="江苏省,南京市">
+                    <div class="zcityGroup" city-range="{'level_start':1,'level_end':2}" city-ini="${(userFront.city)!}">
                     </div>
                 </div>
             </div>
             <div class="field-box">
                 <label class="m_char">职位:</label>
-                <input class="span5 inline-input" type="text" value="产品经理" />
+                <input class="span5 inline-input" type="text" name="position" value="${(userFront.position)!}" />
             </div>
             <div class="field-box">
                 <label class="m_char">签名:</label>
-                <input class="span5 inline-input" type="text" value="balabalabala" />
+                <input class="span5 inline-input" name="introduction" type="text" value="${(userFront.introduction)!}" />
             </div>
             <div class="span6 field-box actions">
-                <input type="button" class="btn-glow primary" value="保存" />
+                <input type="submit" class="btn-glow primary" value="保存" />
                 <span></span>
                 <input type="reset" value="重置" class="reset" />
             </div>

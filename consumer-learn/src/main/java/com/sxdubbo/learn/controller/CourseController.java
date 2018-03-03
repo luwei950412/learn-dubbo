@@ -381,13 +381,13 @@ public class CourseController {
         Course course1 = courseService.findById(course.getId());
         course.setCreateDate(course1.getCreateDate());
         course.setModifyDate(new Date());
-        course.setUserid(course1.getUserid());
+        course.setUserId(course1.getUserId());
 
         if (!file.isEmpty()) {
             String contentType = file.getContentType();
             String fileName = file.getOriginalFilename();
             String suffixName = fileName.substring(fileName.lastIndexOf("."));
-            //        String filePath1 = request.getSession().getServletContext().getRealPath("/");
+            String filePath1 = request.getSession().getServletContext().getRealPath("/");
             //        System.out.println(filePath1+"++++++++++++++");
 
             String filePath = ClassUtils.getDefaultClassLoader().getResource("static/admin/upload/").getPath();
