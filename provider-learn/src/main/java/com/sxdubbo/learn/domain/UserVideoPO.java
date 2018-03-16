@@ -24,7 +24,9 @@ public class UserVideoPO implements Serializable {
 
     private Integer videoId;
 
-    private Time progress;//视频学习进度
+    private Integer courseId;
+
+    private Double progress;//视频学习进度
 
     private Date createDate;
 
@@ -54,12 +56,20 @@ public class UserVideoPO implements Serializable {
         this.videoId = videoId;
     }
 
-    public Time getProgress() {
-        return progress;
+    public Integer getCourseId() {
+        return courseId;
     }
 
-    public void setProgress(Time progress) {
+    public void setCourseId(Integer courseId) {
+        this.courseId = courseId;
+    }
+
+    public void setProgress(Double progress) {
         this.progress = progress;
+    }
+
+    public double getProgress() {
+        return progress;
     }
 
     public Date getCreateDate() {

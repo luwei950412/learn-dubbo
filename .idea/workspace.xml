@@ -2,10 +2,245 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5041eefe-6445-4b29-a32f-4773d3e894b6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/lib/jave-1.0.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/403.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/403char.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/LOGO.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/LOGO1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/LOGOICON.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/top_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/font/_-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/font/_-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/img/hooker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/img/hooker1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_janeluo_ikanalyzer_2012_u6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_regexp_jakarta_regexp_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_smartcn_4_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_4_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_4_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_4_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_4_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_4_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/SearchController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/UserCourseController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/utils/LuceneUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/admin/css/new.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/index_search.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/lecture.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/new.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/qa.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/chapter/user_course_list.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/test/addtest.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/exam/403.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/exam/exam_list.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/exam/score_calculate.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/qa/front_qa.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/search/sousuo.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/user/front_lecture.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/exam/score_list.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/utils/BeanTransferUserCourse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/utils/BeanTransferUserTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/SysPermission.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/SysRole.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-api-learn/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-api-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-api-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-api-learn/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-api-learn/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-api-learn/target/provider-api-learn-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-api-learn/target/surefire-reports/TEST-com.sxdubboapi.learn.AppTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-api-learn/target/surefire-reports/com.sxdubboapi.learn.AppTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/SysPermissionPO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/SysRolePO.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/img_bg_1.jpg" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/img_bg_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/img_bg_2.jpg" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/img_bg_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/img_bg_3.jpg" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/images/img_bg_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/domain/Comment.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/domain/Comment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/domain/Course.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/domain/Course.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/domain/UserCourse.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/domain/UserCourse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/domain/UserVideo.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/domain/UserVideo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/domain/Video.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/domain/Video.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/CommentService.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/CommentService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/CourseService.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/CourseService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/UserCourseService.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/UserCourseService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/UserService.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/UserVideoService.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/UserVideoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/VideoService.class" afterPath="$PROJECT_DIR$/provider-api-learn/target/classes/com/sxdubboapi/learn/service/VideoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/.gitignore" afterPath="$PROJECT_DIR$/consumer-learn/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/pom.xml" afterPath="$PROJECT_DIR$/consumer-learn/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/ChapterController.java" afterPath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/ChapterController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/CourseController.java" afterPath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/CourseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/FrontController.java" afterPath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/FrontController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/IndexController.java" afterPath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/MycenterController.java" afterPath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/MycenterController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/UserController.java" afterPath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/VideoController.java" afterPath="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/VideoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/consumers.xml" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/consumers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/admin/js/login.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/admin/js/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/animate.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/animate.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/bootstrap.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/flexslider.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/flexslider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/icomoon.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/icomoon.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/magnific-popup.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/magnific-popup.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/pricing.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/pricing.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/style.css.map" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/fonts/bootstrap/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/fonts/icomoon/icomoon.svg" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/fonts/icomoon/icomoon.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/google_map.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/google_map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.countTo.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.countTo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.easing.1.3.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.easing.1.3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.flexslider-min.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.flexslider-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.magnific-popup.min.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.magnific-popup.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.min.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.stellar.min.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.stellar.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.waypoints.min.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/jquery.waypoints.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/magnific-popup-options.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/magnific-popup-options.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/main.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/modernizr-2.6.2.min.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/modernizr-2.6.2.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/owl.carousel.min.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/owl.carousel.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/respond.min.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/respond.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/simplyCountdown.js" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/simplyCountdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/_bootstrap-compass.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/_bootstrap-compass.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/_bootstrap-mincer.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/_bootstrap-mincer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/_bootstrap-sprockets.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/_bootstrap-sprockets.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_alerts.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_alerts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_badges.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_badges.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_breadcrumbs.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_breadcrumbs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_button-groups.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_button-groups.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_buttons.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_carousel.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_carousel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_close.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_close.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_code.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_code.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_component-animations.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_component-animations.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_dropdowns.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_dropdowns.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_forms.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_glyphicons.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_glyphicons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_grid.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_input-groups.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_input-groups.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_jumbotron.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_jumbotron.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_labels.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_labels.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_list-group.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_list-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_media.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_media.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_mixins.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_modals.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_modals.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_navbar.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_navbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_navs.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_navs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_normalize.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_normalize.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_pager.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_pager.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_pagination.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_pagination.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_panels.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_panels.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_popovers.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_popovers.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_print.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_print.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_progress-bars.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_progress-bars.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_responsive-embed.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_responsive-embed.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_responsive-utilities.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_responsive-utilities.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_scaffolding.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_scaffolding.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_tables.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_tables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_theme.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_theme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_thumbnails.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_thumbnails.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_tooltip.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_tooltip.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_type.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_type.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_utilities.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_utilities.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_variables.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_wells.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/_wells.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_alerts.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_alerts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_background-variant.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_background-variant.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_border-radius.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_border-radius.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_center-block.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_center-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_clearfix.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_clearfix.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_forms.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_gradients.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_gradients.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_grid-framework.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_grid-framework.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_grid.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_hide-text.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_hide-text.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_image.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_image.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_labels.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_labels.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_list-group.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_list-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_nav-divider.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_nav-divider.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_nav-vertical-align.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_nav-vertical-align.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_opacity.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_opacity.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_pagination.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_pagination.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_panels.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_panels.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_progress-bar.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_progress-bar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_reset-filter.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_reset-filter.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_reset-text.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_reset-text.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_resize.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_resize.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_responsive-visibility.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_responsive-visibility.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_size.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_size.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_tab-focus.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_tab-focus.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_table-row.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_table-row.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_text-emphasis.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_text-emphasis.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_text-overflow.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_text-overflow.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_vendor-prefixes.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_vendor-prefixes.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/style.scss" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/bootstrap/bootstrap-overrides.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/bootstrap/bootstrap-overrides.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/bootstrap/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/bootstrap/bootstrap-responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/bootstrap/bootstrap.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/bootstrap/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/elements.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/elements.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/new.css" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/new.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/footer.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/footer.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/header.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/header.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/right_menu.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/right_menu.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/chapter/chapter_manage.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/chapter/chapter_manage.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/course/course_list.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/course/course_list.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/index.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/index.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/common.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/common.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/lecture.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/lecture.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/login.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/login.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/user_view.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/user_view.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/video/video_manage.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/video/video_manage.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/index.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/index.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/user/login.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/user/login.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/base/header.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/base/header.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/course/favorite.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/course/favorite.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/exam/score.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/exam/score.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/profile/myprofile.ftl" afterPath="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/profile/myprofile.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/Comment.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/Comment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/Course.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/Course.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/UserCourse.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/UserCourse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/UserVideo.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/UserVideo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/Video.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/Video.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/CommentService.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/CommentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/CourseService.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/CourseService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/UserCourseService.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/UserCourseService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/UserService.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/UserVideoService.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/UserVideoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/VideoService.java" afterPath="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/VideoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/pom.xml" afterPath="$PROJECT_DIR$/provider-learn/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/CommentPO.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/CommentPO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/CoursePO.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/CoursePO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserCoursePO.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserCoursePO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserVideoPO.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserVideoPO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/VideoPO.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/VideoPO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/CommentRepository.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/CommentRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/CourseRepository.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/CourseRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/UserCourseRepository.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/UserCourseRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/UserRepository.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/UserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/UserVideoRepository.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/UserVideoRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/VideoRepository.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/VideoRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/CommentServiceImpl.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/CommentServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/CourseServiceImpl.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/CourseServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserCourseServiceImpl.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserCourseServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserVideoServiceImpl.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserVideoServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/VideoServiceImpl.java" afterPath="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/VideoServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/main/resources/providers.xml" afterPath="$PROJECT_DIR$/provider-learn/src/main/resources/providers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider-learn/src/test/java/com/sxdubbo/learn/ProviderLearnApplicationTests.java" afterPath="$PROJECT_DIR$/provider-learn/src/test/java/com/sxdubbo/learn/ProviderLearnApplicationTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/provider-learn/target/" />
     <ignored path="$PROJECT_DIR$/provider-api-learn/target/" />
@@ -30,153 +265,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MycenterController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/MycenterController.java">
+      <file leaf-file-name="header.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/header.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+            <state relative-caret-position="76">
+              <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
               <folding>
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#668#669#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#894#895#0" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
-                <element signature="e#1213#1214#0" expanded="true" />
-                <element signature="e#1266#1267#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
-                <element signature="e#1435#1436#0" expanded="true" />
-                <element signature="e#1486#1487#0" expanded="true" />
-                <element signature="e#1588#1589#0" expanded="true" />
+                <marker date="1521208394532" expanded="false" signature="7274:7288" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moment.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/moment/moment.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myprofile.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/profile/myprofile.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.ftl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/index.ftl">
+        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/index.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-228">
-              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-              <folding>
-                <element signature="e#136#143#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#aside#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#aside#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#aside#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#18625#18632#0#HTML" expanded="true" />
-                <element signature="e#18847#18854#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#19402#19409#0#HTML" expanded="true" />
-                <element signature="e#19507#19514#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#20061#20068#0#HTML" expanded="true" />
-                <element signature="e#20242#20249#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#35151#35157#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/new.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="242">
+              <caret line="171" column="0" lean-forward="true" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/login.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/base/header.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/layout.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4313">
-              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modify.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/profile/modify.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="64" column="27" lean-forward="false" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>comment</find>
+      <find>userVideo</find>
+      <find>userTest</find>
+      <find>chapter</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>userTest</replace>
+      <replace>userCourse</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -192,16 +322,63 @@
       <projects_view />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/course_history.css" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserTestServiceImpl.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/base/header.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/course/favorite.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/target/classes/static/mycenter/css/new.css" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/js/login.js" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/exam/score.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/exam/exam_list.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/new.css" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/exam/score_list.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/a.css" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/index_search.css" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/sass/bootstrap/mixins/_grid-framework.scss" />
+        <option value="$PROJECT_DIR$/consumer-learn/target/classes/com/sxdubbo/learn/config/ext.dic" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/user/login.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/course/course_list.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/base/header.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/new.css" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/qa.css" />
         <option value="$PROJECT_DIR$/provider-learn/pom.xml" />
-        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/test" />
-        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/header.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/login.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/static/admin/js/login.js" />
+        <option value="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/user_view.ftl" />
+        <option value="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/UserCourseService.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/common.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/CourseController.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/VideoController.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/UserVideoController.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/video/video_view.ftl" />
+        <option value="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserCoursePO.java" />
+        <option value="$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/UserCourse.java" />
+        <option value="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/UserCourseRepository.java" />
+        <option value="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/utils/BeanTransferUserCourse.java" />
+        <option value="$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserCourseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/MycenterController.java" />
         <option value="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/lecture.ftl" />
-        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/profile/myprofile.ftl" />
-        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/index.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/UserCourseController.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/course/course_list.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/chapter/chapter_manage.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/chapter/user_course_list.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/index.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/right_menu.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/test/addtest.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/ChoiceController.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/test/test_list.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/TOrFQuestionController.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/TestPaperController.java" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/test/choice_list.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/test/tOrF_list.ftl" />
+        <option value="$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/header.ftl" />
       </list>
     </option>
   </component>
@@ -213,24 +390,34 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="consumer-learn" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="consumer-learn" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="699" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>ArquillianJava</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -249,6 +436,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Default">
           <expand>
@@ -260,34 +448,27 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -295,7 +476,6 @@
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -304,7 +484,6 @@
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -314,17 +493,6 @@
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="Interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -332,47 +500,6 @@
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="mycenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="mycenter" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -381,148 +508,137 @@
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mycenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mycenter" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mycenter" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-api-learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="provider-api-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="provider-api-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mycenter" type="462c0819:PsiDirectoryNode" />
-              <item name="moment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-api-learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mycenter" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-api-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-learn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="mycenter" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mycenter" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mycenter" type="462c0819:PsiDirectoryNode" />
-              <item name="moment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="android.sdk.path" value="F:/adt-bundle-windows-x86_64/adt-bundle-windows-x86_64-20131030/sdk" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/provider-learn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sxdubbo.learn.utils" />
+      <recent name="com.sxdubbo.learn.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\spring boot project\learn-dubbo-master\learn-dubbo\consumer-learn\src\main\resources" />
+      <recent name="E:\shixun\learn-dubbo\consumer-learn\src\main\resources\static\front\images" />
+      <recent name="E:\shixun\learn-dubbo\consumer-learn\src\main\resources\static\mycenter\img" />
+      <recent name="E:\shixun\learn-dubbo\consumer-learn\src\main\resources\static\mycenter\font" />
+      <recent name="E:\shixun\learn-dubbo\consumer-learn\src\main\resources\static\admin\fonts" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -540,12 +656,14 @@
     <configuration name="ConsumerLearnApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sxdubbo.learn.ConsumerLearnApplication" />
+      <option name="SHOW_IN_DASHBOARD" value="true" />
       <module name="consumer-learn" />
       <envs />
     </configuration>
     <configuration name="ProviderLearnApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sxdubbo.learn.ProviderLearnApplication" />
+      <option name="SHOW_IN_DASHBOARD" value="true" />
       <module name="provider-learn" />
       <envs />
     </configuration>
@@ -603,6 +721,12 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SHOW_IN_DASHBOARD" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -638,6 +762,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5041eefe-6445-4b29-a32f-4773d3e894b6" name="Default" comment="" />
@@ -646,6 +773,13 @@
       <option name="presentableId" value="Default" />
       <updated>1515290993573</updated>
       <workItem from="1515290998167" duration="1452000" />
+      <workItem from="1520049312919" duration="1346000" />
+      <workItem from="1520216065489" duration="61335000" />
+      <workItem from="1520398954562" duration="18653000" />
+      <workItem from="1520480465149" duration="56371000" />
+      <workItem from="1520589774371" duration="118737000" />
+      <workItem from="1521079168689" duration="31913000" />
+      <workItem from="1521184300776" duration="15872000" />
     </task>
     <task id="LOCAL-00001" summary="2.28 luwei modify header.ftl">
       <created>1519802765340</created>
@@ -672,9 +806,9 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10070000" />
+    <option name="totallyTimeSpent" value="329710000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -684,61 +818,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22075783" sideWeight="0.48081023" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.51492536" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24546953" sideWeight="0.48507464" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21691974" sideWeight="0.4946695" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21691974" sideWeight="0.49200428" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.49573562" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18123667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2632375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25700164" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5782537" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -752,7 +864,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="2.28 luwei modify header.ftl" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -760,420 +874,441 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/elements.css">
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/index_search.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7410">
+        <state relative-caret-position="18316">
+          <caret line="964" column="28" lean-forward="false" selection-start-line="964" selection-start-column="28" selection-end-line="964" selection-end-column="28" />
+          <folding>
+            <marker date="1521109789429" expanded="true" signature="28628:28652" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/qa.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding>
+            <marker date="1521170161348" expanded="true" signature="26606:26630" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/front/css/new.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-learn/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1963">
+          <caret line="137" column="10" lean-forward="true" selection-start-line="137" selection-start-column="10" selection-end-line="137" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/consumers.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/course/favorite.ftl">
+    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2907">
-          <caret line="153" column="51" lean-forward="true" selection-start-line="153" selection-start-column="51" selection-end-line="153" selection-end-column="51" />
+        <state relative-caret-position="25">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/course/recent.ftl">
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/admin/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="-532">
+          <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/question/myfollow.ftl">
+    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserPO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/question/myquestion.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/exam/score.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/schedule/schedule.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/community/community.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="174" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/setting/mysetting.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/question/myanswer.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/target/classes/templates/mycenter/moment/moment.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/moment/moment.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/MycenterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-          <folding>
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1486#1487#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/header.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        <state relative-caret-position="475">
+          <caret line="40" column="86" lean-forward="true" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4313">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/base/header.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/profile/modify.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="64" column="27" lean-forward="false" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/ProviderLearnApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/test/java/com/sxdubboapi/learn/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/User.java" />
-    <entry file="file://$PROJECT_DIR$/provider-learn/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="83" column="46" lean-forward="false" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-api-learn/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-learn/mvnw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="116" column="4" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/ProviderLearnApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/test/java/com/sxdubboapi/learn/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/User.java" />
-    <entry file="file://$PROJECT_DIR$/provider-learn/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="83" column="46" lean-forward="false" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-api-learn/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-learn/mvnw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="116" column="4" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/ProviderLearnApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/VideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/header.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <caret line="29" column="94" lean-forward="false" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/user_view.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-760">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/admin/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="285">
+          <caret line="54" column="116" lean-forward="false" selection-start-line="54" selection-start-column="116" selection-end-line="54" selection-end-column="116" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state relative-caret-position="1539">
+          <caret line="104" column="46" lean-forward="false" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../3.14/learn-dubbo/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserTestPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../3.14/learn-dubbo/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserCoursePO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/common.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="48" column="74" lean-forward="true" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
+          <folding>
+            <element signature="e#2706#2760#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/VideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="189" column="64" lean-forward="false" selection-start-line="189" selection-start-column="64" selection-end-line="189" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="55" column="51" lean-forward="true" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/VideoPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/QaPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/video/watch.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserVideoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="78" column="55" lean-forward="false" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/UserVideoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/UserVideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/video/danmu.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-494">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/video/video_view.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="270" column="38" lean-forward="true" selection-start-line="270" selection-start-column="38" selection-end-line="270" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/video/video_manage.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/domain/UserCoursePO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/service/UserCourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-api-learn/src/main/java/com/sxdubboapi/learn/domain/UserCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding>
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/repository/UserCourseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="66" lean-forward="true" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/utils/BeanTransferUserCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/service/impl/UserCourseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-learn/src/main/java/com/sxdubbo/learn/utils/BeanTransferUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/MycenterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="89" column="64" lean-forward="true" selection-start-line="89" selection-start-column="64" selection-end-line="89" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/course/course_list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="65" column="122" lean-forward="false" selection-start-line="65" selection-start-column="122" selection-end-line="65" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/chapter/user_course_list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="90" column="81" lean-forward="true" selection-start-line="90" selection-start-column="81" selection-end-line="90" selection-end-column="81" />
+          <folding>
+            <element signature="e#3146#3166#0#HTML" expanded="false" />
+            <element signature="e#3511#3532#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/UserCourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/right_menu.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/user/lecture.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="188" column="95" lean-forward="true" selection-start-line="188" selection-start-column="95" selection-end-line="188" selection-end-column="95" />
+        <state relative-caret-position="171">
+          <caret line="157" column="56" lean-forward="false" selection-start-line="157" selection-start-column="56" selection-end-line="164" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/test/addtest.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/chapter/chapter_manage.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/TOrFQuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="80" column="56" lean-forward="true" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/TestPaperController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="69" column="48" lean-forward="false" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/ChoiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+          <folding>
+            <element signature="e#2849#2857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/test/tOrF_list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="72" column="123" lean-forward="false" selection-start-line="72" selection-start-column="123" selection-end-line="72" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/test/test_list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2413">
+          <caret line="29" column="63" lean-forward="true" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/test/choice_list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="79" column="121" lean-forward="true" selection-start-line="79" selection-start-column="121" selection-end-line="79" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/base/header.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+          <folding>
+            <marker date="1521208394532" expanded="false" signature="7274:7288" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/java/com/sxdubbo/learn/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/static/mycenter/css/new.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="43">
+          <caret line="349" column="54" lean-forward="true" selection-start-line="349" selection-start-column="54" selection-end-line="349" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/mycenter/profile/myprofile.ftl">
+    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/admin/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="242">
+          <caret line="171" column="0" lean-forward="true" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-learn/src/main/resources/templates/front/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding>
-            <element signature="e#136#143#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#aside#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#aside#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#aside#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#18625#18632#0#HTML" expanded="true" />
-            <element signature="e#18847#18854#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#19402#19409#0#HTML" expanded="true" />
-            <element signature="e#19507#19514#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#20061#20068#0#HTML" expanded="true" />
-            <element signature="e#20242#20249#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#35151#35157#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1229,12 +1364,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>provider-learn</last-edited>
+          <last-edited>consumer-learn</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

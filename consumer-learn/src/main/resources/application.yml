@@ -9,5 +9,16 @@ spring:
     multipart:
       max-file-size: 100Mb
       max-request-size: 100Mb
+  mail:
+       host: smtp.163.com
+       username: 13218016163@163.com
+       password: luwei950412
+       properties:
+          mail:
+            smtp:
+              auth: true
+              starttls:
+                  enable: true
+                  required: true
 server:
   port: 8012

@@ -28,6 +28,14 @@
     <bean id="commentService" class="com.sxdubbo.learn.service.impl.CommentServiceImpl"/>
     <bean id="bulletScreenService" class="com.sxdubbo.learn.service.impl.BulletScreenServiceImpl"/>
 
+    <bean id="choiceQuestionService" class="com.sxdubbo.learn.service.impl.ChoiceQuestionServiceImpl"/>
+    <bean id="tOrFQuestionService" class="com.sxdubbo.learn.service.impl.TOrFQuestionServiceImpl"/>
+    <bean id="testPaperService" class="com.sxdubbo.learn.service.impl.TestPaperServiceImpl"/>
+    <bean id="userTestService" class="com.sxdubbo.learn.service.impl.UserTestServiceImpl"/>
+    <bean id="qaService" class="com.sxdubbo.learn.service.impl.QaServiceImp"/>
+    <bean id="qaReplyService" class="com.sxdubbo.learn.service.impl.QaReplyServiceImp"/>
+
+
     <dubbo:service interface="com.sxdubboapi.learn.service.UserService" ref="userService" timeout="10000"/>
     <dubbo:service interface="com.sxdubboapi.learn.service.RedisService" ref="redisService" timeout="10000"/>
     <dubbo:service interface="com.sxdubboapi.learn.service.CourseService" ref="courseService" timeout="10000"/>
@@ -36,8 +44,12 @@
     <dubbo:service interface="com.sxdubboapi.learn.service.UserCourseService" ref="userCourseService" timeout="10000"/>
     <dubbo:service interface="com.sxdubboapi.learn.service.UserVideoService" ref="userVideoService" timeout="10000"/>
     <dubbo:service interface="com.sxdubboapi.learn.service.CommentService" ref="commentService" timeout="10000"/>
-    <dubbo:service interface="com.sxdubboapi.learn.service.BulletScreenService" ref="bulletScreenService"
-                   timeout="10000"/>
+    <dubbo:service interface="com.sxdubboapi.learn.service.BulletScreenService" ref="bulletScreenService" timeout="10000"/>
 
-
+    <dubbo:service interface="com.sxdubboapi.learn.service.ChoiceQuestionService" ref="choiceQuestionService" timeout="10000"/>
+    <dubbo:service interface="com.sxdubboapi.learn.service.TOrFQuestionService" ref="tOrFQuestionService" timeout="10000"/>
+    <dubbo:service interface="com.sxdubboapi.learn.service.TestPaperService" ref="testPaperService" timeout="10000"/>
+    <dubbo:service interface="com.sxdubboapi.learn.service.UserTestService" ref="userTestService" timeout="10000"/>
+    <dubbo:service interface="com.sxdubboapi.learn.service.QaService" ref="qaService" timeout="10000"/>
+    <dubbo:service interface="com.sxdubboapi.learn.service.QaReplyService" ref="qaReplyService" timeout="10000"/>
 </beans>

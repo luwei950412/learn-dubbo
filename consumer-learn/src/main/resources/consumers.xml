@@ -18,4 +18,13 @@
     <dubbo:reference id="videoService" interface="com.sxdubboapi.learn.service.VideoService"/>
     <dubbo:reference id="commentService" interface="com.sxdubboapi.learn.service.CommentService"/>
     <dubbo:reference id="redisService" interface="com.sxdubboapi.learn.service.RedisService"/>
+    <dubbo:reference id="userVideoService" interface="com.sxdubboapi.learn.service.UserVideoService"/>
+    <dubbo:reference id="userCourseService" interface="com.sxdubboapi.learn.service.UserCourseService"/>
+
+    <dubbo:reference id="choiceQuestionService" interface="com.sxdubboapi.learn.service.ChoiceQuestionService"/>
+    <dubbo:reference id="tOrFQuestionService" interface="com.sxdubboapi.learn.service.TOrFQuestionService"/>
+    <dubbo:reference id="testPaperService" interface="com.sxdubboapi.learn.service.TestPaperService"/>
+    <dubbo:reference id="userTestService" interface="com.sxdubboapi.learn.service.UserTestService"/>
+    <dubbo:reference id="qaService" interface="com.sxdubboapi.learn.service.QaService"/>
+    <dubbo:reference id="qaReplyService" interface="com.sxdubboapi.learn.service.QaReplyService"/>
 </beans>

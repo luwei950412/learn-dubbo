@@ -17,5 +17,7 @@ public interface UserRepository extends JpaRepository<UserPO, Long> {
 
     public UserPO findById(Integer id);
 
+    public List<UserPO> findByUserType(Integer userType);
+
 
 }

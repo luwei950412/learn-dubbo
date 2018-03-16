@@ -1,6 +1,7 @@
 package com.sxdubboapi.learn.service;
 
 import com.sxdubboapi.learn.domain.Comment;
+import com.sxdubboapi.learn.domain.User;
 
 import java.util.List;
 
@@ -11,8 +12,15 @@ import java.util.List;
 public interface CommentService {
 
 
-    public Comment findByVideoId(Integer videoId);
+//    public Comment findByVideoId(Integer videoId);
     public List<Comment> findAllComment();
 
-    public List<Comment> findByUserId(Integer userId);
+    public List<Comment> findByUser(User user);
+
+
+    //    fxb
+//    public Comment findByUserIdAndVideoId(Integer userId,Integer videoId);
+    public List<Comment> findByVideoId(Integer videoId);
+
+    public Comment addComment(Comment comment);
 }

@@ -102,34 +102,35 @@
                                             <#if "${lecture.userType}" != "1">
                                                 <#assign count=count+1>
                                             <tr role="row" class="odd">
-                                                <td class="">${lecture.username}</td>
+                                                <td class=""><img width="50px" height="50px" style="border-radius: 30%" src="${base}/admin/upload/${(lecture.headimg)!}" />
+                                                &nbsp;&nbsp;&nbsp;${lecture.username}</td>
                                                 <td class="sorting_1">${lecture.email}</td>
                                                 <td class="">
                                                     <#if lecture.userStatus ==0 ><i class="fa fa-check-square-o"
                                                                                     style="color: green">正常</i>
-                                                        <#if "${userInfo.userType}"=="0">
-                                                            <#if "${lecture.userType}"=="0">
+                                                        <#if "${(userInfo.userType)!}"=="0">
+                                                            <#if "${(lecture.userType)!}"=="0">
                                                                 <span title="您无权冻结管理员">[冻结锁定]</span>
                                                             <#else>
-                                                                <a href="/user/view?id=${lecture.id}" title="操作冻结">[冻结锁定]</a>
+                                                                <a href="${base}/user/view?id=${lecture.id}" title="操作冻结">[冻结锁定]</a>
                                                             </#if>
                                                         </#if>
                                                     <#elseif lecture.userStatus == 1><i class="fa fa-hourglass-half"
                                                                                         style="color:orange">待审核</i>
-                                                        <#if "${userInfo.userType}"=="0">
-                                                            <a href="/user/view?id=${lecture.id}"
+                                                        <#if "${(userInfo.userType)!}"=="0">
+                                                            <a href="${base}/user/view?id=${lecture.id}"
                                                                title="操作通过审核">[审核操作]</a>
                                                         </#if>
                                                     <#elseif lecture.userStatus == 2>
                                                         <i class="fa fa-lock" style="color: red">锁定</i>
-                                                        <#if "${userInfo.userType}"=="0">
-                                                            <a href="/user/view?id=${lecture.id}"
+                                                        <#if "${(userInfo.userType)!}"=="0">
+                                                            <a href="${base}/user/view?id=${lecture.id}"
                                                                title="操作解除冻结">[解除冻结]</a>
                                                         </#if>
                                                     <#else>
                                                         <i class="fa fa-times" style="color: grey">审核未通过</i>
-                                                        <#if "${userInfo.userType}"=="0">
-                                                            <a href="/user/view?id=${lecture.id}"
+                                                        <#if "${(userInfo.userType)!}"=="0">
+                                                            <a href="${base}/user/view?id=${lecture.id}"
                                                                title="操作审核">[重新审核]</a>
                                                         </#if>
                                                     </#if>
@@ -146,8 +147,8 @@
                                                     &nbsp;
                                                 </#if></td>
                                                 <td>
-                                                    <#if "${userInfo.userType}"=="0">
-                                                        <a href="/user/delete?id=${lecture.id}"
+                                                    <#if "${(userInfo.userType)!}"=="0">
+                                                        <a href="${base}/user/delete?id=${lecture.id}"
                                                            onclick="javascript:return p_del()" title="删除">[删除]</a>
 
                                                         <a href="" data-toggle="modal" data-target="#myModal_update${count}" title="修改用户信息">[修改]</a>
@@ -176,7 +177,7 @@
                                                                         修改用户信息
                                                                     </h4>
                                                                 </div>
-                                                                <form action="/user/updateUser" method="post" enctype="multipart/form-data">
+                                                                <form action="${base}/user/updateUser" method="post" enctype="multipart/form-data">
                                                                     <div class="modal-body" style="height:550px;width:400px">
 
                                                                         <label for="name" class="col-sm-2 control-label">用户名</label>
@@ -212,7 +213,7 @@
                                                                         </div>
                                                                         <label for="name" class="col-sm-2 control-label">职位</label>
                                                                         <div class="col-sm-10">
-                                                                            <input type="text" style="width: 400px;" class="form-control" name="city"
+                                                                            <input type="text" style="width: 400px;" class="form-control" name="position"
                                                                                    value="${(lecture.position)!}" placeholder="请输入用户职位">
                                                                         </div>
 

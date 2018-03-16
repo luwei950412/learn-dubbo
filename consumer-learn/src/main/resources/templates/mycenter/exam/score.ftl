@@ -1,148 +1,70 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="${base}/mycenter/css/new.css" />
+</head>
+<body>
+<div class="paper">
+    <div class="test_title_span"><span>${(course.courseName)!}测试</span></div>
+    <div class="test_title_first">
+        <div class="test_title_first_1">考试科目：<span class="test_title_span2">${(course.courseName)!}</span></div>
+        <div class="test_title_first_1">考试时间：<span class="test_title_span2">30分钟</span></div>
+        <div class="test_title_first_1">成绩：<img class="test_title_span4"width="120px" height="85px" src="img/hooker1.png"><span class="test_title_span3">${(userTest.score)}</span></div>
+    </div>
+    <div class="test_title_second">
+        <div class="test_title_second_1">出题老师：<span class="test_title_span2">${(user.username)!}</span></div>
+        <div class="test_title_second_1">考试日期：<span class="test_title_span2">${(userTest.createDate?date)!}</span></div>
+        <div class="test_title_second_1">考试者：<span class="test_title_span2">${(user1.username)!}</span></div>
+    </div>
+    <div class="test_title_third">
+        <div class="test_title_third_1">一、选择题（共${(choiceQuestionLists?size)!}题，每题${(100/((choiceQuestionLists?size)+(tOrFQuestionLists?size)))?string('#.#')}分）</div>
+    </div>
+    <div class="test_title_forth">
+        <#list "${(userTest.choiceQuestionNum)!}"?split("/") as cu>
+        <#list choiceQuestionLists as cq>
+            <#if cu_index == cq_index>
+            <div class="option_main">
+                <div class="content_span">${(cq_index+1)}、${(cq.content)!}：
+                    <div class="content_span_1">
+                        <#if cq.answer!=cu><div class="false">你选了(${(cu)!})&nbsp&nbsp&nbsp× 错误<br><br>正确答案:${(cq.answer)!}</div>
+                        <#else><div class="true">你选了(${(cu)!})&nbsp&nbsp&nbsp√ 正确</div>
+                        </#if>
+                    </div>
+                </div>
+                <div class="option">&nbsp&nbsp&nbsp(A).&nbsp${(cq.op1)!}</div>
+                <div class="option">&nbsp&nbsp&nbsp(B).&nbsp${(cq.op2)!}</div>
+                <div class="option">&nbsp&nbsp&nbsp(C).&nbsp${(cq.op3)!}</div>
+                <div class="option">&nbsp&nbsp&nbsp(D).&nbsp${(cq.op4)!}</div>
+            </div>
+            </#if>
+        </#list>
+        </#list>
+    </div>
+    <div class="test_title_third">
+        <div class="test_title_third_1">二、判断题（共${(tOrFQuestionLists?size)!}题，每题${(100/((choiceQuestionLists?size)+(tOrFQuestionLists?size)))?string('#.#')}分）</div>
+    </div>
+    <div class="test_title_forth">
+        <#list "${(userTest.tOrFQuestionNum)!}"?split("/") as tu>
+        <#list tOrFQuestionLists as tq>
+            <#if tu_index == tq_index>
+            <div class="option_main">
+                <#if tq.answer!=tu></#if>
+                <div class="content_span">${(tq_index+1)}、${(tq.content)!}：
+                    <div class="content_span_1">
+                        <#if tq.answer!=tu><div class="false">你选了(${(tu)!})&nbsp&nbsp&nbsp× 错误<br><br>正确答案:${(tq.answer)!}</div>
+                        <#else><div class="true">你选了(${(tu)!})&nbsp&nbsp&nbsp√ 正确</div>
+                        </#if>
+                    </div>
+                </div>
+                <#--答案:${(tq.answer)!}你的答案${tu}-->
+                <div class="option">&nbsp&nbsp&nbsp(A).&nbsp正确</div>
+                <div class="option">&nbsp&nbsp&nbsp(B).&nbsp错误</div>
+            </div>
+            </#if>
+        </#list>
+        </#list>
+    </div>
 
-    <style type="text/css">
-        #active4{
-            color:black;
-            font-weight: bold;
-        }
-    </style>
-    <style>
-        #p_active1{  display: none;  }
-        #p_active2{  display: none;  }
-        #p_active3{  display: none;  }
-        #p_active5{  display: none;  }
-        #p_active6{  display: none;  }
-        #p_active7{  display: none;  }
-    </style>
-
-<#include  "../base/header.ftl" >
-
-
-
-<!-- scripts -->
-<script src="js/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui-1.10.2.custom.min.js"></script>
-<!-- knob -->
-<script src="js/jquery.knob.js"></script>
-<!-- flot charts -->
-<script src="js/jquery.flot.js"></script>
-<script src="js/jquery.flot.stack.js"></script>
-<script src="js/jquery.flot.resize.js"></script>
-<script src="js/theme.js"></script>
-
-<script type="text/javascript">
-    $(function () {
-
-        // jQuery Knobs
-        $(".knob").knob();
-
-
-
-        // jQuery UI Sliders
-        $(".slider-sample1").slider({
-            value: 100,
-            min: 1,
-            max: 500
-        });
-        $(".slider-sample2").slider({
-            range: "min",
-            value: 130,
-            min: 1,
-            max: 500
-        });
-        $(".slider-sample3").slider({
-            range: true,
-            min: 0,
-            max: 500,
-            values: [ 40, 170 ],
-        });
-
-
-
-        // jQuery Flot Chart
-        var visits = [[1, 50], [2, 40], [3, 45], [4, 23],[5, 55],[6, 65],[7, 61],[8, 70],[9, 65],[10, 75],[11, 57],[12, 59]];
-        var visitors = [[1, 25], [2, 50], [3, 23], [4, 48],[5, 38],[6, 40],[7, 47],[8, 55],[9, 43],[10,50],[11,47],[12, 39]];
-
-        var plot = $.plot($("#statsChart"),
-                [ { data: visits, label: "Signups"},
-                    { data: visitors, label: "Visits" }], {
-                    series: {
-                        lines: { show: true,
-                            lineWidth: 1,
-                            fill: true,
-                            fillColor: { colors: [ { opacity: 0.1 }, { opacity: 0.13 } ] }
-                        },
-                        points: { show: true,
-                            lineWidth: 2,
-                            radius: 3
-                        },
-                        shadowSize: 0,
-                        stack: true
-                    },
-                    grid: { hoverable: true,
-                        clickable: true,
-                        tickColor: "#f9f9f9",
-                        borderWidth: 0
-                    },
-                    legend: {
-                        // show: false
-                        labelBoxBorderColor: "#fff"
-                    },
-                    colors: ["#a7b5c5", "#30a0eb"],
-                    xaxis: {
-                        ticks: [[1, "JAN"], [2, "FEB"], [3, "MAR"], [4,"APR"], [5,"MAY"], [6,"JUN"],
-                            [7,"JUL"], [8,"AUG"], [9,"SEP"], [10,"OCT"], [11,"NOV"], [12,"DEC"]],
-                        font: {
-                            size: 12,
-                            family: "Open Sans, Arial",
-                            variant: "small-caps",
-                            color: "#697695"
-                        }
-                    },
-                    yaxis: {
-                        ticks:3,
-                        tickDecimals: 0,
-                        font: {size:12, color: "#9da3a9"}
-                    }
-                });
-
-        function showTooltip(x, y, contents) {
-            $('<div id="tooltip">' + contents + '</div>').css( {
-                position: 'absolute',
-                display: 'none',
-                top: y - 30,
-                left: x - 50,
-                color: "#fff",
-                padding: '2px 5px',
-                'border-radius': '6px',
-                'background-color': '#000',
-                opacity: 0.80
-            }).appendTo("body").fadeIn(200);
-        }
-
-        var previousPoint = null;
-        $("#statsChart").bind("plothover", function (event, pos, item) {
-            if (item) {
-                if (previousPoint != item.dataIndex) {
-                    previousPoint = item.dataIndex;
-
-                    $("#tooltip").remove();
-                    var x = item.datapoint[0].toFixed(0),
-                            y = item.datapoint[1].toFixed(0);
-
-                    var month = item.series.xaxis.ticks[item.dataIndex].label;
-
-                    showTooltip(item.pageX, item.pageY,
-                            item.series.label + " of " + month + ": " + y);
-                }
-            }
-            else {
-                $("#tooltip").remove();
-                previousPoint = null;
-            }
-        });
-    });
-</script>
+</div>
 
 </body>
 </html>

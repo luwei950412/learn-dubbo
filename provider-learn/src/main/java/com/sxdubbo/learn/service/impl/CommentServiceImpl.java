@@ -1,16 +1,15 @@
 package com.sxdubbo.learn.service.impl;
 
 import com.sxdubbo.learn.domain.CommentPO;
-import com.sxdubbo.learn.domain.CoursePO;
 import com.sxdubbo.learn.domain.UserPO;
 import com.sxdubbo.learn.repository.CommentRepository;
+import com.sxdubbo.learn.utils.BeanTransferComment;
 import com.sxdubboapi.learn.domain.Comment;
-import com.sxdubboapi.learn.domain.Course;
+import com.sxdubboapi.learn.domain.User;
 import com.sxdubboapi.learn.service.CommentService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,12 +23,13 @@ public class CommentServiceImpl implements CommentService {
     public CommentRepository commentRepository;
 
     @Override
-    public Comment findByVideoId(Integer videoId) {
-        Comment comment = new Comment();
-        CommentPO commentPO = new CommentPO();
-        commentPO = commentRepository.findByVideoId(videoId);
-        BeanUtils.copyProperties(commentPO, comment);
-        return comment;
+    public List<Comment> findByVideoId(Integer videoId) {
+        List<Comment> commentList = new ArrayList<Comment>();
+        List<CommentPO> commentPOList = new ArrayList<CommentPO>();
+        commentPOList = commentRepository.findByVideoId(videoId);
+        BeanTransferComment.transferCommentList(commentPOList,commentList);
+
+        return commentList;
     }
 
     @Override
@@ -46,16 +46,25 @@ public class CommentServiceImpl implements CommentService {
         return commentList;
     }
     @Override
-    public List<Comment> findByUserId(Integer userId){
+    public List<Comment> findByUser(User user){
         List<Comment> commentList= new ArrayList<Comment>();
+        UserPO userPO = new UserPO();
+        BeanUtils.copyProperties(user,userPO);
+        List<CommentPO> commentPOList = commentRepository.findByUserPO(userPO);
 
-//        UserPO userPO = new UserPO();
-        List<CommentPO> commentPOList = commentRepository.findByUserId(userId);
-        for(int i = 0 ; i < commentPOList.size() ; i++) {
-            Comment comment = new Comment();
-            BeanUtils.copyProperties(commentPOList.get(i), comment);
-            commentList.add(comment);
-        }
+        BeanTransferComment.transferCommentList(commentPOList,commentList);
+
         return commentList;
+    }
+
+    @Override
+    public Comment addComment(Comment comment){
+        CommentPO commentPO=new CommentPO();
+        BeanTransferComment.transferComment(comment,commentPO);
+//        BeanUtils.copyProperties(comment,commentPO);
+        CommentPO commentPO1=commentRepository.save(commentPO);
+//        Comment comment1=new Comment();
+//        BeanUtils.copyProperties(commentPO1,comment1);
+        return comment;
     }
 }

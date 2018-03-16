@@ -1,4 +1,5 @@
-		function memberLogin(){
+
+function memberLogin(){
 			var $loginWindowForm = $("#loginWindowForm");
 			var loginWindowMemberUsername=document.getElementById("loginWindowMemberUsername").value;
 			var loginWindowMemberPassword=document.getElementById("loginWindowMemberPassword").value;
@@ -11,6 +12,7 @@
 				alert("请输入密码");
 				return false;
 			}
+
 			$.ajax({
 				url:  "/user/login",
 				data: $loginWindowForm.serialize(),
@@ -18,12 +20,27 @@
 				cache: false,
 				success: function(data) {
 					// alert("hello1");
-					if (data == "success") {
-						alert("登录成功");
-						window.location.href="/admin/index";
-					}else{
-						alert("登录失败，原因：可能不存在这样的用户名或者密码错误！！！");
+					switch (data){
+						case "success":
+                            alert("登录成功");
+                            window.location.href="/admin/index";break;
+						case "no_right":
+                            alert("登录失败，原因：您是普通用户，不能登录管理界面！！！");break;
+						case "frozen":
+                            alert("登录失败，原因：您已经被冻结了，请联系管理员解除冻结！！！");
+                            window.location.href="/front/index";
+                            break;
+						default:
+                            alert("登录失败，原因：可能不存在这样的用户名或者密码错误！！！");break;
 					}
+					// if (data == "success") {
+					// 	alert("登录成功");
+					// 	window.location.href="/admin/index";
+					// }else if(date == "no_right"){
+                     //    alert("登录失败，原因：您是普通用户，不能登录管理界面！！！");
+					// }else{
+                     //    alert("登录失败，原因：可能不存在这样的用户名或者密码错误！！！");
+					// }
 				},
 				complete: function() {
 					// alert("hello");

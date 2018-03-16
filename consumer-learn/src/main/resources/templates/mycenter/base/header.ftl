@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="css/elements.css" />
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="/mycenter/css/new.css" />
+    <link rel="stylesheet" type="text/css" href="css/zcity.css">
+    <link rel="stylesheet" type="text/css" href="${base}/mycenter/css/course_history.css">
 
     <!-- this page specific styles -->
     <link rel="stylesheet" href="css/compiled/index.css" type="text/css" media="screen" />
@@ -29,7 +31,11 @@
     <![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
-
+<#if "${(userFront.username)!}"=="">
+<script>
+    window.location.href="/front/index";
+</script>
+</#if>
 <!-- navbar -->
 <div class="navbar navbar-inverse">
     <div class="navbar-inner">
@@ -39,7 +45,7 @@
             <span class="icon-bar"></span>
         </button>
 
-        <a class="brand" href="#"><img src="img/logo.png" /></a>
+        <a class="brand" href="${base}/front/index"><img src="img/logo.png" /></a>
 
         <ul class="nav pull-right">
             <li class="hidden-phone">
@@ -182,17 +188,12 @@
                 <div class="arrow_border"></div>
             </div>
         </div>
-            <a class="dropdown-toggle" href="#">
+            <a href="${base}/mycenter/favorite?userId=${(userFront.id)!}">
                 <div id="active2">
                 <i class="icon-signal"></i>
                 <span>课程</span>
-                <i class="icon-chevron-down"></i>
                 </div>
             </a>
-            <ul class="submenu">
-                <li><a href="recent"><span class="drop-item"">最近学习</span></a></li>
-                <li><a href="favorite"><span class="drop-item">我的收藏</span></a></li>
-            </ul>
         </li>
         <li>
             <div id="p_active3">
@@ -221,7 +222,7 @@
                     <div class="arrow_border"></div>
                 </div>
             </div>
-            <a href="score"id="active4">
+            <a href="score_list"id="active4">
                 <div id="active4">
                 <i class="icon-edit"></i>
                 <span>成绩</span>

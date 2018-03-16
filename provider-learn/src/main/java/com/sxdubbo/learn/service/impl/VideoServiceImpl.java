@@ -47,12 +47,27 @@ public class VideoServiceImpl implements VideoService {
     }
 
     @Override
+    public List<Video> findByCourseId(Integer courseId){
+        List<Video> videoList= new ArrayList<Video>();
+
+//        UserPO userPO = new UserPO();
+        List<VideoPO> videoPOList = videoRepository.findByCourseId(courseId);
+        for(int i = 0 ; i < videoPOList.size() ; i++) {
+            Video video = new Video();
+            BeanUtils.copyProperties(videoPOList.get(i), video);
+            videoList.add(video);
+        }
+        return videoList;
+    }
+
+    @Override
     public Video findById(Integer id){
         Video video = new Video();
         VideoPO videoPO =  videoRepository.findOne(id);
         BeanUtils.copyProperties(videoPO, video);
         return video;
     }
+
 
     @Override//
     public void deleteVideo(Integer id){

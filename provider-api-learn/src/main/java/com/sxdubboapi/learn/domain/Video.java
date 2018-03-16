@@ -20,7 +20,7 @@ public class Video implements Serializable{
 
     private String videoName;
 
-    private String videoDuration;
+    private Double videoDuration;
 
     private String filePath;
 
@@ -70,11 +70,11 @@ public class Video implements Serializable{
         this.videoName = videoName;
     }
 
-    public String getVideoDuration() {
+    public Double getVideoDuration() {
         return videoDuration;
     }
 
-    public void setVideoDuration(String videoDuration) {
+    public void setVideoDuration(Double videoDuration) {
         this.videoDuration = videoDuration;
     }
 

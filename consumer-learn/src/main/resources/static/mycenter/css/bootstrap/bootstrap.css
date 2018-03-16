@@ -282,7 +282,6 @@ a:focus {
 [class*="span"] {
   float: left;
   min-height: 1px;
-  margin-left: 20px;
 }
 
 .container,
@@ -1181,7 +1180,7 @@ input[type="reset"],
 input[type="button"],
 input[type="radio"],
 input[type="checkbox"] {
-  width: auto;
+  width:66px;
 }
 
 select,

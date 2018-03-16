@@ -1,288 +1,79 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Education &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 
-
-
-
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:site_name" content=""/>
-    <meta property="og:description" content=""/>
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
-
-    <!-- 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet"> -->
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <!-- Flexslider  -->
-    <link rel="stylesheet" href="css/flexslider.css">
-
-    <!-- Pricing -->
-    <link rel="stylesheet" href="css/pricing.css">
-
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body>
-
-<div class="fh5co-loader"></div>
-
-<div id="page">
-    <nav class="fh5co-nav" role="navigation">
-        <div class="top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 text-right">
-
-                        <p class="num">Call: +01 123 456 7890</p>
-                        <ul class="fh5co-social">
-                            <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                            <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                            <li><a href="#"><i class="icon-dribbble2"></i></a></li>
-                            <li><a href="#"><i class="icon-github"></i></a></li>
-                        </ul>
+<#include "base/header.ftl">
+<aside id="fh5co-hero">
+    <div class="flexslider">
+        <ul class="slides">
+            <li style="background-image: url(images/img_bg_1.jpg);">
+                <div class="overlay-gradient"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                            <div class="slider-text-inner">
+                                <h1>系统学习Docker，践行DevOps理念</h1>
+                                <p><a class="btn btn-primary btn-lg" href="#">开始学习!</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="top-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-2">
-                        <div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>LEARN<span>.</span></a></div>
-                    </div>
-                    <form>
-                        <input type="text">
-
-                    </form>
-
-                    <div class="col-xs-10 text-right menu-1">
-
-                        <ul>
-                            <li class="active"><a href="index.html">首页</a></li>
-                            <li style=""><a href="courses.html">课程</a></li>
-                            <li><a href="teacher.html">教师</a></li>
-                            <li><a href="about.html">问答</a></li>
-                            <li><a href="pricing.html">发现</a></li>
-                            <!--							<li class="has-dropdown">
-                                                            <a href="blog.html">Blog</a>
-                                                            <ul class="dropdown">
-                                                                <li><a href="#">Web Design</a></li>
-                                                                <li><a href="#">eCommerce</a></li>
-                                                                <li><a href="#">Branding</a></li>
-                                                                <li><a href="#">API</a></li>
-                                                            </ul>
-                                                        </li>
-                            -->
-                            <li><a href="contact.html">联系我们</a></li>
-                            <li class="btn-cta"><a href="#"><span>登录</span></a></li>
-                            <li class="btn-cta"><a href="#"><span>注册</span></a></li>
-                        </ul>
+            </li>
+            <li style="background-image: url(images/img_bg_2.jpg);">
+                <div class="overlay-gradient"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                            <div class="slider-text-inner">
+                                <h1>学会TensorFlow,抢占人工智能前沿阵地</h1>
+                                <p><a class="btn btn-primary btn-lg btn-learn" href="#">开始学习!</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <aside id="fh5co-hero">
-        <div class="flexslider">
-            <ul class="slides">
-                <li style="background-image: url(images/img_bg_1.jpg);">
-                    <div class="overlay-gradient"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center slider-text">
-                                <div class="slider-text-inner">
-                                    <h1>系统学习Docker，践行DevOps理念</h1>
-                                    <p><a class="btn btn-primary btn-lg" href="#">开始学习!</a></p>
-                                </div>
+            </li>
+            <li style="background-image: url(images/img_bg_3.jpg);">
+                <div class="overlay-gradient"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                            <div class="slider-text-inner">
+                                <h1>学习人工智能，从这开始</h1>
+                                <p><a class="btn btn-primary btn-lg btn-learn" href="#">开始学习!</a></p>
                             </div>
                         </div>
                     </div>
-                </li>
-                <li style="background-image: url(images/img_bg_2.jpg);">
-                    <div class="overlay-gradient"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center slider-text">
-                                <div class="slider-text-inner">
-                                    <h1>学会TensorFlow,抢占人工智能前沿阵地</h1>
-                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">开始学习!</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li style="background-image: url(images/img_bg_3.jpg);">
-                    <div class="overlay-gradient"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center slider-text">
-                                <div class="slider-text-inner">
-                                    <h1>学习人工智能，从这开始</h1>
-                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">开始学习!</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </aside>
+                </div>
+            </li>
+        </ul>
+    </div>
+</aside>
 
-    <div id="fh5co-course-categories">
+
+
+<div id="fh5co-course-categories">
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
                     <h2>热门推荐</h2>
-
                 </div>
             </div>
             <div class="row">
+            <#assign count1 = 0 />
+            <#list courseList?sort_by("score")?reverse as course1>
                 <div class="col-md-3 col-sm-6 text-center animate-box">
+                <#assign count1 = count1 +1 />
+                <#if count1 <= 8>
                     <div class="services">
-
-
+                        <span class="icon">
+                            <a href="${base}/chapter/listChapter?id=${course1.id}">
+                                <img src="${base}/admin/upload/${course1.filePath}" style="width:260px; height:154px;">
+                            </a>
                         </span>
                         <div class="desc">
-                            <h3><a href="#">Business</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                            <p><a href="${base}/chapter/listChapter?id=${course1.id}">${course1.courseName}</a></p>
                         </div>
                     </div>
+                </#if>
                 </div>
-                <div class="col-md-3 col-sm-6 text-center animate-box">
-                    <div class="services">
-						<span class="icon">
-							<i class="icon-heart4"></i>
-						</span>
-                        <div class="desc">
-                            <h3><a href="#">Health &amp; Psychology</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 text-center animate-box">
-                    <div class="services">
-						<span class="icon">
-							<i class="icon-banknote"></i>
-						</span>
-                        <div class="desc">
-                            <h3><a href="#">Accounting</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 text-center animate-box">
-                    <div class="services">
-						<span class="icon">
-							<i class="icon-lab2"></i>
-						</span>
-                        <div class="desc">
-                            <h3><a href="#">Science &amp; Technology</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 text-center animate-box">
-                    <div class="services">
-						<span class="icon">
-							<i class="icon-photo"></i>
-						</span>
-                        <div class="desc">
-                            <h3><a href="#">Art &amp; Media</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 text-center animate-box">
-                    <div class="services">
-						<span class="icon">
-							<i class="icon-home-outline"></i>
-						</span>
-                        <div class="desc">
-                            <h3><a href="#">Real Estate</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 text-center animate-box">
-                    <div class="services">
-						<span class="icon">
-							<i class="icon-bubble3"></i>
-						</span>
-                        <div class="desc">
-                            <h3><a href="#">Language</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 text-center animate-box">
-                    <div class="services">
-						<span class="icon">
-							<i class="icon-world"></i>
-						</span>
-                        <div class="desc">
-                            <h3><a href="#">Web &amp; Programming</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                        </div>
-                    </div>
-                </div>
+            </#list>
             </div>
         </div>
     </div>
@@ -295,84 +86,59 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-6 text-center animate-box">
                             <span class="icon"><i class="icon-world"></i></span>
+                            <#--数据还未获取-->
                             <span class="fh5co-counter js-counter" data-from="0" data-to="3297" data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="fh5co-counter-label">Foreign Followers</span>
+                            <span class="fh5co-counter-label">已访问人数</span>
                         </div>
                         <div class="col-md-3 col-sm-6 text-center animate-box">
                             <span class="icon"><i class="icon-study"></i></span>
                             <span class="fh5co-counter js-counter" data-from="0" data-to="3700" data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="fh5co-counter-label">Students Enrolled</span>
+                            <span class="fh5co-counter-label">已注册用户</span>
                         </div>
                         <div class="col-md-3 col-sm-6 text-center animate-box">
                             <span class="icon"><i class="icon-bulb"></i></span>
                             <span class="fh5co-counter js-counter" data-from="0" data-to="5034" data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="fh5co-counter-label">Classes Complete</span>
+                            <span class="fh5co-counter-label">已完成课程</span>
                         </div>
                         <div class="col-md-3 col-sm-6 text-center animate-box">
                             <span class="icon"><i class="icon-head"></i></span>
                             <span class="fh5co-counter js-counter" data-from="0" data-to="1080" data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="fh5co-counter-label">Certified Teachers</span>
+                            <span class="fh5co-counter-label">已认证讲师</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+    <#--<div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>-->
 
     <div id="fh5co-course">
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                    <h2>Our Course</h2>
-                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                    <h2>新上好课</h2>
+                    <#--<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>-->
                 </div>
             </div>
             <div class="row">
+                <#assign count = 0 />
+                <#list courseList?sort_by("modifyDate")?reverse as course>
                 <div class="col-md-6 animate-box">
+                    <#assign count = count +1 />
+                    <#if count <= 4>
                     <div class="course">
-                        <a href="#" class="course-img" style="background-image: url(images/project-1.jpg);">
+                        <a href="${base}/chapter/listChapter?id=${course.id}" class="course-img" style="background-image: url(${base}/admin/upload/${course.filePath});">
                         </a>
                         <div class="desc">
-                            <h3><a href="#">Web Master</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                            <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+                            <h3>${course.courseName}</h3>
+                            <#--<p>${course.introduction}</p>-->
+                            <p></br></p>
+                            <span><a href="${base}/chapter/listChapter?id=${course.id}" class="btn btn-primary btn-sm btn-course">开始学习</a></span>
                         </div>
                     </div>
+                    </#if>
                 </div>
-                <div class="col-md-6 animate-box">
-                    <div class="course">
-                        <a href="#" class="course-img" style="background-image: url(images/project-2.jpg);">
-                        </a>
-                        <div class="desc">
-                            <h3><a href="#">Business &amp; Accounting</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                            <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                    <div class="course">
-                        <a href="#" class="course-img" style="background-image: url(images/project-3.jpg);">
-                        </a>
-                        <div class="desc">
-                            <h3><a href="#">Science &amp; Technology</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                            <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                    <div class="course">
-                        <a href="#" class="course-img" style="background-image: url(images/project-4.jpg);">
-                        </a>
-                        <div class="desc">
-                            <h3><a href="#">Health &amp; Psychology</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                            <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-                        </div>
-                    </div>
-                </div>
+                </#list>
             </div>
         </div>
     </div>
@@ -382,125 +148,118 @@
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                    <h2><span>Testimonials</span></h2>
+                    <h2><span>精英名师</span></h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="row animate-box">
                         <div class="owl-carousel owl-carousel-fullwidth">
+                    <#assign count=0 />
+                    <#list userList as user>
+                        <#if user.userType?number == 2>
+                            <#assign count = count + 1 />
+                            <#if count <= 3>
                             <div class="item">
                                 <div class="testimony-slide active text-center">
-                                    <div class="user" style="background-image: url(images/person1.jpg);"></div>
-                                    <span>Mary Walker<br><small>Students</small></span>
+                                    <a href="${base}/front/teacher?id=${user.id}">
+                                    <div class="user" style="background-image: url(${base}/admin/upload/${user.headimg});"></div>
+                                    </a>
+                                    <span>${user.username}<br><small>${(user.position)!}</small></span>
                                     <blockquote>
-                                        <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                                        <p>${(user.introduction)!}</p>
                                     </blockquote>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="testimony-slide active text-center">
-                                    <div class="user" style="background-image: url(images/person2.jpg);"></div>
-                                    <span>Mike Smith<br><small>Students</small></span>
-                                    <blockquote>
-                                        <p>&ldquo;Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-slide active text-center">
-                                    <div class="user" style="background-image: url(images/person3.jpg);"></div>
-                                    <span>Rita Jones<br><small>Teacher</small></span>
-                                    <blockquote>
-                                        <p>&ldquo;Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
+                            </#if>
+                        </#if>
+                        </#list>
                     </div>
+
+                </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="fh5co-blog">
-        <div class="container">
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <h2>Blog &amp; Events</h2>
-                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                </div>
-            </div>
-            <div class="row row-padded-mb">
-                <div class="col-md-4 animate-box">
-                    <div class="fh5co-event">
-                        <div class="date text-center"><span>15<br>Mar.</span></div>
-                        <h3><a href="#">USA, International Triathlon Event</a></h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p><a href="#">Read More</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4 animate-box">
-                    <div class="fh5co-event">
-                        <div class="date text-center"><span>15<br>Mar.</span></div>
-                        <h3><a href="#">USA, International Triathlon Event</a></h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p><a href="#">Read More</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4 animate-box">
-                    <div class="fh5co-event">
-                        <div class="date text-center"><span>15<br>Mar.</span></div>
-                        <h3><a href="#">New Device Develope by Microsoft</a></h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p><a href="#">Read More</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="fh5co-blog animate-box">
-                        <a href="#" class="blog-img-holder" style="background-image: url(images/project-1.jpg);"></a>
-                        <div class="blog-text">
-                            <h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-                            <span class="posted_on">March. 15th</span>
-                            <span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="fh5co-blog animate-box">
-                        <a href="#" class="blog-img-holder" style="background-image: url(images/project-2.jpg);"></a>
-                        <div class="blog-text">
-                            <h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-                            <span class="posted_on">March. 15th</span>
-                            <span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="fh5co-blog animate-box">
-                        <a href="#" class="blog-img-holder" style="background-image: url(images/project-3.jpg);"></a>
-                        <div class="blog-text">
-                            <h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-                            <span class="posted_on">March. 15th</span>
-                            <span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <#--<div id="fh5co-blog">-->
+        <#--<div class="container">-->
+            <#--<div class="row animate-box">-->
+                <#--<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">-->
+                    <#--<h2>Blog &amp; Events</h2>-->
+                    <#--<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>-->
+                <#--</div>-->
+            <#--</div>-->
+            <#--<div class="row row-padded-mb">-->
+                <#--<div class="col-md-4 animate-box">-->
+                    <#--<div class="fh5co-event">-->
+                        <#--<div class="date text-center"><span>15<br>Mar.</span></div>-->
+                        <#--<h3><a href="#">USA, International Triathlon Event</a></h3>-->
+                        <#--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+                        <#--<p><a href="#">Read More</a></p>-->
+                    <#--</div>-->
+                <#--</div>-->
+                <#--<div class="col-md-4 animate-box">-->
+                    <#--<div class="fh5co-event">-->
+                        <#--<div class="date text-center"><span>15<br>Mar.</span></div>-->
+                        <#--<h3><a href="#">USA, International Triathlon Event</a></h3>-->
+                        <#--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+                        <#--<p><a href="#">Read More</a></p>-->
+                    <#--</div>-->
+                <#--</div>-->
+                <#--<div class="col-md-4 animate-box">-->
+                    <#--<div class="fh5co-event">-->
+                        <#--<div class="date text-center"><span>15<br>Mar.</span></div>-->
+                        <#--<h3><a href="#">New Device Develope by Microsoft</a></h3>-->
+                        <#--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+                        <#--<p><a href="#">Read More</a></p>-->
+                    <#--</div>-->
+                <#--</div>-->
+            <#--</div>-->
+            <#--<div class="row">-->
+                <#--<div class="col-lg-4 col-md-4">-->
+                    <#--<div class="fh5co-blog animate-box">-->
+                        <#--<a href="#" class="blog-img-holder" style="background-image: url(images/project-1.jpg);"></a>-->
+                        <#--<div class="blog-text">-->
+                            <#--<h3><a href="#">Healty Lifestyle &amp; Living</a></h3>-->
+                            <#--<span class="posted_on">March. 15th</span>-->
+                            <#--<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>-->
+                            <#--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+                        <#--</div>-->
+                    <#--</div>-->
+                <#--</div>-->
+                <#--<div class="col-lg-4 col-md-4">-->
+                    <#--<div class="fh5co-blog animate-box">-->
+                        <#--<a href="#" class="blog-img-holder" style="background-image: url(images/project-2.jpg);"></a>-->
+                        <#--<div class="blog-text">-->
+                            <#--<h3><a href="#">Healty Lifestyle &amp; Living</a></h3>-->
+                            <#--<span class="posted_on">March. 15th</span>-->
+                            <#--<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>-->
+                            <#--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+                        <#--</div>-->
+                    <#--</div>-->
+                <#--</div>-->
+                <#--<div class="col-lg-4 col-md-4">-->
+                    <#--<div class="fh5co-blog animate-box">-->
+                        <#--<a href="#" class="blog-img-holder" style="background-image: url(images/project-3.jpg);"></a>-->
+                        <#--<div class="blog-text">-->
+                            <#--<h3><a href="#">Healty Lifestyle &amp; Living</a></h3>-->
+                            <#--<span class="posted_on">March. 15th</span>-->
+                            <#--<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>-->
+                            <#--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+                        <#--</div>-->
+                    <#--</div>-->
+                <#--</div>-->
+            <#--</div>-->
+        <#--</div>-->
+    <#--</div>-->
 
     <div id="fh5co-pricing" class="fh5co-bg-section">
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                    <h2>Plan &amp; Pricing</h2>
-                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                    <h2>技术分享</h2>
+                    <p></p>
                 </div>
             </div>
             <div class="row">
@@ -509,28 +268,28 @@
                         <div class="pricing__item">
                             <div class="wrap-price">
                                 <!-- <div class="icon icon-user2"></div> -->
-                                <h3 class="pricing__title">Trial</h3>
+                                <h3 class="pricing__title"></h3>
                                 <!-- <p class="pricing__sentence">Single user license</p> -->
                             </div>
                             <div class="pricing__price">
                         <span class="pricing__anim pricing__anim--1">
-								<span class="pricing__currency">$</span>0
+								<span class="pricing__currency"> </span>
                         </span>
                                 <span class="pricing__anim pricing__anim--2">
-								<span class="pricing__period">per year</span>
+								<span class="pricing__period"> </span>
                         </span>
                             </div>
                             <div class="wrap-price">
                                 <ul class="pricing__feature-list">
-                                    <li class="pricing__feature">One Day Trial</li>
-                                    <li class="pricing__feature">Limited Courses</li>
-                                    <li class="pricing__feature">Free 3 Lessons</li>
-                                    <li class="pricing__feature">No Supporter</li>
-                                    <li class="pricing__feature">No Tutorial</li>
-                                    <li class="pricing__feature">No Ebook</li>
-                                    <li class="pricing__feature">Limited Registered User</li>
+                                    <li class="pricing__feature"> </li>
+                                    <li class="pricing__feature"> </li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
                                 </ul>
-                                <button class="pricing__action">Choose plan</button>
+                                <button class="pricing__action">查看</button>
                             </div>
                         </div>
                     </div>
@@ -538,28 +297,28 @@
                         <div class="pricing__item">
                             <div class="wrap-price">
                                 <!-- <div class="icon icon-store"></div> -->
-                                <h3 class="pricing__title">Silver</h3>
+                                <h3 class="pricing__title"></h3>
                                 <!-- <p class="pricing__sentence">Up to 5 users</p> -->
                             </div>
                             <div class="pricing__price">
                         <span class="pricing__anim pricing__anim--1">
-								<span class="pricing__currency">$</span>79
+								<span class="pricing__currency"></span>
                         </span>
                                 <span class="pricing__anim pricing__anim--2">
-								<span class="pricing__period">per year</span>
+								<span class="pricing__period"></span>
                         </span>
                             </div>
                             <div class="wrap-price">
                                 <ul class="pricing__feature-list">
-                                    <li class="pricing__feature">One Year Standard Access</li>
-                                    <li class="pricing__feature">Limited Courses</li>
-                                    <li class="pricing__feature">300+ Lessons</li>
-                                    <li class="pricing__feature">Random Supporter</li>
-                                    <li class="pricing__feature">View Only Ebook</li>
-                                    <li class="pricing__feature">Standard Tutorials</li>
-                                    <li class="pricing__feature">Unlimited Registered User</li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
                                 </ul>
-                                <button class="pricing__action">Choose plan</button>
+                                <button class="pricing__action">查看</button>
                             </div>
                         </div>
                     </div>
@@ -567,28 +326,28 @@
                         <div class="pricing__item">
                             <div class="wrap-price">
                                 <!-- <div class="icon icon-home2"></div> -->
-                                <h3 class="pricing__title">Gold</h3>
+                                <h3 class="pricing__title"></h3>
                                 <!-- <p class="pricing__sentence">Unlimited users</p> -->
                             </div>
                             <div class="pricing__price">
                         <span class="pricing__anim pricing__anim--1">
-								<span class="pricing__currency">$</span>499
+								<span class="pricing__currency"></span>
                         </span>
                                 <span class="pricing__anim pricing__anim--2">
-								<span class="pricing__period">per year</span>
+								<span class="pricing__period"></span>
                         </span>
                             </div>
                             <div class="wrap-price">
                                 <ul class="pricing__feature-list">
-                                    <li class="pricing__feature">Life Time Access</li>
-                                    <li class="pricing__feature">Unlimited All Courses</li>
-                                    <li class="pricing__feature">7000+ Lessons &amp; Growing</li>
-                                    <li class="pricing__feature">Free Supporter</li>
-                                    <li class="pricing__feature">Free Ebook Downloads</li>
-                                    <li class="pricing__feature">Premium Tutorials</li>
-                                    <li class="pricing__feature">Unlimited Registered User</li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
+                                    <li class="pricing__feature"></li>
                                 </ul>
-                                <button class="pricing__action">Choose plan</button>
+                                <button class="pricing__action">查看</button>
                             </div>
                         </div>
                     </div>
@@ -602,11 +361,9 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 animate-box">
                 <div class="date-counter text-center">
-                    <h2>Get 400 of Online Courses for Free</h2>
-                    <h3>By Mike Smith</h3>
                     <div class="simply-countdown simply-countdown-one"></div>
-                    <p><strong>Limited Offer, Hurry Up!</strong></p>
-                    <p><a href="#" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
+                    <p><strong></strong></p>
+                    <p><a href="#" class="btn btn-primary btn-lg btn-reg">开始注册学习吧！</a></p>
                 </div>
             </div>
         </div>
@@ -614,7 +371,7 @@
 
     <div id="fh5co-gallery" class="fh5co-bg-section">
         <div class="row text-center">
-            <h2><span>Instagram Gallery</span></h2>
+            <h2><span>画廊展示</span></h2>
         </div>
         <div class="row">
             <div class="col-md-3 col-padded">
@@ -632,115 +389,9 @@
         </div>
     </div>
 
-    <footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row row-pb-md">
-                <div class="col-md-3 fh5co-widget">
-                    <h3>About Education</h3>
-                    <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-                    <h3>Learning</h3>
-                    <ul class="fh5co-footer-links">
-                        <li><a href="#">Course</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Meetups</a></li>
-                    </ul>
-                </div>
+<#include "base/footer.ftl">
 
-                <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-                    <h3>Learn &amp; Grow</h3>
-                    <ul class="fh5co-footer-links">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Handbook</a></li>
-                        <li><a href="#">Held Desk</a></li>
-                    </ul>
-                </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-                    <h3>Engage us</h3>
-                    <ul class="fh5co-footer-links">
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Visual Assistant</a></li>
-                        <li><a href="#">System Analysis</a></li>
-                        <li><a href="#">Advertise</a></li>
-                    </ul>
-                </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-                    <h3>Legal</h3>
-                    <ul class="fh5co-footer-links">
-                        <li><a href="#">Find Designers</a></li>
-                        <li><a href="#">Find Developers</a></li>
-                        <li><a href="#">Teams</a></li>
-                        <li><a href="#">Advertise</a></li>
-                        <li><a href="#">API</a></li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="row copyright">
-                <div class="col-md-12 text-center">
-                    <p>
-                        <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> &amp; <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </footer>
-</div>
-
-<div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-</div>
-
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
-<!-- Stellar Parallax -->
-<script src="js/jquery.stellar.min.js"></script>
-<!-- Carousel -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- Flexslider -->
-<script src="js/jquery.flexslider-min.js"></script>
-<!-- countTo -->
-<script src="js/jquery.countTo.js"></script>
-<!-- Magnific Popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
-<!-- Count Down -->
-<script src="js/simplyCountdown.js"></script>
-<!-- Main -->
-<script src="js/main.js"></script>
-<script>
-    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
-
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
-</body>
-</html>
 

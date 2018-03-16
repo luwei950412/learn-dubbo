@@ -20,7 +20,7 @@ public class CoursePO implements Serializable {
 
     private String courseName;
 
-    private Integer userid;
+    private Integer userId;
 
     private String filePath;//课程图片
 
@@ -58,12 +58,12 @@ public class CoursePO implements Serializable {
         this.courseName = courseName;
     }
 
-    public Integer getUserid() {
-        return userid;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUserid(Integer userid) {
-        this.userid = userid;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getFilePath() {

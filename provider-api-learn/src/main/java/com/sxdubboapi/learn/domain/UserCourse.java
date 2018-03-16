@@ -1,5 +1,6 @@
 package com.sxdubboapi.learn.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -7,16 +8,18 @@ import java.util.Date;
  * 2018-01-22 18:44.
  **/
 
-public class UserCourse {
+public class UserCourse implements Serializable{
 
 
     private Integer id;
 
-    private  Integer userId;
+    private  User user;
 
-    private Integer courseId;
+    private Course course;
 
-    private String progress; //课程学习进度 例如：1-1/1-3
+    private String progress; //课程学习进度 例如：20%
+
+    private Video video;
 
     private Date createDate;
 
@@ -30,20 +33,20 @@ public class UserCourse {
         this.id = id;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public Integer getCourseId() {
-        return courseId;
+    public Course getCourse() {
+        return course;
     }
 
-    public void setCourseId(Integer courseId) {
-        this.courseId = courseId;
+    public void setCourse(Course course) {
+        this.course = course;
     }
 
     public String getProgress() {
@@ -52,6 +55,14 @@ public class UserCourse {
 
     public void setProgress(String progress) {
         this.progress = progress;
+    }
+
+    public Video getVideo() {
+        return video;
+    }
+
+    public void setVideo(Video video) {
+        this.video = video;
     }
 
     public Date getCreateDate() {

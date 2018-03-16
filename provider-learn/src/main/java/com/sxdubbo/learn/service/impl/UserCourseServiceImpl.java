@@ -3,10 +3,15 @@ package com.sxdubbo.learn.service.impl;
 import com.sxdubbo.learn.domain.UserCoursePO;
 import com.sxdubbo.learn.domain.UserPO;
 import com.sxdubbo.learn.repository.UserCourseRepository;
+import com.sxdubbo.learn.utils.BeanTransferUserCourse;
+import com.sxdubboapi.learn.domain.User;
 import com.sxdubboapi.learn.domain.UserCourse;
 import com.sxdubboapi.learn.service.UserCourseService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * created by  luwei
@@ -18,22 +23,27 @@ public class UserCourseServiceImpl implements UserCourseService {
     public UserCourseRepository userCourseRepository;
 
     @Override
-    public UserCourse findByUserId(Integer userId) {
+    public List<UserCourse> findByUserId(Integer userId) {
 
-        UserCourse userCourse = new UserCourse();
-        UserCoursePO userCoursePO = new UserCoursePO();
-        userCoursePO = userCourseRepository.findByUserId(userId);
-        BeanUtils.copyProperties(userCoursePO, userCourse);
-        return userCourse;
+        List<UserCourse> userCourseList = new ArrayList<>();
+        List<UserCoursePO> userCoursePOList = userCourseRepository.findByUserPO_Id(userId);
+        if(userCoursePOList != null){
+            BeanTransferUserCourse.transferUserCourseList(userCoursePOList,userCourseList);
+            return userCourseList;
+        }else{
+            return null;
+        }
     }
 
     @Override
-    public UserCourse findByCourseId(Integer courseId) {
-
-        UserCourse userCourse = new UserCourse();
-        UserCoursePO userCoursePO = new UserCoursePO();
-        userCoursePO = userCourseRepository.findByUserId(courseId);
-        BeanUtils.copyProperties(userCoursePO, userCourse);
-        return userCourse;
+    public List<UserCourse> findByCourseId(Integer courseId){
+        List<UserCourse> userCourseList = new ArrayList<>();
+        List<UserCoursePO> userCoursePOList = userCourseRepository.findByCoursePO_Id(courseId);
+        if(userCoursePOList != null){
+            BeanTransferUserCourse.transferUserCourseList(userCoursePOList,userCourseList);
+            return userCourseList;
+        }else{
+            return null;
+        }
     }
 }

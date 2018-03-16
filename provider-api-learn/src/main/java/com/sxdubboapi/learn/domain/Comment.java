@@ -1,5 +1,6 @@
 package com.sxdubboapi.learn.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -7,11 +8,11 @@ import java.util.Date;
  * 2018-01-22 19:08.
  **/
 
-public class Comment {
+public class Comment implements Serializable{
 
     private Integer id;
 
-    private Integer userId;
+    private User user;
 
     private Integer videoId;
 
@@ -27,12 +28,12 @@ public class Comment {
         this.id = id;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public Integer getVideoId() {

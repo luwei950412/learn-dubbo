@@ -10,6 +10,7 @@ public interface UserService {
 	public User addUser(User user);
 
     public User findByUsername(String usernmae);
+    public List<User> findByUserType(Integer userType);
 
     public List<User> findAllUser();
 

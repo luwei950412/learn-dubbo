@@ -16,8 +16,19 @@ public interface CourseService {
 
     public List<Course> findByUserId(Integer userId);
 
+//    3-1 添加
+    public List<Course> findByType(String type);
+
     public Course findById(Integer id);
 
+    public List<Course> findByLevel(Integer level);
+
+    public List<String> findAllTypes();
+
+    public List<String> getClassesInType(String type);
+
+//
+    public List<Course> findByTypeLike(String type);
     public void deleteCourse(Integer id);
     public Course addCourse(Course course);
     public Course updateCourse(Course course);

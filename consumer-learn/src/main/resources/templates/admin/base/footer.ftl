@@ -1,21 +1,21 @@
 <!-- start: Javascript -->
-<script src="/admin/js/jquery.js"></script>
-<script src="/admin/js/jquery_002.js"></script>
-<script src="/admin/js/bootstrap.js"></script>
+<script src="${base}/admin/js/jquery.js"></script>
+<script src="${base}/admin/js/jquery_002.js"></script>
+<script src="${base}/admin/js/bootstrap.js"></script>
 
 
 <!-- plugins -->
-<script src="/admin/js/moment.js"></script>
-<script src="/admin/js/fullcalendar.js"></script>
-<script src="/admin/js/jquery_006.js"></script>
-<script src="/admin/js/jquery_004.js"></script>
-<script src="/admin/js/jquery_003.js"></script>
-<script src="/admin/js/jquery_005.js"></script>
-<script src="/admin/js/chart.js"></script>
+<script src="${base}/admin/js/moment.js"></script>
+<script src="${base}/admin/js/fullcalendar.js"></script>
+<script src="${base}/admin/js/jquery_006.js"></script>
+<script src="${base}/admin/js/jquery_004.js"></script>
+<script src="${base}/admin/js/jquery_003.js"></script>
+<script src="${base}/admin/js/jquery_005.js"></script>
+<script src="${base}/admin/js/chart.js"></script>
 
 
 <!-- custom -->
-<script src="/admin/js/main.js"></script>
+<script src="${base}/admin/js/main.js"></script>
 <div id="ascrail2000" class="nicescroll-rails"
      style="width: 5px; z-index: 222; cursor: default; position: fixed; top: 0px; left: 225px; height: 631px; opacity: 0; display: block;">
     <div style="position: relative; top: 0px; float: right; width: 5px; height: 409px; background-color: rgb(33, 150, 243); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div>
@@ -316,16 +316,7 @@
 <div class="jqvmap-label" style="display: none;"></div>
 <!-- end: Javascript -->
 
-<#--<div id="ascrail2002" class="nicescroll-rails" style="width: 24px; z-index: 230; cursor: -moz-grab; position: absolute; top: 0px; left: 204px; height: 80px; display: none;">-->
-<#--<div style="position: relative; top: 0px; float: right; width: 24px; height: 0px; background-color: rgb(33, 150, 243); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div>-->
-<#--</div>-->
-<#--<div id="ascrail2002-hr" class="nicescroll-rails" style="height: 24px; z-index: 230; top: 56px; left: 0px; position: absolute; display: none;"><div style="position: relative; top: 0px; height: 24px; width: 0px; background-color: rgb(33, 150, 243); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div>-->
-<#--<div id="ascrail2003" class="nicescroll-rails" style="width: 5px; z-index: 222; cursor: default; position: absolute; top: 169.283px; left: 1344px; height: 600px; opacity: 0;">-->
-<#--<div style="position: relative; top: 0px; float: right; width: 5px; height: 462px; background-color: rgb(33, 150, 243); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div>-->
-<#--</div>-->
-<#--<div id="ascrail2003-hr" class="nicescroll-rails" style="height: 5px; z-index: 222; top: 764.283px; left: 1120px; position: absolute; cursor: default; display: none; width: 224px; opacity: 0;">-->
-<#--<div style="position: relative; top: 0px; height: 5px; width: 229px; background-color: rgb(33, 150, 243); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div>-->
-<#--</div>-->
+
 </body>
 </html>
 <!DOCTYPE html>

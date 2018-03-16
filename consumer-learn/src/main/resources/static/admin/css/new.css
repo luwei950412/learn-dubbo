@@ -1,0 +1,39 @@
+.search_span{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    top:20px;
+}
+.value_show{
+    position: relative;
+    top:50px;
+    text-align: center;
+}
+.value_choice{
+    display: inline-block;
+    margin-right: 50px;
+}
+.choose_main{
+    text-align: center;
+    position: relative;
+    top:100px;
+    padding-bottom: 200px;
+}
+.choose_choice{
+    display: inline-block;
+    vertical-align: top;
+    width:45%;
+    text-align: left;
+    padding-left: 10%;
+    border-right: 1px solid #d7d7d7;
+}
+.choose_torf{
+    display: inline-block;
+    vertical-align: top;
+    width:40%;
+    padding-left: 3%;
+    text-align: left;
+}
+.fill_block{
+    height: 500px;
+}

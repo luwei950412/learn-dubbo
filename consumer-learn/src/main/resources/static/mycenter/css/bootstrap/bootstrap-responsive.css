@@ -125,7 +125,6 @@
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 30px;
   }
   .container,
   .navbar-static-top .container,
@@ -425,7 +424,7 @@
   input.span5,
   textarea.span5,
   .uneditable-input.span5 {
-    width: 456px;
+    width: 270px;
   }
   input.span4,
   textarea.span4,

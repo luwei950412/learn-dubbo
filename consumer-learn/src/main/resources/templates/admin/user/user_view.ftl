@@ -52,7 +52,7 @@
                                                         <a href="/user/editStatus?id=${userView.id}&status=2"
                                                            title="操作冻结">[冻结]</a>
                                                     <#elseif "${userView.userStatus}"=="1">待审核
-                                                        <a href="/user/editStatus?id=${userView.id}&status=0"
+                                                        <a href="/user/editStatus?id=${userView.id}&status=0&flag=1"
                                                            title="操作审核">[审核通过]</a>
                                                         <a href="/user/editStatus?id=${userView.id}&status=3"
                                                            title="操作审核">[审核不通过]</a>

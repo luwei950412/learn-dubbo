@@ -1,6 +1,9 @@
 package com.sxdubboapi.learn.service;
 
+import com.sxdubboapi.learn.domain.Course;
 import com.sxdubboapi.learn.domain.UserVideo;
+
+import java.util.List;
 
 /**
  * created by  luwei
@@ -8,7 +11,14 @@ import com.sxdubboapi.learn.domain.UserVideo;
  **/
 public interface UserVideoService {
 
-    public UserVideo findByUserId(Integer userId);
+    public List<UserVideo> findByUserId(Integer userId);
+    public List<UserVideo> findByCourseId(Integer courseId);
 
     public UserVideo findByVideoId(Integer videoId);
+
+    public UserVideo saveUserVideo(UserVideo userVideo);
+
+    public UserVideo findByUserIdAndVideoId(Integer userId,Integer videoId);
+    public List<UserVideo> findByUserIdAndCourseId(Integer userId,Integer courseId);
+
 }

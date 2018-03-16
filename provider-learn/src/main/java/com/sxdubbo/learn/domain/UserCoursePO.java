@@ -1,9 +1,6 @@
 package com.sxdubbo.learn.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -19,11 +16,19 @@ public class UserCoursePO implements Serializable {
     @GeneratedValue
     private Integer id;
 
-    private Integer userId;
+    @ManyToOne(optional = true)
+    @JoinColumn(name = "user_id")
+    private UserPO userPO;
 
-    private Integer courseId;
+    @ManyToOne(optional = true)
+    @JoinColumn(name="course_id")
+    private CoursePO coursePO;
 
-    private String progress; //课程学习进度 例如：1-1
+    private String progress; //课程学习进度 例如：20%
+
+    @ManyToOne(optional = true)
+    @JoinColumn(name = "video_id")
+    private VideoPO videoPO;   //当前最新的学习视频
 
     private Date createDate;
 
@@ -37,20 +42,20 @@ public class UserCoursePO implements Serializable {
         this.id = id;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public UserPO getUserPO() {
+        return userPO;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUserPO(UserPO userPO) {
+        this.userPO = userPO;
     }
 
-    public Integer getCourseId() {
-        return courseId;
+    public CoursePO getCoursePO() {
+        return coursePO;
     }
 
-    public void setCourseId(Integer courseId) {
-        this.courseId = courseId;
+    public void setCoursePO(CoursePO coursePO) {
+        this.coursePO = coursePO;
     }
 
     public String getProgress() {
@@ -59,6 +64,14 @@ public class UserCoursePO implements Serializable {
 
     public void setProgress(String progress) {
         this.progress = progress;
+    }
+
+    public VideoPO getVideoPO() {
+        return videoPO;
+    }
+
+    public void setVideoPO(VideoPO videoPO) {
+        this.videoPO = videoPO;
     }
 
     public Date getCreateDate() {

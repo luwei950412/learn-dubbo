@@ -13,7 +13,7 @@ public class Course implements Serializable{
 
     private String courseName;
 
-    private String userid;
+    private Integer userId;
 
     private String filePath;
 
@@ -51,12 +51,12 @@ public class Course implements Serializable{
         this.courseName = courseName;
     }
 
-    public String getUserid() {
-        return userid;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getFilePath() {

@@ -1,6 +1,7 @@
 package com.sxdubbo.learn.repository;
 
 import com.sxdubbo.learn.domain.CommentPO;
+import com.sxdubbo.learn.domain.UserPO;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
  **/
 public interface CommentRepository extends JpaRepository<CommentPO, String> {
 
-    public CommentPO findByVideoId(Integer videoId);
+    public List<CommentPO> findByVideoId(Integer videoId);
 
-    public List<CommentPO> findByUserId(Integer userId);
+    public List<CommentPO> findByUserPO(UserPO userPO);
 }

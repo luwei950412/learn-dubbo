@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="UTF-8"/>
     <title>Miminium</title>
     <!-- start: Css -->
-    <link rel="stylesheet" type="text/css" href="/admin/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="${base}/admin/css/bootstrap.css">
 
     <!-- plugins -->
-    <link rel="stylesheet" type="text/css" href="/admin/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/admin/css/simple-line-icons.css">
-    <link rel="stylesheet" type="text/css" href="/admin/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="/admin/css/aero.css">
-    <link href="/admin/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="${base}/admin/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="${base}/admin/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="${base}/admin/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="${base}/admin/css/aero.css">
+    <link href="${base}/admin/css/style.css" rel="stylesheet">
     <!-- end: Css -->
 
     <link rel="shortcut icon" href="http://demo.cssmoban.com/cssthemes4/btzero_30_miminiummaster/asset/img/logomi.png">
 </head>
 <body id="mimin" class="dashboard form-signin-wrapper">
-<!--</shiro:notAuthenticated>-->
-<!--<form th:action="@{/user/login}" method="post">-->
-<!--<p>账号：<input type="text" name="username" value="luwei" /></p>-->
-<!--<p>密码：<input type="text" name="password" value="123456" /></p>-->
-<!--<p><input type="submit" value="登录"/></p>-->
-<!--</form>-->
-<!--<a href="../user/register">register</a>-->
-<#--<img src="/admin/images/login-bg.jpg" />-->
 <div class="container">
 
     <form class="form-signin" id="loginWindowForm" method="post" enctype="multipart/form-data">
@@ -66,16 +57,16 @@
 
 <!-- end: Content -->
 <!-- start: Javascript -->
-<script src="/admin/js/jquery.js"></script>
-<script src="/admin/js/login.js"></script>
-<script src="/admin/js/jquery_002.js"></script>
-<script src="/admin/js/bootstrap.js"></script>
+<script src="${base}/admin/js/jquery.js"></script>
+<script src="${base}/admin/js/login.js"></script>
+<script src="${base}/admin/js/jquery_002.js"></script>
+<script src="${base}/admin/js/bootstrap.js"></script>
 
-<script src="/admin/js/moment.js"></script>
+<script src="${base}/admin/js/moment.js"></script>
 <#--<script src="/admin/js/icheck.js"></script>-->
 
 <!-- custom -->
-<script src="/admin/js/main.js"></script>
+<script src="${base}/admin/js/main.js"></script>
 <#--<script type="text/javascript">-->
 <#--$(document).ready(function(){-->
 <#--$('input').iCheck({-->

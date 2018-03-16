@@ -59,11 +59,11 @@
                                                             添加课程信息
                                                         </h4>
                                                     </div>
-                                                    <form action="/course/addCourse" method="post">
-                                                        <div class="modal-body" style="height:350px;width:400px">
+                                                    <form action="${base}/course/addCourse" method="post" enctype="multipart/form-data">
+                                                        <div class="modal-body" style="height:450px;width:400px">
                                                             <label for="name" class="col-sm-2 control-label">课程名称</label>
                                                             <div class="col-sm-10">
-                                                                <input type="hidden" name="userId" value="${userInfo.id}" />
+                                                                <input type="hidden" name="userId" value="${(userInfo.id)!}" />
                                                                 <input type="text" style="width: 400px;" class="form-control" name="courseName"
                                                                        placeholder="请输入课程名称">
                                                             </div>
@@ -102,6 +102,11 @@
                                                                 <input type="text" style="width: 400px;" class="form-control" name="score"
                                                                        placeholder="请输入评分">
                                                             </div>
+                                                            <label for="name" class="col-sm-2 control-label">课程图片</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="file" style="width: 400px;" class="form-control" name="filePath"
+                                                                       placeholder="请输入课程图片">
+                                                            </div>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-default" data-dismiss="modal">关闭
@@ -124,7 +129,7 @@
                                         <thead>
                                         <tr role="row">
                                             <th class="sorting" tabindex="0" aria-controls="datatables-example"
-                                                rowspan="1" colspan="1" style="width: 165px;"
+                                                rowspan="1" colspan="1" style="width: 185px;"
                                                 aria-label="Name: activate to sort column ascending">课程名称
                                             </th>
                                             <th class="sorting_desc" tabindex="0" aria-controls="datatables-example"
@@ -133,7 +138,7 @@
                                                 aria-sort="descending">时长
                                             </th>
                                             <th class="sorting" tabindex="0" aria-controls="datatables-example"
-                                                rowspan="1" colspan="1" style="width: 73px;"
+                                                rowspan="1" colspan="1" style="width: 53px;"
                                                 aria-label="Office: activate to sort column ascending">课时
                                             </th>
                                             <th class="sorting" tabindex="0" aria-controls="datatables-example"
@@ -167,7 +172,8 @@
                                                 <#assign count=count + 1 />
                                             <#--<#if "${lecture.userType}" != "1">-->
                                             <tr role="row" class="odd">
-                                                <td class="">${course.courseName}</td>
+                                                <td class=""><img width="60px" height="45px" style="border-radius: 30%" src="${base}/admin/upload/${(course.filePath)!}" />
+                                                    &nbsp;&nbsp;&nbsp;${course.courseName}</td>
                                                 <td class="sorting_1">${course.duration}</td>
                                                 <td class="">
                                                 ${course.hour}
@@ -191,8 +197,8 @@
                                                 ${course.score}
                                                 </td>
                                                 <td>
-                                                    <a href="/chapter/chapterManage?id=${course.id}" title="课程管理">[课程管理]</a>
-                                                    <a href="/course/deleteCourse?id=${course.id}" onclick="javascript:return p_del()" title="删除">[删除]</a>
+                                                    <a href="${base}/chapter/chapterManage?id=${course.id}" title="课程管理">[课程管理]</a>
+                                                    <a href="${base}/course/deleteCourse?id=${course.id}" onclick="javascript:return p_del()" title="删除">[删除]</a>
 
                                                     <script language="javascript">
                                                         function p_del() {
@@ -217,8 +223,8 @@
                                                                         修改课程信息
                                                                     </h4>
                                                                 </div>
-                                                                <form action="/course/updateCourse" method="post">
-                                                                    <div class="modal-body" style="height:350px;width:400px">
+                                                                <form action="${base}/course/updateCourse" method="post" enctype="multipart/form-data">
+                                                                    <div class="modal-body" style="height:450px;width:400px">
                                                                         <label for="name" class="col-sm-2 control-label">课程名称</label>
                                                                         <div class="col-sm-10">
                                                                             <input type="hidden" name="id" value="${course.id}" />
@@ -259,6 +265,11 @@
                                                                         <div class="col-sm-10">
                                                                             <input type="text" style="width: 400px;" class="form-control" name="score"
                                                                                   value="${(course.score)!}" placeholder="请输入评分">
+                                                                        </div>
+                                                                        <label for="name" class="col-sm-2 control-label">课程图片</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="file" style="width: 400px;" class="form-control" name="filePath"
+                                                                                    placeholder="请输入课程图片">
                                                                         </div>
                                                                     </div>
                                                                     <div class="modal-footer">

@@ -1,9 +1,8 @@
 package com.sxdubbo.learn.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import com.sxdubboapi.learn.domain.User;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -19,7 +18,9 @@ public class CommentPO implements Serializable {
     @GeneratedValue
     private Integer id;
 
-    private Integer userId;
+    @ManyToOne(optional = true)
+    @JoinColumn(name = "user_id")
+    private UserPO userPO;
 
     private Integer videoId;
 
@@ -35,12 +36,12 @@ public class CommentPO implements Serializable {
         this.id = id;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public UserPO getUserPO() {
+        return userPO;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUserPO(UserPO userPO) {
+        this.userPO = userPO;
     }
 
     public Integer getVideoId() {

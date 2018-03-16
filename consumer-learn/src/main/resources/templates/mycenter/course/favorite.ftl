@@ -5,6 +5,7 @@
             font-weight: bold;
         }
     </style>
+    <#setting date_format="yyyy-MM-dd">
     <style>
         #p_active1{  display: none;  }
         #p_active3{  display: none;  }
@@ -15,10 +16,7 @@
     </style>
 
 <#include  "../base/header.ftl" >
-
-
-
-<!-- scripts -->
+    <!-- scripts -->
 <script src="js/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
@@ -144,5 +142,120 @@
     });
 </script>
 
-</body>
-</html>
+
+<div class="content">
+
+    <div class="bg-other user-head-info">
+        <div class="user-info clearfix">
+            <div class="user-pic" data-is-fans="" data-is-follows="">
+
+            </div>
+
+
+
+        </div><!-- .user-info end -->
+    </div><!-- .big-pic end -->
+    <div class="wrap">
+
+
+        <div class="u-container">
+            <div class="c-tab clearfix">
+                <div class="tool-left l">
+
+                    <a href="#" class="sort-item active">最近学习</a>
+
+
+
+
+                </div>
+                <div class="tool-right r">
+                    <div class="tool-all">
+            <span id="js-columall" class="tool-item">
+                <span>
+
+                                                                    全部课程
+
+                </span>
+            	<i class="tool-item icon icon-drop_down"></i>
+        	</span>
+                        <ul id="js-columbd" class="all-cont" style="display:none;">
+
+                            <li><a data-id="0" href="https://www.imooc.com/u/6362103/courses?sort=time&amp;skill_id=0">全部课程</a></li>
+                            <li><a data-id="220" href="https://www.imooc.com/u/6362103/courses?sort=time&amp;skill_id=220">Java</a></li>
+                            <li><a data-id="221" href="https://www.imooc.com/u/6362103/courses?sort=time&amp;skill_id=221">Html5</a></li>
+                            <li><a data-id="222" href="https://www.imooc.com/u/6362103/courses?sort=time&amp;skill_id=222">Node.js</a></li>
+                            <li><a data-id="4903" href="https://www.imooc.com/u/6362103/courses?sort=time&amp;skill_id=4903">SpringBoot</a></li>
+                            <li><a href="https://www.imooc.com/u/6362103/courses?sort=time">全部课程</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="js-course-list my-space-course study-tl">
+
+            <#if userCourseList?size==0><div class="else_span">对不起，您没有学习任何课程</div></#if>
+                <#list userCourseList as userCourse>
+                <div class="clearfix tl-item  tl-item-first">
+			            <span class="time">
+                <#--<b>2018</b>-->
+                <#--<em>02月25日</em>-->
+                <b>${userCourse.modifyDate?string("yyyy-MM-dd HH:mm:ss")?substring(0,4)}年</b>
+                    <em>${userCourse.modifyDate?string("yyyy-MM-dd HH:mm:ss")?substring(5,7)}月${userCourse.modifyDate?string("yyyy-MM-dd HH:mm:ss")?substring(8,10)}日</em>
+            </span>
+                    <div class="course-list course-list-m">
+                        <ul class="clearfix">
+                            <li class="course-one" data-courseid="725" data-uid="6362103">
+                                <div class="course-list-img l">
+                                    <a href="${base}/chapter/listChapter?id=${showUserCourseList[userCourse_index].id}" target="_blank">
+                                        <img width="200" height="113" alt="" src="${base}/admin/upload/${showUserCourseList[userCourse_index].filePath}">
+                                    </a>
+                                </div>
+                                <div class="course-list-cont">
+                                    <h3 class="study-hd">
+                                        <a href="${base}/chapter/listChapter?id=${showUserCourseList[userCourse_index].id}" target="_blank">${showUserCourseList[userCourse_index].courseName}</a>
+
+                                        <span class="i-new">更新至${showUserCourseList[userCourse_index].createDate?date}</span>
+                                        <!-- 收藏和删除 -->
+                                        <div class="share-box clearfix">
+                                            <div class="show-btn"><i class="icon-down2"></i></div>
+                                            <div class="share-box-con courses-r">
+                                                <a href="javascript:;" title="收藏" class="follow custom_f"><i class="icon icon-star_outline"></i></a>
+                                                <a href="javascript:;" title="删除" class="del"><i class="icon icon-notdisplay"></i></a>
+
+                                            </div>
+                                        </div>
+                                    </h3>
+                                    <div class="study-points">
+                                        <span class="i-left span-common">已学${userCourse.getProgress()}%</span>
+                                        <#--<span class="i-mid span-common">用时${userCourseList.get(i).setProgress()}分</span>-->
+                                        <#--<span class="i-right span-common">学习至1-1 前端Canvas vs PS 美图秀秀</span>-->
+                                    </div>
+                                    <div class="catog-points">
+                                        <#--<span class="i-left span-common"><a href="https://www.imooc.com/u/6362103/course/725/notes">笔记 <i>0</i></a></span>-->
+                                        <#--<span class="i-mid span-common"><a href="https://www.imooc.com/u/6362103/course/725/codes">代码 <i>0</i></a></span>-->
+                                        <span class="i-right span-common"><a href="https://www.imooc.com/u/6362103/course/725/questions">问答0<i></i></a></span>
+
+                                        <a href="https://www.imooc.com/video/12974" target="_blank" class="btn-red continute-btn">继续学习</a>
+
+                                    </div>
+                                </div>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </#list>
+
+            </div>
+            <!-- 分页 -->
+            <div class="qa-comment-page">
+            </div>
+
+
+        </div><!-- .container end -->
+    </div><!-- .wrap end-->
+
+</div>
+
